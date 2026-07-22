@@ -27,7 +27,7 @@ docs/               ← the website (GitHub Pages serves from here)
 ## Before launch — fill these in
 
 - **GA4**: replace `G-XXXXXXXXXX` in `docs/index.html` with your Measurement ID.
-- **Pay button**: point the `Get Hisaab — ₹112` link (`href="#"`) at the Dodo checkout URL.
+- **Pay button**: replace `PASTE_DODO_URL` in the `Get Hisaab — ₹112` link's `href` with the Dodo checkout URL. Until then, clicking guides visitors to the email capture.
 - **Domain**: the OG / canonical tags assume `hisaab.craftycrow.co`. Change if different.
 - **Form**: capture posts to CraftyForms; test once live (if it errors, allow the
   site origin + `OPTIONS` on the form server).

@@ -429,7 +429,8 @@ footer small{color:#9E9E9E;font-weight:700;text-transform:uppercase;letter-spaci
       <p class="label reveal" style="color:var(--accent-ink);margin-bottom:var(--sp-3)">Start hisaabing</p>
       <div class="price display tnum reveal">₹112</div>
       <p class="sub reveal">The full tool, yours to keep. Drop into our live sessions whenever they run.</p>
-      <a href="#" class="btn btn-primary btn-lg reveal">Get Hisaab — ₹112</a>
+      <!-- DODO: replace PASTE_DODO_URL in the href below with the ₹112 checkout link — that's the only change needed to take payments. -->
+      <a href="PASTE_DODO_URL" class="btn btn-primary btn-lg reveal" id="buyBtn">Get Hisaab — ₹112</a>
 
       <p class="inside reveal"><b>Inside:</b> limits, goals, recurring, reports; and it quietly makes you better with your money.</p>
 
@@ -498,6 +499,19 @@ footer small{color:#9E9E9E;font-weight:700;text-transform:uppercase;letter-spaci
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(function(){showToast("Link copied");},function(){showToast("Copy failed");});}
     else{var t=document.createElement("textarea");t.value=url;document.body.appendChild(t);t.select();try{document.execCommand("copy");showToast("Link copied");}catch(e){showToast("Copy failed");}document.body.removeChild(t);}
   });
+
+  // buy button — opens Dodo checkout once the URL is set; until then, guide to email capture
+  var buyBtn=document.getElementById("buyBtn");
+  if(buyBtn){
+    buyBtn.addEventListener("click",function(e){
+      if(buyBtn.getAttribute("href")==="PASTE_DODO_URL"){
+        e.preventDefault();
+        showToast("Payments open any day now — drop your email below and we'll tell you first.");
+        var ci=document.getElementById("capIn");
+        if(ci){ci.scrollIntoView({behavior:"smooth",block:"center"});setTimeout(function(){ci.focus();},350);}
+      }
+    });
+  }
 
   // capture — posts to CraftyForms
   var CRAFTY_FORM="https://crafty-form-server.fly.dev/api/incoming-webhook/092f09b0feb36b850c5b0aa54fd27d7e9b5f4f7f/86ee5fad-4a0c-46b6-95dd-7efdb2c15ca5";
