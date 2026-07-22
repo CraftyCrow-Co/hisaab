@@ -1,0 +1,7 @@
+.claude/settings.local.json
+.DS_Store
+Thumbs.db
+
+# internal — kept out of the public repo (un-ignore if the repo is private)
+launch-sequence.md
+marketing-bank.md
