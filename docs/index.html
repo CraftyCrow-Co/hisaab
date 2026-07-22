@@ -527,6 +527,7 @@ footer small{color:#9E9E9E;font-weight:700;text-transform:uppercase;letter-spaci
       .then(function(r){
         if(!r.ok)throw 0;
         note.textContent="Noted. You're on the list.";note.style.color="var(--accent-ink)";
+        if(typeof gtag==="function")gtag("event","email_capture",{event_category:"engagement",event_label:picked.join(", ")});
         input.value="";
         [].slice.call(document.querySelectorAll(".optrow input:checked")).forEach(function(c){c.checked=false;});
       })
