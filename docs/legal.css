@@ -1,0 +1,71 @@
+/* ============================================================
+   HISAAB — shared style for legal / doc pages
+   Same palette, type scale and voice as the landing page.
+   ============================================================ */
+:root{
+  --fs-xs:.72rem; --fs-sm:.86rem; --fs-base:1rem; --fs-md:1.25rem;
+  --fs-lg:1.5625rem; --fs-xl:1.953rem; --fs-2xl:2.441rem;
+  --sp-1:.25rem; --sp-2:.5rem; --sp-3:.75rem; --sp-4:1rem; --sp-5:1.5rem;
+  --sp-6:2rem; --sp-7:3rem; --sp-8:4rem;
+  --radius:16px; --measure:66ch; --ease:cubic-bezier(.22,.61,.36,1);
+
+  --bg:#F8F4EB; --surface:#FFFFFF; --ink:#000000; --ink-soft:#2D2D2D; --ink-faint:#9E9E9E;
+  --line:#D8D2C5; --gray:#9E9E9E; --charcoal:#2D2D2D; --cream:#F8F4EB;
+  --accent:#5B7553; --accent-ink:#48603F;
+}
+:root[data-theme="dark"]{
+  --bg:#1C1D19; --surface:#26271F; --ink:#F4EFE3; --ink-soft:#CBC5B6; --ink-faint:#8E897C;
+  --line:#383830; --gray:#6E6E66; --charcoal:#2D2D2D; --cream:#F4EFE3;
+  --accent:#8AA87C; --accent-ink:#A6C09A;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#1C1D19; --surface:#26271F; --ink:#F4EFE3; --ink-soft:#CBC5B6; --ink-faint:#8E897C;
+    --line:#383830; --gray:#6E6E66; --charcoal:#2D2D2D; --cream:#F4EFE3;
+    --accent:#8AA87C; --accent-ink:#A6C09A;
+  }
+}
+
+*{box-sizing:border-box}
+html{font-size:clamp(15px,.9rem + .22vw,17px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Nunito",system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--accent-ink);text-underline-offset:2px}
+.wrap{width:100%;max-width:760px;margin-inline:auto;padding-inline:var(--sp-5)}
+
+/* top bar */
+.topbar{border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding-block:var(--sp-3)}
+.brand{display:flex;align-items:baseline;gap:.5ch;font-weight:900;font-size:var(--fs-md);letter-spacing:-.01em;text-decoration:none;color:var(--ink)}
+.brand small{font-weight:700;font-size:.6rem;text-transform:uppercase;letter-spacing:.16em;color:var(--ink-faint)}
+.iconbtn{display:grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:50%;border:1px solid var(--gray);background:var(--surface);color:var(--ink);cursor:pointer;transition:border-color .2s}
+.iconbtn:hover{border-color:var(--accent)}
+.iconbtn svg{width:1.05rem;height:1.05rem;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.iconbtn .moon{display:none}
+:root[data-theme="dark"] .iconbtn .sun{display:none}
+:root[data-theme="dark"] .iconbtn .moon{display:block}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .iconbtn .sun{display:none}
+  :root:not([data-theme="light"]) .iconbtn .moon{display:block}
+}
+
+/* document body */
+.doc{padding-block:var(--sp-8)}
+.doc h1{font-size:var(--fs-2xl);font-weight:800;line-height:1.1;letter-spacing:-.01em;margin:0 0 var(--sp-2)}
+.doc .meta{color:var(--ink-faint);font-size:var(--fs-sm);font-weight:700;margin-bottom:var(--sp-7)}
+.doc h2{font-size:var(--fs-lg);font-weight:800;margin:var(--sp-7) 0 var(--sp-3)}
+.doc p,.doc li{max-width:var(--measure);color:var(--ink-soft)}
+.doc p{margin:0 0 var(--sp-4)}
+.doc ul{margin:0 0 var(--sp-4);padding-left:1.2em}
+.doc li{margin-bottom:var(--sp-2)}
+.doc strong{color:var(--ink)}
+.doc .lead{font-size:var(--fs-md);color:var(--ink)}
+.note{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-4) var(--sp-5);margin:var(--sp-5) 0}
+.note p{margin:0;max-width:none}
+
+/* foot */
+.docfoot{border-top:1px solid var(--line);padding-block:var(--sp-6);margin-top:var(--sp-8)}
+.docfoot .wrap{display:flex;flex-wrap:wrap;gap:var(--sp-3) var(--sp-5);align-items:center;justify-content:space-between}
+.docnav{display:flex;flex-wrap:wrap;gap:var(--sp-4);font-weight:700;font-size:var(--fs-sm)}
+.docfoot small{color:var(--ink-faint);font-weight:700}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:3px;border-radius:4px}
