@@ -23,6 +23,14 @@
   :root[data-theme="dark"] .btn-copy{color:var(--bg)}
   .payid{color:var(--ink-faint);font-size:var(--fs-sm);font-weight:700}
   [hidden]{display:none !important}
+  /* one-time confetti burst on the paid state */
+  .confetti{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:9}
+  .confetti i{position:absolute;top:-4vh;width:.5rem;height:.75rem;border-radius:2px;opacity:0;
+    animation:cfall 2.2s var(--ease) forwards}
+  @keyframes cfall{
+    0%{opacity:1;transform:translateY(0) rotate(0deg)}
+    100%{opacity:0;transform:translateY(105vh) rotate(540deg)}
+  }
 </style>
 </head>
 <body>
@@ -48,11 +56,13 @@
 
       <a class="btn-copy" href="https://ccro.in/s7k2m9x">Copy Hisaab into my Drive</a>
 
-      <div class="note"><p><strong>Best on a computer.</strong> Google will ask "Make a copy?" — say yes, and that copy is yours forever. On a phone it works, but a spreadsheet deserves a bigger screen.</p></div>
+      <div class="note"><p><strong>Tap it now — phone works fine.</strong> Google asks "Make a copy?", you say yes, and the copy lands in your Google Drive, yours forever. Then open it later on a computer; a spreadsheet deserves the bigger screen.</p></div>
 
       <h2>If anything's off</h2>
       <p>Write to <a href="mailto:support@craftycrow.co">support@craftycrow.co</a> from the email you paid with. Include the payment ID below if you have it — it helps us find you instantly.</p>
       <p class="payid" id="payid" hidden></p>
+
+      <p class="lead">Happy hisaabing.</p>
     </div>
 
     <div id="nopay" hidden>
@@ -85,6 +95,20 @@
   var paid=false;
   q.forEach(function(v,k){if(k.indexOf("razorpay")===0)paid=true;});
   document.getElementById(paid?"paid":"nopay").hidden=false;
+  if(paid&&!matchMedia("(prefers-reduced-motion: reduce)").matches){
+    var box=document.createElement("div");box.className="confetti";box.setAttribute("aria-hidden","true");
+    var colors=["#5B7553","#8AA87C","#A6C09A","#F8F4EB","#2D2D2D"];
+    for(var i=0;i<18;i++){
+      var p=document.createElement("i");
+      p.style.left=(Math.random()*100)+"vw";
+      p.style.background=colors[i%colors.length];
+      p.style.animationDelay=(Math.random()*.6)+"s";
+      p.style.animationDuration=(1.6+Math.random()*1.2)+"s";
+      box.appendChild(p);
+    }
+    document.body.appendChild(box);
+    setTimeout(function(){box.remove();},3600);
+  }
   var pid=q.get("razorpay_payment_id");
   if(pid&&/^[\w-]{1,64}$/.test(pid)){
     var el=document.getElementById("payid");
