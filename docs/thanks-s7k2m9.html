@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- Post-purchase landing. Razorpay Payment Page redirects here after payment,
+     appending razorpay_* query params. Soft gate only: params are trivially fakeable,
+     the real protections are the random filename + noindex + no inbound links.
+     Never link to this page from anywhere on the site. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex,nofollow" />
+<title>Thank you — Hisaab</title>
+<script>try{var t=localStorage.getItem("hisaab-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="legal.css" />
+<style>
+  .btn-copy{display:inline-block;background:var(--accent);color:var(--cream);font-weight:800;font-size:var(--fs-md);
+    padding:var(--sp-4) var(--sp-6);border-radius:var(--radius);text-decoration:none;margin:var(--sp-4) 0 var(--sp-5);
+    transition:opacity .2s}
+  .btn-copy:hover{opacity:.9}
+  :root[data-theme="dark"] .btn-copy{color:var(--bg)}
+  .payid{color:var(--ink-faint);font-size:var(--fs-sm);font-weight:700}
+  [hidden]{display:none !important}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a href="index.html" class="brand">Hisaab <small>by CraftyCrow</small></a>
+    <button class="iconbtn" id="theme" aria-label="Switch light and dark (press T)">
+      <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/></svg>
+      <svg class="moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="doc">
+  <div class="wrap">
+
+    <div id="paid" hidden>
+      <h1>Paid ✓ You're in.</h1>
+      <p class="meta" id="payline">Your receipt is on its way to your email.</p>
+
+      <p class="lead">Hisaab is ready to become yours — one click copies it into your own Google Drive, and from that moment we can't see it, touch it, or take it back.</p>
+
+      <a class="btn-copy" href="https://ccro.in/s7k2m9x">Copy Hisaab into my Drive</a>
+
+      <div class="note"><p><strong>Best on a computer.</strong> Google will ask "Make a copy?" — say yes, and that copy is yours forever. On a phone it works, but a spreadsheet deserves a bigger screen.</p></div>
+
+      <h2>If anything's off</h2>
+      <p>Write to <a href="mailto:support@craftycrow.co">support@craftycrow.co</a> from the email you paid with. Include the payment ID below if you have it — it helps us find you instantly.</p>
+      <p class="payid" id="payid" hidden></p>
+    </div>
+
+    <div id="nopay" hidden>
+      <h1>This page follows a purchase.</h1>
+      <p class="lead">It opens automatically after you buy Hisaab. Looking to get it? <a href="index.html#get">Start here.</a></p>
+      <p>Already paid and ended up here without your sheet? Email <a href="mailto:support@craftycrow.co">support@craftycrow.co</a> from the address you bought with — a real person will sort it out.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer class="docfoot">
+  <div class="wrap">
+    <nav class="docnav">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="refund.html">Refunds</a>
+      <a href="shipping.html">Shipping</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <small>Hisaab by CraftyCrow</small>
+  </div>
+</footer>
+
+<script src="theme.js"></script>
+<script>
+(function(){
+  var q=new URLSearchParams(location.search);
+  var paid=false;
+  q.forEach(function(v,k){if(k.indexOf("razorpay")===0)paid=true;});
+  document.getElementById(paid?"paid":"nopay").hidden=false;
+  var pid=q.get("razorpay_payment_id");
+  if(pid&&/^[\w-]{1,64}$/.test(pid)){
+    var el=document.getElementById("payid");
+    el.textContent="Payment ID: "+pid;
+    el.hidden=false;
+  }
+})();
+</script>
+</body>
+</html>
