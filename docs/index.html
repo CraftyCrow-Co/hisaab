@@ -197,7 +197,7 @@ html[data-theme="dark"] .btn-primary{color:#1C1D19}
 /* payoffs */
 .conseq-h{font-size:var(--fs-lg);font-weight:800;margin:var(--sp-8) 0 var(--sp-5)}
 .conseq{display:grid;gap:var(--sp-5) var(--sp-6);grid-template-columns:1fr}
-@media(min-width:720px){.conseq{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:720px){.conseq{grid-template-columns:repeat(2,1fr)}}
 .cq h4{font-weight:800;font-size:var(--fs-base);display:flex;align-items:center;gap:.6ch;margin-bottom:var(--sp-2)}
 .cq h4 .pip{width:.55rem;height:.55rem;border-radius:50%;background:var(--good);flex:none}
 .cq p{color:var(--ink-soft);font-size:var(--fs-sm);line-height:1.55}
@@ -380,6 +380,10 @@ footer small{color:#9E9E9E;font-weight:700;text-transform:uppercase;letter-spaci
           <p>Your balance isn't all yours. Rent, EMIs and bills already claim a part of it. Hisaab shows what's actually yours.</p>
         </div>
         <div class="cq reveal">
+          <h4><span class="pip"></span>See where the profit went</h4>
+          <p>Made a profit, but cash is somehow not available? It went somewhere: stock, a loan, your own pocket. Hisaab names it.</p>
+        </div>
+        <div class="cq reveal">
           <h4><span class="pip"></span>Works even when you're lazy</h4>
           <p>Write a rough line, skip a month, fix the details later (or never). No streaks, no guilt. One line catches you up.</p>
         </div>
@@ -442,7 +446,7 @@ footer small{color:#9E9E9E;font-weight:700;text-transform:uppercase;letter-spaci
       </div>
 
       <div class="cta-extra reveal">
-        <p class="small">Not ready? Leave your email — tick what you want from us.</p>
+        <p class="small">Not ready? Leave your email. Tick what you want from us:</p>
         <div class="optrow">
           <label class="opt"><input type="checkbox" value="updates" />Sheet updates</label>
           <label class="opt"><input type="checkbox" value="tips" />Tips &amp; tricks</label>
@@ -473,7 +477,11 @@ footer small{color:#9E9E9E;font-weight:700;text-transform:uppercase;letter-spaci
     </div>
     <div class="footword">
       <span class="scripts">हिसाब · حساب</span>
-      <p class="trivia">From the Arabic <em>ḥisāb</em> — "to reckon, to count." Over a thousand years ago, Arab mathematicians used it for <em>ḥisāb al-hind</em>, the Indian art of counting that grew into the numerals the whole world writes with today. The word has always meant one quiet thing: knowing where you stand.</p>
+      <p class="trivia">From the Arabic <em>ḥisāb</em> meaning "to count or to reckon."
+          <br> Over a thousand years ago, Arab mathematicians used it for <em>ḥisāb al-hind</em>.
+          <br>It refers to the Indian art of counting that we use all over the world today.
+          <br>The word has always meant one quiet thing:
+          <br><b><em>knowing where you stand</em></b>.</p>
     </div>
   </div>
 </footer>
@@ -495,7 +503,8 @@ footer small{color:#9E9E9E;font-weight:700;text-transform:uppercase;letter-spaci
   function showToast(m){toast.textContent=m;toast.classList.add("show");clearTimeout(tT);tT=setTimeout(function(){toast.classList.remove("show");},1900);}
 
   document.getElementById("copyLink").addEventListener("click",function(){
-    var url=location.href;
+    var link=document.querySelector('link[rel="canonical"]');
+    var url=(link&&link.href)||location.origin+"/";
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(function(){showToast("Link copied");},function(){showToast("Copy failed");});}
     else{var t=document.createElement("textarea");t.value=url;document.body.appendChild(t);t.select();try{document.execCommand("copy");showToast("Link copied");}catch(e){showToast("Copy failed");}document.body.removeChild(t);}
   });
