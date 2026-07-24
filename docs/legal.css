@@ -66,6 +66,14 @@ a{color:var(--accent-ink);text-underline-offset:2px}
 /* foot */
 .docfoot{border-top:1px solid var(--line);padding-block:var(--sp-6);margin-top:var(--sp-8)}
 .docfoot .wrap{display:flex;flex-wrap:wrap;gap:var(--sp-3) var(--sp-5);align-items:center;justify-content:space-between}
-.docnav{display:flex;flex-wrap:wrap;gap:var(--sp-4);font-weight:700;font-size:var(--fs-sm)}
+.docnav{display:flex;flex-wrap:wrap;gap:var(--sp-3) var(--sp-4);font-weight:700;font-size:var(--fs-sm)}
+.docnav a{color:var(--ink-soft);text-decoration:none;transition:color .2s}
+.docnav a:hover{color:var(--ink)}
+.docnav a[href="guide.html"]{color:var(--accent-ink);font-weight:900}
 .docfoot small{color:var(--ink-faint);font-weight:700}
+@media(max-width:560px){
+  .docfoot .wrap{justify-content:center;text-align:center}
+  .docnav{justify-content:center;width:100%;row-gap:var(--sp-2)}
+  .docfoot small{width:100%}
+}
 :focus-visible{outline:2.5px solid var(--accent);outline-offset:3px;border-radius:4px}

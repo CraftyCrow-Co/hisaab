@@ -97,7 +97,9 @@ h1,h2,h3{margin:0} p{margin:0} a{color:inherit}
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding-block:var(--sp-3)}
 .brand{display:flex;align-items:baseline;gap:.5ch;font-weight:900;font-size:var(--fs-md);letter-spacing:-.01em;text-decoration:none}
 .brand small{font-weight:700;font-size:.6rem;text-transform:uppercase;letter-spacing:.16em;color:var(--ink-faint)}
-.bar-actions{display:flex;align-items:center;gap:var(--sp-3)}
+.bar-actions{display:flex;align-items:center;gap:var(--sp-4)}
+.barlink{font-weight:800;font-size:var(--fs-sm);color:var(--ink-soft);text-decoration:none;transition:color .2s}
+.barlink:hover{color:var(--accent-ink)}
 .iconbtn{display:grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:50%;border:1px solid var(--gray);background:var(--surface);color:var(--ink);cursor:pointer;transition:border-color .2s,transform .2s}
 .iconbtn:hover{border-color:var(--accent);transform:translateY(-1px)}
 .iconbtn svg{width:1.05rem;height:1.05rem;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
@@ -246,6 +248,12 @@ footer small{color:#9E9E9E;font-weight:700;text-transform:uppercase;letter-spaci
 .footnav{display:flex;flex-wrap:wrap;gap:var(--sp-2) var(--sp-5);font-weight:700;font-size:var(--fs-sm)}
 .footnav a{color:#CFC8B8;text-decoration:none;transition:color .2s}
 .footnav a:hover{color:var(--cream)}
+.footnav a[href="guide.html"]{color:#A6C09A;font-weight:900}
+.footnav a[href="guide.html"]:hover{color:var(--cream)}
+@media(max-width:560px){
+  .footrow{justify-content:center;text-align:center}
+  .footnav{justify-content:center;width:100%}
+}
 .footword{margin-top:var(--sp-7);padding-top:var(--sp-6);border-top:1px solid rgba(255,255,255,.1);max-width:74ch}
 .footword .scripts{display:block;font-size:var(--fs-lg);font-weight:800;color:var(--cream);letter-spacing:.02em;margin-bottom:var(--sp-3)}
 .footword .trivia{margin:0;color:#9E9E9E;font-weight:600;font-size:var(--fs-sm);line-height:1.7}
@@ -261,6 +269,7 @@ footer small{color:#9E9E9E;font-weight:700;text-transform:uppercase;letter-spaci
   <div class="wrap">
     <a href="#" class="brand">Hisaab <small>by CraftyCrow</small></a>
     <div class="bar-actions">
+      <a href="guide.html" class="barlink">Guide</a>
       <button class="iconbtn" id="theme" aria-label="Switch light and dark (press T)">
         <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/></svg>
         <svg class="moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
@@ -435,7 +444,6 @@ footer small{color:#9E9E9E;font-weight:700;text-transform:uppercase;letter-spaci
       <p class="sub reveal">The full tool, yours to keep. Drop into our live sessions whenever they run.</p>
       <!-- RAZORPAY: live ₹112 Payment Page. -->
       <a href="https://rzp.io/rzp/hisaab" class="btn btn-primary btn-lg reveal" id="buyBtn">Get Hisaab — ₹112</a>
-      <p class="sub reveal" style="margin-top:var(--sp-3);font-size:var(--fs-base)"><a href="guide.html">Curious first? Read the guide →</a></p>
 
       <p class="inside reveal"><b>Inside:</b> limits, goals, recurring, reports; and it quietly makes you better with your money.</p>
 

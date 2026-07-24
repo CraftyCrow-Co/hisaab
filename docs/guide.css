@@ -52,18 +52,19 @@
 /* ---- content column ---- */
 .gcontent{max-width:var(--measure);min-width:0}
 .gcontent section{scroll-margin-top:var(--sp-5);
-  padding-block:var(--sp-6);border-top:1px solid var(--line)}
-.gcontent section:first-of-type{border-top:0;padding-top:var(--sp-2)}
-.gcontent h2{font-size:var(--fs-xl);font-weight:800;line-height:1.15;
-  letter-spacing:-.01em;margin:0 0 var(--sp-4)}
-.gcontent h3{font-size:var(--fs-md);font-weight:800;margin:var(--sp-5) 0 var(--sp-2)}
-.gcontent p,.gcontent li{color:var(--ink-soft)}
-.gcontent p{margin:0 0 var(--sp-4)}
-.gcontent ul{margin:0 0 var(--sp-4);padding-left:1.2em}
-.gcontent li{margin-bottom:var(--sp-2)}
+  padding-block:var(--sp-8);border-top:1px solid var(--line)}
+.gcontent section:first-of-type{border-top:0;padding-top:var(--sp-3)}
+.gcontent h2{font-size:var(--fs-xl);font-weight:800;line-height:1.2;
+  letter-spacing:-.01em;margin:0 0 var(--sp-5)}
+.gcontent h3{font-size:var(--fs-md);font-weight:800;margin:var(--sp-6) 0 var(--sp-3)}
+.gcontent p,.gcontent li{color:var(--ink-soft);line-height:1.78}
+.gcontent p{margin:0 0 var(--sp-5)}
+.gcontent ul,.gcontent ol{margin:0 0 var(--sp-5);padding-left:1.3em}
+.gcontent li{margin-bottom:var(--sp-3);padding-left:.2em}
+.gcontent li::marker{color:var(--ink-faint)}
 .gcontent strong{color:var(--ink)}
-.gcontent .big{font-size:var(--fs-md);color:var(--ink);font-weight:800;
-  margin-block:var(--sp-4)}
+.gcontent .big{font-size:var(--fs-lg);color:var(--ink);font-weight:800;
+  line-height:1.3;margin-block:var(--sp-6)}
 
 /* lead / tagline */
 .tagline{font-size:var(--fs-md);color:var(--ink);font-weight:700;margin:0 0 var(--sp-2)}
@@ -71,7 +72,7 @@
 
 /* ---- tables (wrap in .scroll so the page never scrolls sideways) ---- */
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;
-  margin:0 0 var(--sp-4);border:1px solid var(--line);border-radius:var(--radius)}
+  margin:0 0 var(--sp-5);border:1px solid var(--line);border-radius:var(--radius)}
 .scroll table{border-collapse:collapse;width:100%;min-width:34ch;font-size:var(--fs-sm)}
 .scroll th,.scroll td{text-align:left;padding:var(--sp-3) var(--sp-4);
   border-bottom:1px solid var(--line);white-space:nowrap}
@@ -82,7 +83,7 @@
 /* ---- report blocks (the profit-pot diagrams) ---- */
 .report{overflow-x:auto;-webkit-overflow-scrolling:touch;
   background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
-  padding:var(--sp-4) var(--sp-5);margin:0 0 var(--sp-4)}
+  padding:var(--sp-4) var(--sp-5);margin:0 0 var(--sp-5)}
 .report pre{margin:0;font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
   font-size:var(--fs-sm);line-height:1.7;color:var(--ink);white-space:pre}
 
@@ -103,8 +104,11 @@
   border:0;cursor:pointer;text-decoration:none;transition:opacity .2s}
 .aibtn:hover{opacity:.9}
 :root[data-theme="dark"] .aibtn{color:var(--bg)}
-.aishare code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.85em;
-  background:var(--bg);padding:.1em .5ch;border-radius:5px;border:1px solid var(--line)}
+.aihint{margin:var(--sp-3) 0 0;color:var(--ink-faint);font-size:var(--fs-sm)}
+.copyurl{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em;font-weight:700;
+  background:var(--bg);color:var(--ink-soft);padding:.2em .6ch;border-radius:6px;
+  border:1px solid var(--line);cursor:pointer;transition:border-color .2s,color .2s}
+.copyurl:hover{border-color:var(--accent);color:var(--ink)}
 
 /* ---- finale ---- */
 .finale{border-top:1px solid var(--line);margin-top:var(--sp-6);padding-top:var(--sp-6)}

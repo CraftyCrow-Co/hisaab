@@ -70,8 +70,8 @@
       <p><strong>Reading with an AI?</strong> Hand it the whole guide and it can walk you through your own money — setup, a tricky classification, reading a report.</p>
       <p><button class="aibtn" id="copyAI" type="button">
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
-        Give this to your AI</button>
-        &nbsp; or point it at <code>hisaab.craftycrow.co/guide.md</code></p>
+        Give this to your AI</button></p>
+      <p class="aihint">…or point it at <button class="copyurl" id="copyURL" type="button" title="Click to copy">hisaab.craftycrow.co/guide.md</button></p>
     </div>
 
     <section id="s1">
@@ -360,6 +360,18 @@ Pocket         −15,000    taken home, net</pre></div>
   });
 
   // give-this-to-your-AI: copy the full guide markdown
+  // click-to-copy the raw markdown URL
+  var copyURL=document.getElementById("copyURL");
+  if(copyURL){
+    var urlText="https://hisaab.craftycrow.co/guide.md",origURL=copyURL.textContent;
+    copyURL.addEventListener("click",function(){
+      ((navigator.clipboard&&navigator.clipboard.writeText)?navigator.clipboard.writeText(urlText):Promise.reject())
+        .then(function(){copyURL.textContent="Copied ✓";})
+        .catch(function(){copyURL.textContent="Copy failed";})
+        .then(function(){setTimeout(function(){copyURL.textContent=origURL;},1800);});
+    });
+  }
+
   var copyBtn=document.getElementById("copyAI");
   if(copyBtn){
     var original=copyBtn.innerHTML;
