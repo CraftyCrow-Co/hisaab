@@ -335,15 +335,33 @@
   var links=[].slice.call(toc.querySelectorAll("a"));
   var sections=links.map(function(a){return document.getElementById(a.getAttribute("href").slice(1));});
 
-  // reading progress
+  // reading progress + text-aware reading-focus spotlight
   var bar=document.getElementById("progress");
-  function onScroll(){
-    var h=document.documentElement;
-    var max=h.scrollHeight-h.clientHeight;
-    bar.style.width=(max>0?(h.scrollTop/max*100):0)+"%";
-    document.getElementById("fabTop").classList.toggle("show",h.scrollTop>600);
+  var fabTop=document.getElementById("fabTop");
+  var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var blocks=[].slice.call(document.querySelectorAll(
+    ".gcontent section > *, .gcontent > h1, .gcontent > p, .gcontent > .aishare, .gcontent .finale > *"));
+  var FOCUS_MIN=0.45,focusPaused=false,ticking=false;
+  function updateFocus(){
+    if(reduce||focusPaused)return;
+    var vh=innerHeight,focusY=vh*0.35,clear=vh*0.05,span=vh*0.35;   // clear near the line, fade beyond
+    for(var i=0;i<blocks.length;i++){
+      var el=blocks[i],r=el.getBoundingClientRect();
+      if(r.bottom<-300||r.top>vh+300)continue;                     // skip well-offscreen blocks
+      var dist=focusY<r.top?r.top-focusY:(focusY>r.bottom?focusY-r.bottom:0);
+      var t=(dist-clear)/span;t=t<0?0:t>1?1:t;
+      el.style.opacity=(1-t*(1-FOCUS_MIN)).toFixed(3);
+    }
   }
-  addEventListener("scroll",onScroll,{passive:true});onScroll();
+  function onScroll(){
+    var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+    bar.style.width=(max>0?(h.scrollTop/max*100):0)+"%";
+    fabTop.classList.toggle("show",h.scrollTop>600);
+    if(!ticking){requestAnimationFrame(function(){updateFocus();ticking=false;});ticking=true;}
+  }
+  addEventListener("scroll",onScroll,{passive:true});
+  addEventListener("resize",updateFocus,{passive:true});
+  onScroll();updateFocus();
 
   // scrollspy — highlight the section in view
   if("IntersectionObserver" in window){
@@ -359,9 +377,10 @@
     sections.forEach(function(s){if(s)io.observe(s);});
   }
 
-  // phone: open/close the contents sheet; close on pick
-  function openTOC(){toc.classList.add("open");}
-  function closeTOC(){toc.classList.remove("open");}
+  // phone: open/close the contents sheet; close on pick.
+  // pause the spotlight while it's open (and restore full opacity underneath)
+  function openTOC(){toc.classList.add("open");focusPaused=true;for(var i=0;i<blocks.length;i++)blocks[i].style.opacity="";}
+  function closeTOC(){toc.classList.remove("open");focusPaused=false;updateFocus();}
   document.getElementById("fabContents").addEventListener("click",openTOC);
   document.getElementById("tocClose").addEventListener("click",closeTOC);
   links.forEach(function(a){a.addEventListener("click",closeTOC);});

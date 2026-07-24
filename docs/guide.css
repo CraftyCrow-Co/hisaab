@@ -14,6 +14,13 @@
 .progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);
   z-index:60;transition:width .12s linear}
 
+/* sticky, translucent header — guide only (this file loads after legal.css) */
+.topbar{position:sticky;top:0;z-index:50;background:var(--bg)}
+@supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  .topbar{background:color-mix(in srgb,var(--bg) 80%,transparent);
+    -webkit-backdrop-filter:saturate(140%) blur(10px);backdrop-filter:saturate(140%) blur(10px)}
+}
+
 /* ---- layout: single column on phone, sidebar + content on wide ---- */
 .glayout{width:100%;max-width:1120px;margin-inline:auto;padding-inline:var(--sp-5)}
 @media(min-width:980px){
@@ -35,7 +42,7 @@
 
 /* desktop: sticky sidebar, always open */
 @media(min-width:980px){
-  .toc{position:sticky;top:var(--sp-5);max-height:calc(100vh - var(--sp-7));
+  .toc{position:sticky;top:4.5rem;max-height:calc(100vh - 5.5rem);
     overflow-y:auto;padding-right:var(--sp-2)}
   .toc h2{font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:.16em;
     color:var(--ink-faint);font-weight:800;margin:0 0 var(--sp-3) var(--sp-3)}
@@ -56,7 +63,7 @@
 
 /* ---- content column ---- */
 .gcontent{max-width:var(--measure);min-width:0}
-.gcontent section{scroll-margin-top:var(--sp-5);
+.gcontent section{scroll-margin-top:5rem;
   padding-block:var(--sp-8);border-top:1px solid var(--line)}
 .gcontent section:first-of-type{border-top:0;padding-top:var(--sp-3)}
 .gcontent h2{font-size:var(--fs-xl);font-weight:800;line-height:1.2;
