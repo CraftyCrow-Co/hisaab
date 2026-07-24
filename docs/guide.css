@@ -1,0 +1,127 @@
+/* ============================================================
+   HISAAB — The Guide. Builds on legal.css tokens (palette,
+   type scale, spacing, topbar, footer, theme toggle).
+   Adds: reading layout, sticky contents, tables, report
+   blocks, callouts, progress, back-to-top.
+   ============================================================ */
+
+/* reading-progress bar */
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);
+  z-index:60;transition:width .12s linear}
+
+/* ---- layout: single column on phone, sidebar + content on wide ---- */
+.glayout{width:100%;max-width:1120px;margin-inline:auto;padding-inline:var(--sp-5)}
+@media(min-width:980px){
+  .glayout{display:grid;grid-template-columns:248px minmax(0,1fr);
+    gap:var(--sp-8);align-items:start;padding-block:var(--sp-7)}
+}
+
+/* ---- table of contents ---- */
+.toc a{color:var(--ink-soft);text-decoration:none}
+.toc ol{list-style:none;margin:0;padding:0;counter-reset:toc}
+.toc li{margin:0}
+.toc li a{display:block;padding:var(--sp-2) var(--sp-3);border-radius:10px;
+  font-weight:700;font-size:var(--fs-sm);line-height:1.35;transition:background .15s,color .15s}
+.toc li a::before{content:counter(toc);counter-increment:toc;
+  color:var(--ink-faint);font-variant-numeric:tabular-nums;margin-right:.7ch}
+.toc li a:hover{background:var(--surface);color:var(--ink)}
+.toc li a.active{background:var(--surface);color:var(--accent-ink)}
+.toc li a.active::before{color:var(--accent-ink)}
+
+/* desktop: sticky sidebar, always open */
+@media(min-width:980px){
+  .toc{position:sticky;top:var(--sp-5);max-height:calc(100vh - var(--sp-7));
+    overflow-y:auto;padding-right:var(--sp-2)}
+  .toc h2{font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:.16em;
+    color:var(--ink-faint);font-weight:800;margin:0 0 var(--sp-3) var(--sp-3)}
+  .toc-close{display:none}
+}
+
+/* phone: TOC becomes a slide-up overlay */
+@media(max-width:979px){
+  .toc{position:fixed;inset:0;z-index:70;background:var(--bg);
+    padding:var(--sp-5);overflow-y:auto;
+    transform:translateY(100%);transition:transform .28s var(--ease);
+    visibility:hidden}
+  .toc.open{transform:translateY(0);visibility:visible}
+  .toc h2{font-size:var(--fs-md);font-weight:800;margin:0 0 var(--sp-4)}
+  .toc li a{padding:var(--sp-3);font-size:var(--fs-base)}
+  .toc-close{position:absolute;top:var(--sp-4);right:var(--sp-5)}
+}
+
+/* ---- content column ---- */
+.gcontent{max-width:var(--measure);min-width:0}
+.gcontent section{scroll-margin-top:var(--sp-5);
+  padding-block:var(--sp-6);border-top:1px solid var(--line)}
+.gcontent section:first-of-type{border-top:0;padding-top:var(--sp-2)}
+.gcontent h2{font-size:var(--fs-xl);font-weight:800;line-height:1.15;
+  letter-spacing:-.01em;margin:0 0 var(--sp-4)}
+.gcontent h3{font-size:var(--fs-md);font-weight:800;margin:var(--sp-5) 0 var(--sp-2)}
+.gcontent p,.gcontent li{color:var(--ink-soft)}
+.gcontent p{margin:0 0 var(--sp-4)}
+.gcontent ul{margin:0 0 var(--sp-4);padding-left:1.2em}
+.gcontent li{margin-bottom:var(--sp-2)}
+.gcontent strong{color:var(--ink)}
+.gcontent .big{font-size:var(--fs-md);color:var(--ink);font-weight:800;
+  margin-block:var(--sp-4)}
+
+/* lead / tagline */
+.tagline{font-size:var(--fs-md);color:var(--ink);font-weight:700;margin:0 0 var(--sp-2)}
+.introlede{color:var(--ink-soft)}
+
+/* ---- tables (wrap in .scroll so the page never scrolls sideways) ---- */
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;
+  margin:0 0 var(--sp-4);border:1px solid var(--line);border-radius:var(--radius)}
+.scroll table{border-collapse:collapse;width:100%;min-width:34ch;font-size:var(--fs-sm)}
+.scroll th,.scroll td{text-align:left;padding:var(--sp-3) var(--sp-4);
+  border-bottom:1px solid var(--line);white-space:nowrap}
+.scroll thead th{background:var(--surface);color:var(--ink);font-weight:800}
+.scroll tbody tr:last-child td,.scroll tr:last-child td{border-bottom:0}
+.scroll td:first-child,.scroll th:first-child{color:var(--ink);font-weight:700}
+
+/* ---- report blocks (the profit-pot diagrams) ---- */
+.report{overflow-x:auto;-webkit-overflow-scrolling:touch;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:var(--sp-4) var(--sp-5);margin:0 0 var(--sp-4)}
+.report pre{margin:0;font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  font-size:var(--fs-sm);line-height:1.7;color:var(--ink);white-space:pre}
+
+/* ---- callouts ---- */
+.jump{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:12px;padding:var(--sp-3) var(--sp-4);margin:0 0 var(--sp-5)}
+.jump p{margin:0;color:var(--ink-soft);font-size:var(--fs-sm)}
+.say{border-left:3px solid var(--accent);margin:var(--sp-4) 0;padding:var(--sp-2) 0 var(--sp-2) var(--sp-4)}
+.say p{margin:0;color:var(--ink);font-size:var(--fs-md);font-weight:700;font-style:italic}
+
+/* ---- give-to-AI box ---- */
+.aishare{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:var(--sp-4) var(--sp-5);margin:var(--sp-5) 0}
+.aishare p{margin:0 0 var(--sp-3);color:var(--ink-soft)}
+.aishare p:last-child{margin:0}
+.aibtn{display:inline-flex;align-items:center;gap:.5ch;background:var(--accent);color:var(--cream);
+  font-weight:800;font-size:var(--fs-sm);padding:var(--sp-2) var(--sp-4);border-radius:10px;
+  border:0;cursor:pointer;text-decoration:none;transition:opacity .2s}
+.aibtn:hover{opacity:.9}
+:root[data-theme="dark"] .aibtn{color:var(--bg)}
+.aishare code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.85em;
+  background:var(--bg);padding:.1em .5ch;border-radius:5px;border:1px solid var(--line)}
+
+/* ---- finale ---- */
+.finale{border-top:1px solid var(--line);margin-top:var(--sp-6);padding-top:var(--sp-6)}
+.finale em{color:var(--ink-soft);font-style:italic}
+.finale .punch{font-size:var(--fs-lg);font-weight:800;color:var(--ink);
+  line-height:1.25;margin-top:var(--sp-4)}
+
+/* ---- floating controls ---- */
+.fab{position:fixed;z-index:55;display:inline-flex;align-items:center;gap:.5ch;
+  background:var(--accent);color:var(--cream);border:0;border-radius:999px;
+  font-family:inherit;font-weight:800;font-size:var(--fs-sm);cursor:pointer;
+  padding:var(--sp-3) var(--sp-4);box-shadow:0 6px 20px rgba(0,0,0,.18);
+  opacity:0;transform:translateY(8px);transition:opacity .2s,transform .2s}
+.fab.show{opacity:1;transform:translateY(0)}
+:root[data-theme="dark"] .fab{color:var(--bg)}
+.fab svg{width:1.05rem;height:1.05rem;fill:none;stroke:currentColor;stroke-width:2;
+  stroke-linecap:round;stroke-linejoin:round}
+.fab-contents{left:var(--sp-4);bottom:var(--sp-5)}
+.fab-top{right:var(--sp-4);bottom:var(--sp-5)}
+@media(min-width:980px){.fab-contents{display:none}}   /* sidebar covers desktop */

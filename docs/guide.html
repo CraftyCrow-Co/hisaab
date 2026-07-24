@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Guide — Hisaab</title>
+<meta name="description" content="Ten minutes to learn Hisaab, then the sheet does the explaining. The deep guide: forecasting, tags, purpose, and where the profit really went." />
+<link rel="canonical" href="https://hisaab.craftycrow.co/guide.html" />
+<meta property="og:title" content="The Guide — Hisaab" />
+<meta property="og:description" content="A mirror for your money. The full guide to reading, forecasting and understanding your cash." />
+<meta property="og:type" content="article" />
+<script>try{var t=localStorage.getItem("hisaab-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="legal.css" />
+<link rel="stylesheet" href="guide.css" />
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header class="topbar">
+  <div class="wrap">
+    <a href="index.html" class="brand">Hisaab <small>by CraftyCrow</small></a>
+    <button class="iconbtn" id="theme" aria-label="Switch light and dark (press T)">
+      <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/></svg>
+      <svg class="moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="glayout">
+
+  <!-- table of contents: sidebar on desktop, slide-up sheet on phone -->
+  <nav class="toc" id="toc" aria-label="Contents">
+    <button class="iconbtn toc-close" id="tocClose" aria-label="Close contents">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <h2>The Guide</h2>
+    <ol>
+      <li><a href="#s1">What this is</a></li>
+      <li><a href="#s2">Make it yours</a></li>
+      <li><a href="#s3">Your first row</a></li>
+      <li><a href="#s4">Watch it react</a></li>
+      <li><a href="#s5">Money that repeats</a></li>
+      <li><a href="#s6">Tomorrow, already visible</a></li>
+      <li><a href="#s7">The numbers that watch you</a></li>
+      <li><a href="#s8">Who owes you</a></li>
+      <li><a href="#s9">Tags — words that count</a></li>
+      <li><a href="#s10">Watchlist</a></li>
+      <li><a href="#s11">Limits &amp; goals</a></li>
+      <li><a href="#s12">Purpose</a></li>
+      <li><a href="#s13">Where the profit went</a></li>
+      <li><a href="#s14">Linked payments</a></li>
+      <li><a href="#s15">When life happens</a></li>
+      <li><a href="#s16">Small habits</a></li>
+      <li><a href="#s17">Questions people ask</a></li>
+    </ol>
+  </nav>
+
+  <article class="gcontent">
+
+    <h1>Hisaab — The Guide</h1>
+    <p class="tagline">Ten minutes to read. After that, the sheet does the explaining.</p>
+    <p class="introlede">Read top to bottom the first time — each section quietly builds on the one before it, and by the end nothing should feel complicated. Coming back for one thing? Jump straight to it — every section past the basics opens with the little it needs.</p>
+
+    <div class="aishare">
+      <p><strong>Reading with an AI?</strong> Hand it the whole guide and it can walk you through your own money — setup, a tricky classification, reading a report.</p>
+      <p><button class="aibtn" id="copyAI" type="button">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+        Give this to your AI</button>
+        &nbsp; or point it at <code>hisaab.craftycrow.co/guide.md</code></p>
+    </div>
+
+    <section id="s1">
+      <h2>1. What this is</h2>
+      <p>Hisaab is a mirror for your money. Not a budget — nobody here will tell you to stop buying chai.</p>
+      <p>You write money down as it moves: in, out, expected. The sheet turns those lines into answers to the only two questions that matter:</p>
+      <p class="big">Do I have enough right now? Is enough coming in on time?</p>
+      <p>Most money stress — in a home or a business — is one of these two questions, unanswered. You do the writing. The sheet does the math, the remembering, and the warning.</p>
+    </section>
+
+    <section id="s2">
+      <h2>2. Make it yours <small>(five minutes, once)</small></h2>
+      <ol>
+        <li>Open the link → <strong>File → Make a copy</strong>. It's now your file, in your Google Drive. Nothing you type ever leaves it.</li>
+        <li>It arrives with sample rows so no screen is blank. Poke them, change a number, watch things move — then delete them and begin yours.</li>
+        <li>Tell it what you have today. One row per place money sits: today's date, the amount as a plus, the account's name in <strong>To</strong> (<code>bank/idfc</code>, <code>bank/kotak</code>, <code>cash</code>), and Mode = <strong>Opening Balance</strong>. That label keeps it out of your income reports; the balance picks it up on its own.</li>
+        <li>Four settings, one tab: your <strong>income goal</strong>, your <strong>cushion</strong> (how many months of expenses to keep safe — 6 is good), how far ahead to look, and how many past months to average. Don't overthink these. Change them any time.</li>
+      </ol>
+    </section>
+
+    <section id="s3">
+      <h2>3. Your first row</h2>
+      <p>A money event is one line. Date, Amount, From, To — a description if you feel like it.</p>
+      <div class="scroll"><table>
+        <thead><tr><th>Date</th><th>Amount</th><th>From</th><th>To</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td>05-Aug</td><td>−450</td><td>bank/hdfc</td><td>swiggy</td><td>dinner</td></tr>
+          <tr><td>07-Aug</td><td>+60,000</td><td>acme</td><td>bank/hdfc</td><td>August retainer</td></tr>
+        </tbody>
+      </table></div>
+      <p>Two habits, and they are the whole skill:</p>
+      <p><strong>The sign is the direction of your money.</strong> Minus — it left you. Plus — it came to you. The colour says it back: green in, red out.</p>
+      <p><strong>From and To are the two ends of the movement,</strong> in your own words.</p>
+      <p>Why both? They answer different questions. From → To says <em>who to whom</em>. The sign says <em>did my money grow or shrink</em> — without you ever teaching the sheet which names are "you". Anjuman hands you ₹5,000: <code>anjuman → cash, +5,000</code>. You return it next week: <code>cash → anjuman, −5,000</code>. Same two names, opposite signs, everything clear.</p>
+      <p>Use <code>/</code> when a name has family: <code>bank/idfc</code>, <code>bank/kotak</code>, <code>hr/payroll</code>, <code>ops/purchase</code>. Later, "bank" totals all of them and "bank/idfc" totals one. Detail costs nothing — use words you'd say aloud.</p>
+      <p>One rule that never bends: <strong>same thing, same spelling.</strong> "Acme" and "Acme Pvt Ltd" become two strangers, and every total splits between them. The dropdowns remember your words — pick from them, and the problem never starts.</p>
+      <p><strong>Moving your own money?</strong> Bank to bank, bank to cash — that's not earning or spending, just your money changing pockets. Enter it as a pair: minus out of one, plus into the other, Mode: <strong>Self</strong>. Your total doesn't move, and the reports know not to call it income.</p>
+      <p>That's everything you <em>must</em> know. The sheet is fully working from here. Everything below is optional power, added when you want it.</p>
+    </section>
+
+    <section id="s4">
+      <h2>4. Watch it react</h2>
+      <p>Next to every row, <strong>Balance</strong> — your total money, across every account, as of that line. No bank shows you this number. Each shows its own slice; Hisaab shows the whole.</p>
+      <p>The <strong>Timeline</strong> tab is the same story laid flat: every movement, past and future, in date order, balance running alongside. Look, don't type — entries live in Log and Repeats; Timeline only shows.</p>
+      <p>Now the quiet trick: give a row a <em>future</em> date and read the balance beside it. That's your money on that day, if today's plans hold. Type a date, see your future — that is most of what "forecasting" means, and you already have it.</p>
+    </section>
+
+    <section id="s5">
+      <h2>5. Money that repeats</h2>
+      <p>Rent. Salaries. EMIs. Subscriptions. The retainer that arrives every month. Write each <strong>once</strong>, in <strong>Repeats</strong> — not twelve times a year in Log.</p>
+      <p>A rule reads like a sentence you'd say: <em>−25,000 · bank → landlord · Monthly · Day 5.</em> Plain dropdowns cover every pattern — Monthly, Weekly, Every 2 weeks, Yearly; on Day 5, Last day, Third Fri; both 1st <em>and</em> 15th if that's how a payment runs. <strong>End</strong>: leave it blank for "never", type a number for "that many times", a date for "stop then".</p>
+      <p>From that one line, the sheet writes every future occurrence into your timeline by itself. When a date passes, the row becomes real by itself — nothing to tick. One month was different — date slipped, paid by another mode? Edit that single row. Your edits are respected; the machine never overwrites a row you've touched.</p>
+      <p>Each rule also reports back:</p>
+      <ul>
+        <li><strong>Monthly bite</strong> — what it really costs per month. An ₹18,000 yearly insurance is ₹1,500 a month; seeing everything in ₹/month lets anything be compared with anything.</li>
+        <li><strong>Paid / Remaining / Next date</strong> — for an EMI, a bar slowly filling. Payments left, amount left, end in sight.</li>
+        <li><strong>Importance</strong> — Essential, Nice-to-have, Can drop. Set once. On a tight day, the sheet already knows what to cut first — and how much per month comes back.</li>
+      </ul>
+      <p>And one number worth a long look: your recurring outflows added up for the year. <em>"You owe ₹14L this year no matter what happens."</em> People cancel subscriptions on that sentence alone.</p>
+    </section>
+
+    <section id="s6">
+      <h2>6. Tomorrow, already visible</h2>
+      <p>A row with a future date and a tick in <strong>Planned</strong> is a hope, not a fact. Planned rows never touch your balance — <strong>money isn't real until it lands</strong> — but they appear in the future view, dated, waiting. Two dates ride along: <strong>Planned on</strong> holds when it was <em>due</em>; Date holds when it actually happens. The gap between them is how the sheet learns who runs late.</p>
+      <p>Expecting ₹1L from a client in August? One planned row. Considering a ₹2L machine in October? One planned row. The months ahead redraw instantly. <strong>To try out any future, add a planned row and look.</strong> Delete it, and the future goes back. There is no separate "simulator" — the sheet is the simulator.</p>
+      <p>The <strong>Monthly Snapshot</strong> shows last month, this month, and the next twelve: in, out, net, balance, and a small bar per month. The bar's colour deepens as a month sinks toward your cushion — so your scariest month is visible long before it arrives, while there's still time to do something about it.</p>
+      <p>A word on order: this is a <em>forecast</em>, not a budget. A budget is what you intend; a forecast is what's coming. Most of us run on gut feel and surprises — so see what's coming first. Discipline (section 11) is easy to add once you can see.</p>
+    </section>
+
+    <section id="s7">
+      <h2>7. The numbers that watch you</h2>
+      <p>The Dashboard reduces everything to a row of answers:</p>
+      <div class="scroll"><table>
+        <thead><tr><th>Number</th><th>In one breath</th></tr></thead>
+        <tbody>
+          <tr><td>In Hand</td><td>what you have — all accounts, one number, now</td></tr>
+          <tr><td>Inflow</td><td>what's coming — next 30 days, from Repeats. Hopes show on their own line beside it, never added in</td></tr>
+          <tr><td>Outflow</td><td>what's going — next 30 days, already booked</td></tr>
+          <tr><td>Breakeven</td><td>what you need — <em>"You need ₹3.5L to cover the next 30 days"</em></td></tr>
+          <tr><td>Avg Expense</td><td>what a normal month costs you, from your own history</td></tr>
+          <tr><td>In vs Out</td><td>how you spend — <em>"for every ₹1 you earn, you spend 93 paise"</em></td></tr>
+          <tr><td>Usable for Growth</td><td>unused money — what's left after your cushion is safe</td></tr>
+          <tr><td>Used to Grow</td><td>money put to work — how much of your spending <em>built</em> something</td></tr>
+        </tbody>
+      </table></div>
+      <p>Three of these deserve a second look:</p>
+      <p><strong>Breakeven</strong> counts your committed payments plus your own average of everyday spending — and it never counts money you're merely expecting. A cheque in the post pays no bills. It also teaches the honest shape of money: the next 30 days never stop coming. The question is never <em>am I done?</em> — it's <em>can I keep running?</em> That's not bleak; that's just the game, seen clearly. Your cushion (months you could run with nothing coming in) is the calmest number in money.</p>
+      <p><strong>Usable for Growth</strong> is your true "can I afford it?" — for the machine, the hire, the holiday. Not what's in the bank; what's <em>left after</em> the next months are safe. When it's negative it flips into a target, not a scolding: <em>"You still have to earn ₹X to be safe."</em></p>
+      <p><strong>Used to Grow</strong> shows the percentage <em>and</em> the rupees. <em>"Only ₹2,876 went toward growth"</em> stings precisely because it's true — and rises the moment you act on it.</p>
+      <p>And one glance worth making a habit: both sides of your money move at a <em>speed</em>. Earning ₹X a month and rising, spending ₹Y and rising <strong>faster</strong> — that crossing is the single most dangerous pattern in a small business, and here it's visible months before it bites.</p>
+      <p>Below the numbers, the sheet speaks in sentences: <em>"Things are steady — keep an eye on next month's numbers."</em> When all is well, it says so. And where one payer dominates your steady income, it says what that means: <em>"If the Techpark contract stops, your runway drops to X months."</em> A consequence you can act on — not a statistic you have to interpret.</p>
+    </section>
+
+    <section id="s8">
+      <h2>8. Who owes you</h2>
+      <div class="jump"><p><em>Jumped straight here? One habit powers this: when someone promises you money, enter it as a <strong>planned</strong> row with the due date (section 6). The rest is automatic.</em></p></div>
+      <p>The moment a promised payment's date passes with no money landed, it appears on the <strong>Chase List</strong>: who, how much, days late — and once there's history, how late that payer <em>usually</em> runs. <em>"Sharma runs about 12 days late"</em> changes how you plan around Sharma.</p>
+      <p>No scores, no status ceremony. You already know in your gut who's slow — the list just refuses to let you forget. It sits at the top of Cash Flows because for a business it's the highest-paying report in the sheet: <strong>money already earned, not yet collected.</strong> Chasing it beats finding a new customer every single time.</p>
+      <p>When it lands, put the real date on that same row and untick Planned — the row becomes the fact, and the chase closes itself. The due date stays in Planned on, so the sheet remembers how late it ran. Paid in part? Log what came as its own row and shrink the planned one to what's still due. Never coming? Delete it — and keep the lesson.</p>
+      <p>The chase sits at the top of the <strong>Cash Flows</strong> tab. Below it, the rest of your money's rhythm: who pays you and where it goes, side by side, top five each; every tag's in, out and net; and the full dated list of everything ahead — because timing is the whole point. It's rarely the month that hurts; it's the <em>week</em> when things collide.</p>
+    </section>
+
+    <section id="s9">
+      <h2>9. Tags — words that count</h2>
+      <div class="jump"><p><em>Jumped here? You need two facts: amounts carry a sign (+ in, − out), and the sheet's dropdowns remember your words. That's all.</em></p></div>
+      <p>Forget what "tags" means elsewhere. Here, <strong>a tag is a calculator you name.</strong></p>
+      <p>Write <code>sharma-reception</code> on every row that belongs to that order — the advance (+), the ingredients (−), the event staff (−) — and <em>sharma-reception adds itself up</em>. No formula, no math. The sign decides add or subtract; the word decides where it counts.</p>
+      <p><strong>Every tag is a small business inside your business</strong> — its own money in, its own money out, its own answer. Name one for anything you want judged: a line of work (<code>tiffins</code>, <code>events</code>), a client, one big order, a channel (<code>instagram</code>), a bet (<code>diwali-orders</code>). A row can carry several words — festive boxes can be <code>tiffins, packaging</code> — and every word counts it. Three calculators running at once, no extra effort.</p>
+      <p>Two rules keep the answers honest:</p>
+      <ol>
+        <li><strong>Tag both sides.</strong> The job's income <em>and</em> the job's costs. Tag only the income and every job looks brilliant.</li>
+        <li><strong>Only tag money you can point at.</strong> Paneer that went into the Sharma reception — you can point at it, tag it. Rent? You can't point at where rent went; it runs the whole shop. Rent never gets a job's word. (What rent <em>is</em>, and where it's judged, is sections 12–13.)</li>
+      </ol>
+      <p>Start with one kind of word — your lines of work. Add more kinds when the first ones prove useful. Five kinds of tags is real power; five kinds on day one is confusion.</p>
+    </section>
+
+    <section id="s10">
+      <h2>10. Watchlist — pick a thing, see everything</h2>
+      <p>Choose any name — a client, an account, a tag — and its row fills in: money in, money out, net, share, and a twelve-month trend line. Want a comparison? Add a second row. That's the entire feature.</p>
+      <p>"How is X actually doing?" — rent this year, chai this month, what Sharma is really worth to you — one row each, no report-building, no formulas.</p>
+      <p>And here the slash pays off: because you named things <code>staff/salary</code>, <code>staff/wages</code>, the word <code>staff</code> alone totals every person you pay. Departments, teams, projects — you never design them. Your words already built them.</p>
+    </section>
+
+    <section id="s11">
+      <h2>11. Limits &amp; goals</h2>
+      <div class="jump"><p><em>Standalone: a <strong>Limit</strong> is a ceiling — "chai under ₹500 a week." A <strong>Goal</strong> is a floor — "₹30L from events this year." Both live in one small table.</em></p></div>
+      <p>Pick a <em>For</em> (any name or tag), an amount, a period — weekly, monthly, yearly, or rolling windows like "last 30 days". The sheet fills a bar and speaks plainly: <strong>Under · Warning · Over</strong> for limits, <strong>Behind · Almost there · Reached</strong> for goals. Green fills, amber warns at 80%, red is over — the colour is the alert; no popup needed.</p>
+      <p>Then the part a notebook can't do. Miss the same limit three periods in a row and the sheet stops nagging and starts advising:</p>
+      <blockquote class="say"><p>"Over 3 in a row. ₹871 is more realistic."</p></blockquote>
+      <p>— computed from your own history, leaning on your recent weeks. A budget you break every single month isn't a discipline problem — <strong>it's a wrong number.</strong> Fix the number; save the discipline for where it's real.</p>
+    </section>
+
+    <section id="s12">
+      <h2>12. Purpose — what is this money for?</h2>
+      <div class="jump"><p><em>Standalone-ready: this is one dropdown on outgoing money. Five options, picked once per repeating rule, per row for one-offs. It funds section 13 — the best report in the sheet.</em></p></div>
+      <p>Every rupee that leaves is doing exactly one of five jobs:</p>
+      <ul>
+        <li><strong>Specific work</strong> — went <em>into</em> the work: materials, site labour, that job's transport. You can point at where it went.</li>
+        <li><strong>Running cost</strong> — keeps the shop open: rent, salaries, internet, software. There whether you sold or not.</li>
+        <li><strong>Investment</strong> — bought something that lasts: a machine, a laptop, gold.</li>
+        <li><strong>Loan</strong> — borrowed money going back. And when a loan <em>arrives</em>, it's a plus with Purpose Loan — because <strong>borrowing is not income</strong>, however good the month suddenly looks.</li>
+        <li><strong>Pocket</strong> — money moving between the business and <em>you</em>. Minus is you taking money home; plus is you rescuing a bad month. (Tracking only personal money? Everything is already your pocket — simply ignore this one.)</li>
+      </ul>
+      <p>Stuck between the first two? One test settles it: <strong>would I still be paying this if I did zero work this month?</strong> Yes → Running cost. No → Specific work.</p>
+      <p>A cousin worth naming: GST you've collected is money in your account that was never yours — a short loan from the government. Mark it so, and filing day stops being a surprise.</p>
+      <p>Thirty seconds a day. Section 13 pays it back with the answer most owners have never seen in their lives.</p>
+    </section>
+
+    <section id="s13">
+      <h2>13. Where the profit went</h2>
+      <div class="jump"><p><em>Standalone: all this needs is — signs (+ in, − out), tags (words that add rows up, section 9), and Purpose (what each outgoing rupee was for, section 12).</em></p></div>
+      <p>Every owner has lived this: <strong>"The year was profitable. So where is the money?"</strong> Your accountant answers next September, about last year, in a language you don't enjoy. This report answers today, in yours. It has three parts, and they read top to bottom.</p>
+      <h3>Part one — what each line of work really earns.</h3>
+      <p>A dosa sells for ₹50. Its batter cost ₹20. That dosa drops <strong>₹30 into the shop's common pot</strong>. That's what a stream truly earns — its income minus the costs that went <em>into that work</em> — and the sheet computes it from your words alone:</p>
+      <div class="report"><pre>tiffins    in 4,20,000 · work costs 2,52,000  →  drops 1,68,000   40%
+events     in 5,00,000 · work costs 4,35,000  →  drops    65,000   13%</pre></div>
+      <p>The weddings get the congratulations. The boring daily tiffins pay the rent — two and a half times over. Now you know what to sell more of — and what to reprice. The rupees say which stream fed you; the percentage ranks them fairly, big orders and small alike.</p>
+      <h3>Part two — the pot pays for the shop.</h3>
+      <p>Every stream pours what it earns into one pot. Out of that pot — once, and only there — go the running costs, ranked biggest first:</p>
+      <div class="report"><pre>comes in from all work       2,33,000
+running costs
+  salaries                   1,08,000
+  rent                         75,000
+  utilities                    24,000
+  everything else              21,000
+                            ─────────
+left                            5,000</pre></div>
+      <p>The layout is the lesson: the shop's costs sit visibly attached to no stream. What survives the pot is profit — here, five thousand rupees. Barely breathing.</p>
+      <p>Here lives the rule that saves businesses: <strong>never split the rent across your streams to judge them.</strong> Do that, and a perfectly good stream can look like a loser. You kill it. The rent doesn't shrink — it lands on the survivors, who now look sick too. Judge every stream by what it <em>drops in the pot</em>: if it drops anything at all, killing it only makes the pot poorer. The only truly losing stream is one whose own work costs exceed its own income.</p>
+      <p>And when the pot isn't covering the shop, one division tells you which war to fight — <em>total dropped ÷ running costs</em>. Low because streams drop little? Pricing and mix — work on the streams. Low because running costs swelled? Overhead — the ranked list has already found the whales.</p>
+      <h3>Part three — profit vs cash.</h3>
+      <p>The pot said ₹5,000 left — and yet the bank went down by nearly <em>two lakh</em>. Three things eat cash <strong>without ever appearing as a cost</strong>, and your Purpose column has been quietly naming them all along:</p>
+      <div class="report"><pre>Investment   −1,35,000    the oven, the SIP
+Loan           −45,000    EMIs paid back
+Pocket         −15,000    taken home, net</pre></div>
+      <p>Profit was real. The cash went <em>there</em>. Line by line, named. <em>"You took ₹45,000 home this quarter — and put ₹30,000 back in a lean month"</em> — most owners have never once seen that sentence about themselves. This is the page that shows it.</p>
+      <p>Two honesty notes, both automatic: if "rent" ever appears marked both Running cost <em>and</em> Specific work, the sheet flags the contradiction quietly at the bottom — one of them is wrong, by definition. Same for work costs carrying no tag — real work money landing on no stream means some stream is reporting less than it earned. (A word on a <em>running cost</em>, though, does no damage — contribution counts only Specific-work rows. The word just buys you a bonus view: rent by location, salaries by branch.) And judge an order over the <em>order</em>, not the month: a wedding's advance lands in May, the ingredient bills hit June, the balance comes in July — June alone looks like disaster, July like a miracle. The tag's lifetime total is the true number.</p>
+    </section>
+
+    <section id="s14">
+      <h2>14. Linked payments</h2>
+      <p>One shape a single row can't say: <strong>one thing, paid in pieces.</strong> A ₹5L machine paid ₹1L + ₹2L + ₹2L, whenever cash allowed. An invoice collected in three parts.</p>
+      <p>Enter the whole thing once as a planned row (the hope). Link each real payment to it as it happens. The sheet keeps score: <em>paid ₹3L, ₹2L left</em> — for money going out and money coming in alike.</p>
+      <p>Rule of thumb: <strong>link only when the money is not new</strong> — when a payment pays down something already written. Everyday rows: no link, leave it blank. EMIs don't need it either — Repeats already counts paid and remaining on its own.</p>
+    </section>
+
+    <section id="s15">
+      <h2>15. When life happens</h2>
+      <p>Skipped a week? A month? One rough line — <em>−40,000 · bank → misc · "catching up June"</em> — and you're current. <strong>Approximate beats absent.</strong> A rough sheet still answers the two questions; an abandoned one answers nothing. There are no streaks here, no guilt. The sheet waits.</p>
+      <p>Doubt the numbers? Run the bank check: type today's <em>actual</em> bank balance, and the sheet shows the gap. <em>Sheet says ₹4.2L · Bank says ₹4.45L · off by ₹25,000.</em> That gap <strong>is</strong> the missing story — a bounced EMI, a forgotten sale, a typo — one number that catches every kind of error at once.</p>
+      <p>And the bounced-EMI case has a two-second fix: the sheet marked it done, but the money never left — re-tick Planned and move its date forward. It goes back to "coming," and the balance corrects itself.</p>
+      <p>And relax about small wrongness. The decisions this sheet powers are <em>rankings</em> — kitchen over wardrobe, cut this before that — and ₹2L versus ₹40k survives a few mislabelled rows. You'll <em>feel</em> a wrong number long before any audit would find it. You are the audit.</p>
+    </section>
+
+    <section id="s16">
+      <h2>16. Small habits that keep it clean</h2>
+      <ul>
+        <li><strong>Same word, every time.</strong> Pick from the dropdowns; never re-type a name from memory.</li>
+        <li><strong>Tag both sides.</strong> Income-only tags look brilliant; cost-only tags look dying. A number that looks too good is usually missing rows — the too-good number <em>is</em> the alarm.</li>
+        <li><strong>Clear the untagged-income line</strong> now and then — income that lands as an untagged lump makes every stream look like it's starving.</li>
+        <li><strong>Type only in Log and Repeats.</strong> Timeline and the generated tabs are views — they show, you don't touch.</li>
+        <li><strong>A number looks wrong?</strong> In order: bank check → hunt missing rows → check spellings. It's one of the three.</li>
+      </ul>
+    </section>
+
+    <section id="s17">
+      <h2>17. Questions people ask</h2>
+      <p><strong>Whose data is this?</strong> Yours. A Google Sheet in your Drive. No account with us, no server, nothing leaves the file.</p>
+      <p><strong>Do I need to know accounting?</strong> No. If you can say "money went from here to there," you're qualified. The sheet carries the rigour so you don't have to.</p>
+      <p><strong>One person? A family? Three businesses?</strong> Yes — one sheet. Your words make the walls: <code>personal/…</code>, <code>shop/…</code>, <code>mom/…</code>. Watch any one of them, or everything at once. (Starter rows for each of these lives ship with this guide — pick yours, type ten rows, you're running.)</p>
+      <p><strong>Does this replace my CA?</strong> No. Your CA files; this makes <em>you</em> the informed one in that meeting. They tell you what happened last year — this tells you what to do this month.</p>
+      <p><strong>Do I get updates?</strong> Your copy can't be changed from outside — that's your privacy working. New versions are announced; moving is copying your rows across, and you'll be walked through it.</p>
+      <p><strong>I entered something wrong.</strong> Fix it. Words, tags, purposes are your <em>interpretation</em> — reinterpret freely, forever. What actually happened — date, amount, who to whom — keep true, and everything above it can always be repaired.</p>
+    </section>
+
+    <div class="finale">
+      <p><em>How you'll know it's working: fewer surprises. A payment will run late and you'll find you already knew on Tuesday. A "profitable" month won't confuse you, because you'll know where the cash went. That's the whole product —</em></p>
+      <p class="punch">You know what's in the bank. This tells you what it means.</p>
+    </div>
+
+  </article>
+</div>
+
+<footer class="docfoot">
+  <div class="wrap">
+    <nav class="docnav">
+      <a href="index.html">Home</a>
+      <a href="guide.html">Guide</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="refund.html">Refunds</a>
+      <a href="shipping.html">Shipping</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <small>Hisaab by CraftyCrow</small>
+  </div>
+</footer>
+
+<!-- floating controls -->
+<button class="fab fab-contents show" id="fabContents" type="button" aria-label="Open contents">
+  <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg> Contents
+</button>
+<button class="fab fab-top" id="fabTop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="theme.js"></script>
+<script>
+(function(){
+  var toc=document.getElementById("toc");
+  var links=[].slice.call(toc.querySelectorAll("a"));
+  var sections=links.map(function(a){return document.getElementById(a.getAttribute("href").slice(1));});
+
+  // reading progress
+  var bar=document.getElementById("progress");
+  function onScroll(){
+    var h=document.documentElement;
+    var max=h.scrollHeight-h.clientHeight;
+    bar.style.width=(max>0?(h.scrollTop/max*100):0)+"%";
+    document.getElementById("fabTop").classList.toggle("show",h.scrollTop>600);
+  }
+  addEventListener("scroll",onScroll,{passive:true});onScroll();
+
+  // scrollspy — highlight the section in view
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          links.forEach(function(a){a.classList.remove("active");});
+          var i=sections.indexOf(e.target);
+          if(i>=0)links[i].classList.add("active");
+        }
+      });
+    },{rootMargin:"-45% 0px -50% 0px"});
+    sections.forEach(function(s){if(s)io.observe(s);});
+  }
+
+  // phone: open/close the contents sheet; close on pick
+  function openTOC(){toc.classList.add("open");}
+  function closeTOC(){toc.classList.remove("open");}
+  document.getElementById("fabContents").addEventListener("click",openTOC);
+  document.getElementById("tocClose").addEventListener("click",closeTOC);
+  links.forEach(function(a){a.addEventListener("click",closeTOC);});
+  document.getElementById("fabTop").addEventListener("click",function(){
+    scrollTo({top:0,behavior:"smooth"});
+  });
+
+  // give-this-to-your-AI: copy the full guide markdown
+  var copyBtn=document.getElementById("copyAI");
+  if(copyBtn){
+    var original=copyBtn.innerHTML;
+    copyBtn.addEventListener("click",function(){
+      fetch("guide.md").then(function(r){return r.text();}).then(function(txt){
+        var payload="Here is the full Hisaab guide. Read it, then help me use Hisaab for my money — setup, classifying a transaction, or reading any report.\n\n"+txt;
+        return (navigator.clipboard&&navigator.clipboard.writeText)?navigator.clipboard.writeText(payload):Promise.reject();
+      }).then(function(){
+        copyBtn.textContent="Copied — paste into ChatGPT or Claude";
+      }).catch(function(){
+        copyBtn.textContent="Couldn't copy — open guide.md instead";
+      }).then(function(){
+        setTimeout(function(){copyBtn.innerHTML=original;},3000);
+      });
+    });
+  }
+})();
+</script>
+</body>
+</html>

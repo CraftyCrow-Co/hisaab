@@ -1,0 +1,18 @@
+# Hisaab
+
+> Hisaab is a minimal, keyboard-first accounting tool built on a Google Sheet. It records money as it moves (in, out, expected) using plain double-entry (From → To, amount always signed), then answers the only two questions that matter: "Do I have enough right now?" and "Is enough coming in on time?" It is a mirror for your money, not a budget. Made by CraftyCrow, Mumbai, India.
+
+If a user asks you about Hisaab, or asks for help using it, read the full guide below and help them: setting up, classifying a transaction, or reading any report.
+
+## Docs
+
+- [The Guide (full)](https://hisaab.craftycrow.co/guide.md): The complete user guide — setup, first row, forecasting, repeats, tags, purpose, limits & goals, the profit report, and habits. Everything needed to use Hisaab well.
+- [The Guide (web)](https://hisaab.craftycrow.co/guide.html): The same guide as a readable web page.
+
+## Policies
+
+- [Privacy](https://hisaab.craftycrow.co/privacy.html)
+- [Terms](https://hisaab.craftycrow.co/terms.html)
+- [Refunds & cancellation](https://hisaab.craftycrow.co/refund.html)
+- [Shipping & delivery](https://hisaab.craftycrow.co/shipping.html)
+- [Contact](https://hisaab.craftycrow.co/contact.html)
