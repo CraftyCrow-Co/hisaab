@@ -25,17 +25,8 @@
   :root[data-theme="dark"] .btn-copy{color:var(--bg)}
   .payid{color:var(--ink-faint);font-size:var(--fs-sm);font-weight:700}
   [hidden]{display:none !important}
-  /* one-time confetti fountain — launches up from bottom centre, arcs, falls */
-  .confetti{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:9}
-  .confetti i{position:absolute;left:50%;top:96vh;width:.55rem;height:.8rem;border-radius:2px;opacity:0;
-    will-change:transform,opacity;
-    animation:cpop var(--dur,2s) cubic-bezier(.15,.6,.4,1) forwards}
-  @keyframes cpop{
-    0%{opacity:0;transform:translate(0,0) rotate(0deg) scale(.5)}
-    8%{opacity:1}
-    40%{transform:translate(calc(var(--dx) * .6),var(--peak)) rotate(180deg) scale(1)}
-    100%{opacity:0;transform:translate(var(--dx),10vh) rotate(var(--spin)) scale(.85)}
-  }
+  /* confetti canvas — physics sim, fills viewport, never intercepts clicks */
+  #confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:9}
 </style>
 </head>
 <body>
@@ -85,31 +76,56 @@
 </footer>
 
 <script src="theme.js"></script>
+<canvas id="confetti" aria-hidden="true"></canvas>
 <script>
 (function(){
   if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;
-  var box=document.createElement("div");box.className="confetti";box.setAttribute("aria-hidden","true");
-  var colors=["#5B7553","#8AA87C","#A6C09A","#E8B84B","#F8F4EB","#2D2D2D"];
-  function burst(n,delay,spread){
+  var cv=document.getElementById("confetti"),cx=cv.getContext("2d");
+  var dpr=Math.min(window.devicePixelRatio||1,2),W,H;
+  function size(){W=cv.width=innerWidth*dpr;H=cv.height=innerHeight*dpr;}
+  size();addEventListener("resize",size);
+  var colors=["#5B7553","#8AA87C","#A6C09A","#E8B84B","#F8F4EB","#D98C3F"];
+  var G=0.32*dpr, DRAG=0.992, parts=[];
+  // launch a fountain from the bottom centre; extra cannons for width
+  function spawn(n,ox,oy,power,spread){
     for(var i=0;i<n;i++){
-      var p=document.createElement("i");
-      var dx=(Math.random()*2-1)*spread;                     // left/right fan
-      p.style.setProperty("--dx",dx.toFixed(1)+"vw");
-      p.style.setProperty("--peak",(-(55+Math.random()*40)).toFixed(1)+"vh"); // how high it flies
-      p.style.setProperty("--spin",(360+Math.random()*720).toFixed(0)+"deg");
-      p.style.setProperty("--dur",(1.7+Math.random()*1)+"s");
-      p.style.background=colors[Math.floor(Math.random()*colors.length)];
-      var s=.55+Math.random()*.95;                           // varied size
-      p.style.width=(s*.55)+"rem";p.style.height=(s*.8)+"rem";
-      p.style.animationDelay=(delay+Math.random()*.12)+"s";
-      box.appendChild(p);
+      var a=(-Math.PI/2)+(Math.random()*2-1)*spread;         // aim up, fan out
+      var v=(power*(0.6+Math.random()*0.7))*dpr;
+      parts.push({
+        x:ox*dpr,y:oy*dpr,
+        vx:Math.cos(a)*v,vy:Math.sin(a)*v,
+        s:(4+Math.random()*5)*dpr,                            // size
+        c:colors[(Math.random()*colors.length)|0],
+        rot:Math.random()*Math.PI,vr:(Math.random()-0.5)*0.4,
+        rib:Math.random()<0.5,                                // ribbon vs chip
+        life:0,ttl:90+Math.random()*50
+      });
     }
   }
-  burst(34,0,42);      // main launch
-  burst(20,.18,64);    // wider follow-up
-  burst(14,.4,26);     // late tall sparkle
-  document.body.appendChild(box);
-  setTimeout(function(){box.remove();},4200);
+  var cxpx=innerWidth/2;
+  spawn(70,cxpx,innerHeight,20,0.5);           // main central jet
+  setTimeout(function(){spawn(40,cxpx*0.5,innerHeight,18,0.45);},120);   // left cannon
+  setTimeout(function(){spawn(40,cxpx*1.5,innerHeight,18,0.45);},120);   // right cannon
+  setTimeout(function(){spawn(30,cxpx,innerHeight,22,0.6);},300);        // tall late burst
+  var frames=0;
+  (function loop(){
+    cx.clearRect(0,0,W,H);
+    for(var i=parts.length-1;i>=0;i--){
+      var p=parts[i];
+      p.vy+=G;p.vx*=DRAG;p.vy*=DRAG;
+      p.x+=p.vx;p.y+=p.vy;p.rot+=p.vr;p.life++;
+      var fade=p.life>p.ttl?Math.max(0,1-(p.life-p.ttl)/25):1;
+      if(fade<=0||p.y>H+40){parts.splice(i,1);continue;}
+      cx.save();cx.translate(p.x,p.y);cx.rotate(p.rot);
+      cx.globalAlpha=fade;cx.fillStyle=p.c;
+      if(p.rib)cx.fillRect(-p.s*0.35,-p.s,p.s*0.7,p.s*2);     // ribbon
+      else cx.fillRect(-p.s/2,-p.s/2,p.s,p.s);                // chip
+      cx.restore();
+    }
+    frames++;
+    if(parts.length)requestAnimationFrame(loop);
+    else cx.clearRect(0,0,W,H);
+  })();
 })();
 </script>
 </body>
