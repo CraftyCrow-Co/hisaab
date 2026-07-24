@@ -23,13 +23,16 @@
   :root[data-theme="dark"] .btn-copy{color:var(--bg)}
   .payid{color:var(--ink-faint);font-size:var(--fs-sm);font-weight:700}
   [hidden]{display:none !important}
-  /* one-time confetti burst on the paid state */
+  /* one-time confetti burst on the paid state — launches up from centre, then falls */
   .confetti{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:9}
-  .confetti i{position:absolute;top:-4vh;width:.5rem;height:.75rem;border-radius:2px;opacity:0;
-    animation:cfall 2.2s var(--ease) forwards}
-  @keyframes cfall{
-    0%{opacity:1;transform:translateY(0) rotate(0deg)}
-    100%{opacity:0;transform:translateY(105vh) rotate(540deg)}
+  .confetti i{position:absolute;left:50%;top:42vh;width:.55rem;height:.8rem;border-radius:2px;opacity:0;
+    will-change:transform,opacity;
+    animation:cpop 1.9s cubic-bezier(.2,.7,.3,1) forwards}
+  @keyframes cpop{
+    0%{opacity:0;transform:translate(0,0) rotate(0deg) scale(.6)}
+    12%{opacity:1}
+    35%{transform:translate(var(--dx),var(--peak)) rotate(180deg) scale(1)}
+    100%{opacity:0;transform:translate(calc(var(--dx) * 1.4),110vh) rotate(var(--spin)) scale(.9)}
   }
 </style>
 </head>
@@ -97,17 +100,27 @@
   document.getElementById(paid?"paid":"nopay").hidden=false;
   if(paid&&!matchMedia("(prefers-reduced-motion: reduce)").matches){
     var box=document.createElement("div");box.className="confetti";box.setAttribute("aria-hidden","true");
-    var colors=["#5B7553","#8AA87C","#A6C09A","#F8F4EB","#2D2D2D"];
-    for(var i=0;i<18;i++){
-      var p=document.createElement("i");
-      p.style.left=(Math.random()*100)+"vw";
-      p.style.background=colors[i%colors.length];
-      p.style.animationDelay=(Math.random()*.6)+"s";
-      p.style.animationDuration=(1.6+Math.random()*1.2)+"s";
-      box.appendChild(p);
+    var colors=["#5B7553","#8AA87C","#A6C09A","#E8B84B","#F8F4EB","#2D2D2D"];
+    function burst(n,delay,spread){
+      for(var i=0;i<n;i++){
+        var p=document.createElement("i");
+        var dx=(Math.random()*2-1)*spread;            // left/right fan
+        p.style.setProperty("--dx",dx.toFixed(1)+"vw");
+        p.style.setProperty("--peak",(-20-Math.random()*30)+"vh"); // how high it flies
+        p.style.setProperty("--spin",(360+Math.random()*540).toFixed(0)+"deg");
+        p.style.background=colors[Math.floor(Math.random()*colors.length)];
+        var s=.6+Math.random()*.9;                    // varied size
+        p.style.width=(s*.55)+"rem";p.style.height=(s*.8)+"rem";
+        p.style.animationDelay=(delay+Math.random()*.12)+"s";
+        p.style.animationDuration=(1.5+Math.random()*.9)+"s";
+        box.appendChild(p);
+      }
     }
+    burst(26,0,45);      // main pop
+    burst(14,.22,60);    // wider follow-up
+    burst(10,.42,30);    // late sparkle
     document.body.appendChild(box);
-    setTimeout(function(){box.remove();},3600);
+    setTimeout(function(){box.remove();},3800);
   }
   var pid=q.get("razorpay_payment_id");
   if(pid&&/^[\w-]{1,64}$/.test(pid)){
