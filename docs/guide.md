@@ -88,6 +88,13 @@ A row with a future date and a tick in **Planned** is a hope, not a fact. Planne
 
 Expecting ₹1L from a client in August? One planned row. Considering a ₹2L machine in October? One planned row. The months ahead redraw instantly. **To try out any future, add a planned row and look.** Delete it, and the future goes back. There is no separate "simulator" — the sheet is the simulator.
 
+**The tick has a second job.** When two rows are linked (section 14), it marks which side is the ghost — and it's always exactly one side:
+
+- **One thing, paid in pieces** — a ₹5L machine, three payments. The **plan** is ticked; the payments are real.
+- **One bill, many jobs** — a ₹10,000 bill covering two jobs. The **bill** is real; the **pieces** are ticked.
+
+The rule underneath is the one you already know: **whatever isn't a payment of its own gets the tick.** A plan hasn't been paid yet. A piece was paid as part of something bigger. Neither moved money by itself, so neither touches your balance — and the money counts exactly once. *(Worked through in section 14.)*
+
 The **Monthly Snapshot** shows last month, this month, and the next twelve: in, out, net, balance, and a small bar per month. The bar's colour deepens as a month sinks toward your cushion — so your scariest month is visible long before it arrives, while there's still time to do something about it.
 
 A word on order: this is a *forecast*, not a budget. A budget is what you intend; a forecast is what's coming. Most of us run on gut feel and surprises — so see what's coming first. Discipline (section 11) is easy to add once you can see.
@@ -131,7 +138,7 @@ The moment a promised payment's date passes with no money landed, it appears on 
 
 No scores, no status ceremony. You already know in your gut who's slow — the list just refuses to let you forget. It sits at the top of Cash Flows because for a business it's the highest-paying report in the sheet: **money already earned, not yet collected.** Chasing it beats finding a new customer every single time.
 
-When it lands, put the real date on that same row and untick Planned — the row becomes the fact, and the chase closes itself. The due date stays in Planned on, so the sheet remembers how late it ran. Paid in part? Log what came as its own row and shrink the planned one to what's still due. Never coming? Delete it — and keep the lesson.
+When it lands, put the real date on that same row and untick Planned — the row becomes the fact, and the chase closes itself. The due date stays in Planned on, so the sheet remembers how late it ran. Paid in part? Log what came as its own row and shrink the planned one to what's still due — or link the parts to it instead and let the sheet keep score (section 14). Never coming? Delete it — and keep the lesson.
 
 The chase sits at the top of the **Cash Flows** tab. Below it, the rest of your money's rhythm: who pays you and where it goes, side by side, top five each; every tag's in, out and net; and the full dated list of everything ahead — because timing is the whole point. It's rarely the month that hurts; it's the *week* when things collide.
 
@@ -256,9 +263,17 @@ Two honesty notes, both automatic: if "rent" ever appears marked both Running co
 
 ## 14. Linked payments
 
-One shape a single row can't say: **one thing, paid in pieces.** A ₹5L machine paid ₹1L + ₹2L + ₹2L, whenever cash allowed. An invoice collected in three parts.
+Two shapes a single row can't say. One column says both.
 
-Enter the whole thing once as a planned row (the hope). Link each real payment to it as it happens. The sheet keeps score: *paid ₹3L, ₹2L left* — for money going out and money coming in alike.
+**One thing, paid in pieces.** A ₹5L machine paid ₹1L + ₹2L + ₹2L, whenever cash allowed. An invoice collected in three parts. A project billed by milestone, on no schedule anyone can predict. Enter the whole thing once as a planned row (the hope). Link each real payment to it as it happens. The sheet keeps score: *paid ₹3L, ₹2L left* — for money going out and money coming in alike.
+
+**One payment, many purposes.** A ₹10,000 hardware bill — ₹6,000 into the kitchen job, ₹4,000 into the wardrobe. Shops hand you one bill for two jobs; this unbundles it. Easiest answer, and usually the right one: **write two rows, tag each, done.** Same totals, nothing new to learn.
+
+Want one row that matches the ₹10,000 line on your bank statement? Keep the bill whole as one real row, then put the pieces beneath it — each piece points at the bill and gets **Planned** ticked, so the money is only spent once. Two pieces or five, split four ways among friends: every piece points at the same bill. Pieces never point at each other, so nothing gets harder as they multiply.
+
+The same **Planned** tick from section 6 tells the two shapes apart, so you never have to remember which: in *paid in pieces* the **parent** is ticked (it hasn't happened yet); in *many purposes* the **pieces** are ticked (the money already left, once). Exactly one side of a link is ever ticked — that is the whole mechanic.
+
+Never put a share or a percentage inside a tag. A tag counts its row in full, always. Half-and-half is two rows — never half a word.
 
 Rule of thumb: **link only when the money is not new** — when a payment pays down something already written. Everyday rows: no link, leave it blank. EMIs don't need it either — Repeats already counts paid and remaining on its own.
 
@@ -270,7 +285,7 @@ Skipped a week? A month? One rough line — *−40,000 · bank → misc · "catc
 
 Doubt the numbers? Run the bank check: type today's *actual* bank balance, and the sheet shows the gap. *Sheet says ₹4.2L · Bank says ₹4.45L · off by ₹25,000.* That gap **is** the missing story — a bounced EMI, a forgotten sale, a typo — one number that catches every kind of error at once.
 
-And the bounced-EMI case has a two-second fix: the sheet marked it done, but the money never left — re-tick Planned and move its date forward. It goes back to "coming," and the balance corrects itself.
+And the bounced-EMI case has a two-second fix: the sheet marked it done, but the money never left — re-tick Planned (section 6) and move its date forward. It goes back to "coming," and the balance corrects itself.
 
 And relax about small wrongness. The decisions this sheet powers are *rankings* — kitchen over wardrobe, cut this before that — and ₹2L versus ₹40k survives a few mislabelled rows. You'll *feel* a wrong number long before any audit would find it. You are the audit.
 

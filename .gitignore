@@ -6,3 +6,26 @@ Thumbs.db
 launch-sequence.md
 marketing-bank.md
 NOTES.md
+doc-bank.md
+
+# personal data — never commit
+knowledge/
+*.zip
+*.jpeg
+*.jpg
+
+# internal — strategy, specs, unreleased content. THIS REPO IS PUBLIC.
+CLAUDE.md
+outside-the-sheet.md
+decisions.md
+reports-layout-spec.md
+sample-data.md
+sample-data/
+skills/
+script-full-tour.md
+video-outlines.md
+missing-little-things.md
+little-things-you-can-do.md
+money-that-grows.md
+starter-rows.md
+hisaab-guide.md
