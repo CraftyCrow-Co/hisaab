@@ -46,6 +46,23 @@ Why both? They answer different questions. From → To says *who to whom*. The s
 
 Use `/` when a name has family: `bank/idfc`, `bank/kotak`, `hr/payroll`, `ops/purchase`. Later, "bank" totals all of them and "bank/idfc" totals one. Detail costs nothing — use words you'd say aloud.
 
+**A name reads like a postal address — left to right, big to small.**
+
+`india / maharashtra / nashik`
+
+Ask for **india** and you get everything in india. Ask for **india/maharashtra** and you narrow to that state. Ask for **maharashtra** on its own and this address doesn't answer — its front door is india. (Name something `maharashtra/nashik` and of course `maharashtra` totals it — it's the front door there.)
+
+**You always start at the front door.** A word finds names that *start* with it, never names that merely contain it. So `kitchen` totals `kitchen/gas` and `kitchen/oven`. It does not total `repairs/kitchen` — that one's front door is repairs. It only *mentions* the kitchen.
+
+**Which means the first word decides what you can total. Pick it on purpose.**
+
+- `kitchen/repairs` → you can total everything kitchen
+- `repairs/kitchen` → you can total all repairs, everywhere
+
+Want both? Tag it — that's section 9.
+
+Two levels is nearly always enough. Three is where people stop recording money and start building a filing system.
+
 One rule that never bends: **same thing, same spelling.** "Acme" and "Acme Pvt Ltd" become two strangers, and every total splits between them. The dropdowns remember your words — pick from them, and the problem never starts.
 
 **Moving your own money?** Bank to bank, bank to cash — that's not earning or spending, just your money changing pockets. Enter it as a pair: minus out of one, plus into the other, Mode: **Self**. Your total doesn't move, and the reports know not to call it income.
@@ -152,7 +169,19 @@ Forget what "tags" means elsewhere. Here, **a tag is a calculator you name.**
 
 Write `sharma-reception` on every row that belongs to that order — the advance (+), the ingredients (−), the event staff (−) — and *sharma-reception adds itself up*. No formula, no math. The sign decides add or subtract; the word decides where it counts.
 
+**Three columns describe every rupee, and each has exactly one job.**
+
+| | Like | Rule |
+|---|---|---|
+| **From / To** | folders | where the money sits — one place each |
+| **Count Under** | sticky notes | stick on as many as you like, or none |
+| **Purpose** | a stamp | exactly one, always |
+
+Folders locate it. Sticky notes cut across folders. The stamp is the only one that adds to 100% — that's section 12.
+
 **Every tag is a small business inside your business** — its own money in, its own money out, its own answer. Name one for anything you want judged: a line of work (`tiffins`, `events`), a client, one big order, a channel (`instagram`), a bet (`diwali-orders`). A row can carry several words — festive boxes can be `tiffins, packaging` — and every word counts it. Three calculators running at once, no extra effort.
+
+Really did spend ₹60 on one and ₹40 on the other? Write two rows. Then it's true instead of guessed.
 
 Two rules keep the answers honest:
 
