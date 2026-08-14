@@ -18,10 +18,11 @@
 <style>
   .doc h2{scroll-margin-top:var(--sp-5)}
   /* on-this-page links */
-  .jump{color:var(--ink-faint);font-size:var(--fs-sm);font-weight:700;margin:0 0 var(--sp-7);max-width:none}
+  .jump{color:var(--ink-faint);font-size:var(--fs-sm);font-weight:700;margin:0 0 var(--sp-7);
+    max-width:none;line-height:2}
   .jump a{color:var(--accent-ink);text-decoration:none;white-space:nowrap}
   .jump a:hover{text-decoration:underline}
-  .jump .sep{padding:0 .35em;color:var(--line)}
+  .jump .sep{color:var(--line)}
   /* prompt box */
   .pbox{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);margin:0 0 var(--sp-7);overflow:hidden}
   .pbox-top{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-4);
@@ -70,8 +71,19 @@
 
     <p>Hisaab is the long-term memory it's missing — the same shape, month after month. Once your money sits in that shape, AI stops guessing and starts reading. Two prompts do the work. A third makes them yours.</p>
 
+    <!-- whitespace between these is load-bearing: each link is nowrap, so the
+         spaces are the only places the line is allowed to break on a phone -->
     <p class="jump">On this page:
-      <a href="#rows">Get my rows</a><span class="sep">·</span><a href="#read">Read my Hisaab</a><span class="sep">·</span><a href="#tune">Customise it to your life</a><span class="sep">·</span><a href="#skills">The two skills</a><span class="sep">·</span><a href="#which">AI recommendations</a></p>
+      <a href="#rows">Get my rows</a>
+      <span class="sep">·</span>
+      <a href="#read">Read my Hisaab</a>
+      <span class="sep">·</span>
+      <a href="#tune">Customise it</a>
+      <span class="sep">·</span>
+      <a href="#skills">The skills</a>
+      <span class="sep">·</span>
+      <a href="#which">Which AI</a>
+    </p>
 
     <h2 id="rows">1. Get my rows</h2>
     <p>A bank statement, a photo of your bills, a voice note, a rough list scribbled on the back of something. Comes back as rows, ready to paste into your Log.</p>
