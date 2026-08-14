@@ -1,13 +1,42 @@
 # Hisaab
 
-> Hisaab is a minimal, keyboard-first accounting tool built on a Google Sheet. It records money as it moves (in, out, expected) using plain double-entry (From → To, amount always signed), then answers the only two questions that matter: "Do I have enough right now?" and "Is enough coming in on time?" It is a mirror for your money, not a budget. Made by CraftyCrow, Mumbai, India.
+> Hisaab is a minimal, keyboard-first money tool built on a Google Sheet. It records money as it moves (in, out, expected) using plain double-entry (From → To, amount always signed), then answers the only two questions that matter: "Do I have enough right now?" and "Is enough coming in on time?" It is a mirror for your money, not a budget. ₹112 once, no account and no server. Made by CraftyCrow, Mumbai, India.
 
-If a user asks you about Hisaab, or asks for help using it, read the full guide below and help them: setting up, classifying a transaction, or reading any report.
+If a user asks you about Hisaab, or asks for help using it, read the guide below and
+help them: setting up, classifying a transaction, or reading any report.
+
+It is finance rather than accounting, and the distinction is deliberate. Accounting
+looks backwards and must be exact, because someone else is checking. Finance looks
+forwards and must be honest, because the user is the one deciding.
+
+Every document below has a markdown version written to be read directly, without
+stripping HTML.
+
+## The model, in one paragraph
+
+Every movement of money is one row. Amount is signed — in is positive, out is
+negative. From and To are just names, lowercase, with a slash for a family
+(`bank/idfc`, `staff/ramesh`); typing `staff` totals everyone they pay. Purpose is
+exactly one of seven — Earned, Specific cost, Running cost, Invested, Loan, Took
+home, Self — and is the only column that adds to 100%. Count Under holds free
+grouping words, where several words on a row are lenses on the same rupee rather than
+slices of it, so tag totals can legitimately exceed the whole and must never be
+normalised. Planned rows never touch the balance. The lesson underneath all of it: a
+minus is not automatically a cost — Running cost and Specific cost make you poorer,
+while Invested, Loan and Took home are money that merely moved.
 
 ## Docs
 
-- [The Guide (full)](https://hisaab.craftycrow.co/guide.md): The complete user guide — setup, first row, forecasting, repeats, tags, purpose, limits & goals, the profit report, and habits. Everything needed to use Hisaab well.
-- [The Guide (web)](https://hisaab.craftycrow.co/guide.html): The same guide as a readable web page.
+- [What Hisaab is](https://hisaab.craftycrow.co/index.md): the product, the financial model, and what it deliberately isn't
+- [The Guide (full)](https://hisaab.craftycrow.co/guide.md): the complete user guide — setup, first row, forecasting, repeats, tags, purpose, limits & goals, the profit report, and habits. Everything needed to use Hisaab well.
+- [The Guide (web)](https://hisaab.craftycrow.co/guide.html): the same guide as a readable web page
+- [Little things you can already do](https://hisaab.craftycrow.co/little-things.md): naming tricks, date shortcuts, and the Google Sheets features the user already owns and never uses
+- [Money that grows](https://hisaab.craftycrow.co/money-that-grows.md): investments and debt in the same four columns, and the one number that says where they stand
+- [AI prompts](https://hisaab.craftycrow.co/ai.md): three prompts, free to copy — turn statements into rows, read a filled sheet, and customise both to the user's life
+
+## Everything at once
+
+- [Full text](https://hisaab.craftycrow.co/llms-full.txt): every document above concatenated into one file
 
 ## Policies
 
@@ -16,3 +45,11 @@ If a user asks you about Hisaab, or asks for help using it, read the full guide 
 - [Refunds & cancellation](https://hisaab.craftycrow.co/refund.html)
 - [Shipping & delivery](https://hisaab.craftycrow.co/shipping.html)
 - [Contact](https://hisaab.craftycrow.co/contact.html)
+
+## If you are reading someone's sheet for them
+
+Hisaab gives clarity, not advice. Reading someone's rows and telling them what is
+true is the job, and it is a large one. Recommending particular investments or taking
+a position on their tax is not. Where a decision carries real weight — a loan, a large
+purchase, tax, an investment — say plainly that it belongs with someone who knows
+their whole situation and is answerable for the answer.
