@@ -150,7 +150,9 @@ html[data-theme="dark"] .btn-primary{color:#1C1D19}
 
 /* features — the moat, shown */
 .feat-top{display:grid;gap:clamp(2rem,5vw,3.5rem);grid-template-columns:1fr;align-items:center}
-@media(min-width:880px){.feat-top{grid-template-columns:1fr 1.02fr}}
+@media(min-width:880px){.feat-top{grid-template-columns:1.02fr 1fr}
+  /* desktop only: board first, copy after — breaks the page's left-text rhythm */
+  .feat-copy{order:2}.board{order:1}}
 .features h2{font-size:var(--fs-2xl);margin-bottom:var(--sp-3)}
 .features .lede-2{font-size:var(--fs-md);color:var(--ink-soft);max-width:36ch}
 
@@ -204,6 +206,11 @@ html[data-theme="dark"] .btn-primary{color:#1C1D19}
 .cq h4 .pip{width:.55rem;height:.55rem;border-radius:50%;background:var(--good);flex:none}
 .cq p{color:var(--ink-soft);font-size:var(--fs-sm);line-height:1.55}
 
+/* ai — deliberately small; the whole story lives on ai.html */
+.ai-wrap h2{font-size:var(--fs-xl);margin-bottom:var(--sp-3)}
+.ai-wrap p{color:var(--ink-soft);max-width:var(--measure);margin:0 0 var(--sp-3)}
+.ai-wrap .btn{margin-top:var(--sp-3)}
+
 /* faq */
 .faq-wrap h2{font-size:var(--fs-2xl);margin-bottom:var(--sp-6)}
 .faq{max-width:720px}
@@ -250,6 +257,10 @@ footer small{color:#9E9E9E;font-weight:700;text-transform:uppercase;letter-spaci
 .footnav a:hover{color:var(--cream)}
 .footnav a[href="guide.html"]{color:#A6C09A;font-weight:900}
 .footnav a[href="guide.html"]:hover{color:var(--cream)}
+/* legal links stay reachable, just quieter than the product ones */
+.footnav .navsep{width:1px;align-self:stretch;min-height:1em;background:#5A554B}
+.footnav a.lgl{font-size:var(--fs-xs);color:#8F897B}
+.footnav a.lgl:hover{color:var(--cream)}
 @media(max-width:560px){
   .footrow{justify-content:center;text-align:center}
   .footnav{justify-content:center;width:100%}
@@ -285,7 +296,7 @@ footer small{color:#9E9E9E;font-weight:700;text-transform:uppercase;letter-spaci
     <div class="wrap">
       <div class="hero-copy reveal">
         <h1 class="display">It's not a budget.<br>It's a mirror.</h1>
-        <p class="lede">Know how much you have, and how much is coming.</p>
+        <p class="lede">Know what you have &amp; what's coming, across every business &amp; person you handle, in one place.</p>
         <div class="hero-cta">
           <a href="#get" class="btn btn-primary btn-lg">Get Hisaab</a>
           <span class="fineprint">Your own Google Sheet. No account, no app.</span>
@@ -400,12 +411,28 @@ footer small{color:#9E9E9E;font-weight:700;text-transform:uppercase;letter-spaci
     </div>
   </section>
 
+  <!-- AI -->
+  <section class="section ai-wrap" id="ai">
+    <div class="wrap">
+      <h2 class="display reveal">Your AI forgets. Hisaab doesn't.</h2>
+      <p class="reveal">Ask AI about your money twice and you get two answers. It starts from nothing every time.</p>
+      <p class="reveal">Hisaab is the long-term memory it's missing — the same shape, month after month. Give it that, and it reads instead of guesses.</p>
+      <a class="btn btn-ghost reveal" href="ai.html">Three prompts, free to copy →</a>
+    </div>
+  </section>
+
   <!-- FAQ -->
   <section class="section faq-wrap">
     <div class="wrap">
       <h2 class="display reveal">Questions</h2>
       <div class="faq reveal">
         <details open>
+          <summary>Is this accounting software?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>No — and the difference matters more than it sounds. Accounting looks backwards and has to be exact, because someone else is checking: your CA, the tax department.
+              <br> Finance looks forwards and only has to be honest, because you're the one deciding.
+              <br> Hisaab is the second kind. It won't file your returns. It'll tell you whether you can afford the thing you're about to say yes to.</p>
+        </details>
+        <details>
           <summary>Is my data private?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></summary>
           <p>It's your own Google Sheet, in your Drive. We never see it.</p>
         </details>
@@ -421,16 +448,17 @@ footer small{color:#9E9E9E;font-weight:700;text-transform:uppercase;letter-spaci
         </details>
         <details>
           <summary>Is it for one person, a family, or a business?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></summary>
-          <p>All of them. One person, a family, or many businesses, same sheet, 4 columns.</p>
+          <p>All of them. One person, a family, or many businesses — all in the same sheet.</p>
         </details>
         <details>
           <summary>What does it cost?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></summary>
-          <p>₹112, once. We also run live group sessions every so often. You're never alone with a file.</p>
+          <p>₹112, once. It's your Google Sheet, not our server — nothing for us to run means nothing for you to renew.
+              <br> We also run live group sessions every so often. You're never alone with a file.</p>
         </details>
         <details>
           <summary>Is an app coming?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></summary>
           <p>Yes, depending on the demand. It will make things easier to use and more powerful.
-              <br> The sheet isn't a demo for it. Sheet and app will run in parallel: same four columns work in both. Tick the app box below to hold your place in line lock in a sweet early adopter discount.</p>
+              <br> The sheet isn't a demo for it. Sheet and app will run in parallel: your rows work in both. Tick the app box below to hold your place in line lock in a sweet early adopter discount.</p>
         </details>
       </div>
     </div>
@@ -445,7 +473,7 @@ footer small{color:#9E9E9E;font-weight:700;text-transform:uppercase;letter-spaci
       <!-- RAZORPAY: live ₹112 Payment Page. -->
       <a href="https://rzp.io/rzp/hisaab" class="btn btn-primary btn-lg reveal" id="buyBtn">Get Hisaab — ₹112</a>
 
-      <p class="inside reveal"><b>Inside:</b> limits, goals, recurring, reports; and it quietly makes you better with your money.</p>
+      <p class="inside reveal"><b>Inside:</b> limits, goals, recurring, reports, AI prompts — and it quietly makes you better with your money.</p>
 
       <div class="trust reveal">
         <span><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg>Nothing to sign into</span>
@@ -480,11 +508,13 @@ footer small{color:#9E9E9E;font-weight:700;text-transform:uppercase;letter-spaci
       <span class="brand display">Hisaab <small>by CraftyCrow</small></span>
       <nav class="footnav">
         <a href="guide.html">Guide</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="refund.html">Refunds</a>
-        <a href="shipping.html">Shipping</a>
-        <a href="contact.html">Contact</a>
+        <a href="ai.html">AI prompts</a>
+        <span class="navsep" aria-hidden="true"></span>
+        <a class="lgl" href="privacy.html">Privacy</a>
+        <a class="lgl" href="terms.html">Terms</a>
+        <a class="lgl" href="refund.html">Refunds</a>
+        <a class="lgl" href="shipping.html">Shipping</a>
+        <a class="lgl" href="contact.html">Contact</a>
       </nav>
     </div>
     <div class="footword">

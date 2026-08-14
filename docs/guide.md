@@ -65,7 +65,7 @@ Two levels is nearly always enough. Three is where people stop recording money a
 
 One rule that never bends: **same thing, same spelling.** "Acme" and "Acme Pvt Ltd" become two strangers, and every total splits between them. The dropdowns remember your words — pick from them, and the problem never starts.
 
-**Moving your own money?** Bank to bank, bank to cash — that's not earning or spending, just your money changing pockets. Enter it as a pair: minus out of one, plus into the other, Mode: **Self**. Your total doesn't move, and the reports know not to call it income.
+**Moving your own money?** Bank to bank, bank to cash — that's not earning or spending, just your money changing pockets. It's one row: the amount as a minus, From the account it left, To the account it reached, and Purpose: **Self**. That last part is what stops the reports calling it income. Mode stays free for how it moved.
 
 That's everything you *must* know. The sheet is fully working from here. Everything below is optional power, added when you want it.
 
@@ -343,6 +343,18 @@ And relax about small wrongness. The decisions this sheet powers are *rankings* 
 **Do I get updates?** Your copy can't be changed from outside — that's your privacy working. New versions are announced; moving is copying your rows across, and you'll be walked through it.
 
 **I entered something wrong.** Fix it. Words, tags, purposes are your *interpretation* — reinterpret freely, forever. What actually happened — date, amount, who to whom — keep true, and everything above it can always be repaired.
+
+---
+
+## 18. Where to next
+
+Two companions, both for once you've been using this a while.
+
+**Little things you can already do** — https://hisaab.craftycrow.co/little-things.html
+Everything the sheet already does that nobody tells you about: naming tricks, date shortcuts, and the Google Sheets features you already own and never use.
+
+**Money that grows** — https://hisaab.craftycrow.co/money-that-grows.html
+What you own and what you owe, in these same four columns. Investments, debt, and the one number that tells you where you actually stand.
 
 ---
 

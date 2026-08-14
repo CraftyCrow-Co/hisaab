@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Little things you can already do — Hisaab</title>
+<meta name="description" content="Everything the sheet already does that nobody tells you about — naming tricks, date shortcuts, and the Google Sheets features you already own." />
+<link rel="canonical" href="https://hisaab.craftycrow.co/little-things.html" />
+<meta property="og:title" content="Little things you can already do — Hisaab" />
+<meta property="og:description" content="Everything the sheet already does that nobody tells you about — naming tricks, date shortcuts, and the Google Sheets features you already own." />
+<meta property="og:type" content="article" />
+<script>try{var t=localStorage.getItem("hisaab-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="legal.css" />
+<link rel="stylesheet" href="guide.css" />
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header class="topbar">
+  <div class="wrap">
+    <a href="index.html" class="brand">Hisaab <small>by CraftyCrow</small></a>
+    <button class="iconbtn" id="theme" aria-label="Switch light and dark (press T)">
+      <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/></svg>
+      <svg class="moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="glayout">
+
+  <nav class="toc" id="toc" aria-label="Contents">
+    <button class="iconbtn toc-close" id="tocClose" aria-label="Close contents">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <h2>Little things you can already do</h2>
+    <ol>
+      <li><a href="#s1">Names that do the work</a></li>
+      <li><a href="#s2">Words that count</a></li>
+      <li><a href="#s3">The sign, and the two ends</a></li>
+      <li><a href="#s4">Dates are a time machine</a></li>
+      <li><a href="#s5">Repeats — write once, run forever</a></li>
+      <li><a href="#s6">Watchlist — the fastest thing in the sheet</a></li>
+      <li><a href="#s7">Limits and goals</a></li>
+      <li><a href="#s8">Reading the numbers</a></li>
+      <li><a href="#s9">Free, because it's a spreadsheet</a></li>
+      <li><a href="#s10">Safety net</a></li>
+    </ol>
+  </nav>
+
+  <article class="gcontent">
+
+    <h1>Little things you can already do</h1>
+    <p class="tagline"><em>A companion to the Guide. Nothing here is a feature you switch on — all of it falls out of how the sheet is shaped. Skim it once; you'll keep finding uses.</em></p>
+    <section id="s1">
+      <h2>Names that do the work</h2>
+      <p><strong>A slash makes a family.</strong> <code>bank/idfc</code>, <code>bank/kotak</code>. Now <code>bank</code> totals both, <code>bank/idfc</code> totals one. You never set up a category list — your typing did it.</p>
+      <p><strong>Go as deep as you like.</strong> <code>mom/union/fd</code> counts three ways: under <code>mom</code>, under <code>mom/union</code>, and on its own. No setup, no limit.</p>
+      <p><strong>Slashes work in tags too,</strong> not just From and To. <code>marketing/instagram</code>, <code>marketing/print</code> — and <code>marketing</code> adds them up.</p>
+      <p><strong>Departments, teams, branches — for free.</strong> <code>staff/salary</code>, <code>staff/wages</code>, <code>staff/bonus</code>. The word <code>staff</code> is now every person you pay. You never designed a department; you just typed consistently.</p>
+      <p><strong>One sheet, many lives.</strong> <code>personal/…</code>, <code>shop/…</code>, <code>mom/…</code>. The words are the walls. Watch one, or watch everything.</p>
+      <p><strong>The dropdown remembers every name you've used.</strong> Start typing, pick from the list. That's the whole trick to keeping totals clean — never re-type a name from memory.</p>
+      <p><strong>A name can be anything.</strong> A person, a bank, a shop, a machine, a project code like <code>#PROJ-123</code>. The sheet doesn't care what it is; it just counts it.</p>
+      <p><strong>Changed your mind about a name? Ctrl+H.</strong> Find <code>Acme</code>, replace with <code>Acme Pvt Ltd</code>, every row at once. Split totals get merged, old habits get renamed, and nothing about what happened changes. <em>(Select the columns first and tick "specific range" — then it can only touch what you picked. Do Log and Recurring both, or tomorrow's rows come back with the old name.)</em></p>
+      <p><strong>That's what keeps it fresh.</strong> Reorganising your names is a two-minute job, not a project. So you can start rough today and tidy in December, and the whole history rewrites itself.</p>
+      <p><strong>Fix a spelling and the totals heal.</strong> <code>Swiggy</code> and <code>swiggy </code> with a stray space were two strangers splitting one number. One replace, one number.</p>
+    </section>
+
+    <section id="s2">
+      <h2>Words that count</h2>
+      <p><strong>A tag is a calculator you name.</strong> Put <code>sharma-reception</code> on the advance, the ingredients, the staff — and it adds itself up. Sign decides plus or minus.</p>
+      <p><strong>Several words on one row.</strong> <code>tiffins, packaging</code> — both count it. Three calculators running at once, no extra work.</p>
+      <p><strong>Anything can be a word.</strong> A client, a season (<code>diwali-2026</code>), a channel (<code>instagram</code>), a bet, one big order. If you'd judge it, name it.</p>
+      <p><strong>A job that runs across months still reads whole.</strong> Advance in May, costs in June, balance in July — the word's total is the true number. Set the period to FY or All and the calendar stops lying to you.</p>
+      <p><strong>Cash Flow already breaks up your money by the parent word,</strong> in and out, side by side. You'll see which family of spending is really the big one.</p>
+    </section>
+
+    <section id="s3">
+      <h2>The sign, and the two ends</h2>
+      <p><strong>Minus left you, plus came to you.</strong> That's it. Green in, red out — the colour says it back.</p>
+      <p><strong>You never tell the sheet which names are "you".</strong> Anjuman gives you ₹5,000: <code>anjuman → cash, +5,000</code>. You return it: <code>cash → anjuman, −5,000</code>. Same names, opposite signs, both clear.</p>
+      <p><strong>Moving your own money isn't income.</strong> Bank to cash — enter the pair, Mode: <strong>Self</strong>. Your total doesn't move and no report calls it earnings.</p>
+      <p><strong>Starting balances have their own mode.</strong> Mode <strong>Opening Balance</strong> keeps day-one money out of your income reports while the balance still picks it up.</p>
+      <p><strong>Mode gives you a second cut of everything</strong> — cash vs bank vs card vs UPI — without you tagging anything.</p>
+      <p><strong>Description is free.</strong> Write anything, or nothing. It never affects a total, so it costs you nothing to be chatty.</p>
+    </section>
+
+    <section id="s4">
+      <h2>Dates are a time machine</h2>
+      <p><strong>Type a future date, read the balance beside it.</strong> That's your money on that day if today's plans hold. Most of what "forecasting" means, already done.</p>
+      <p><strong>Add a planned row to try out any future.</strong> A ₹2L machine in October, a client's ₹1L in August — the months ahead redraw instantly. Delete it and the future goes back. The sheet <em>is</em> the simulator.</p>
+      <p><strong>Planned rows never touch your balance.</strong> Money isn't real until it lands, so hopes stay visible but never counted.</p>
+      <p><strong>Two dates ride along.</strong> <em>Planned on</em> is when it was due, <em>Date</em> is when it happened. The gap is how the sheet learns who runs late — <em>"Sharma runs about 12 days late."</em></p>
+      <p><strong>The same tick does the linking too.</strong> Join two rows with a link and exactly one side carries the tick. A purchase paid in installments: the <em>plan</em> is ticked, the payments are real. One bill covering two jobs: the <em>bill</em> is real, the <em>pieces</em> are ticked. Whatever isn't a payment of its own gets the tick — so the money counts once, every time. <em>Guide, sections 6 and 14.</em></p>
+      <p><strong>Enter next year's rows today.</strong> Nothing stops you. Known school fees, a wedding in March, an insurance renewal — put them in once and stop carrying them in your head.</p>
+      <p><strong>Backdate freely.</strong> Forgot a month? Type the rows with their real dates. The balance and every report reorder themselves.</p>
+      <p><strong>A date can carry a time.</strong> <code>06-Aug 11:30</code> — and the balance beside it is your money at 11:30, not at the end of the day. For a shop, that's the morning float, the afternoon rush, the evening deposit, each in the right order.</p>
+      <p><strong>Same-day rows stop guessing.</strong> Ten entries on one date sort themselves the way they actually happened, so the running balance is right at every single line — not just correct by closing time.</p>
+      <p><strong>Ctrl+Shift+Alt+; stamps this exact moment.</strong> Date and time, one keystroke, as the sale happens. (Ctrl+; is just the date, Ctrl+Shift+; is just the time.)</p>
+    </section>
+
+    <section id="s5">
+      <h2>Repeats — write once, run forever</h2>
+      <p><strong>One line covers a year.</strong> Rent, salaries, EMIs, subscriptions, the monthly retainer. Never type them twelve times.</p>
+      <p><strong>Odd patterns are covered.</strong> Every 2 weeks, Third Friday, Last day, Day 1 <em>and</em> Day 15, every 4 months. Pick from dropdowns.</p>
+      <p><strong>End is flexible.</strong> Blank = never. A number = that many times. A date = stop then.</p>
+      <p><strong>Edit one month without breaking the rule.</strong> Date slipped, paid by cash instead — change that single row. Your edit is respected; the rule never overwrites it.</p>
+      <p><strong>Every rule tells you its monthly bite.</strong> An ₹18,000 yearly insurance is ₹1,500 a month. Now anything can be compared with anything.</p>
+      <p><strong>EMIs count themselves down.</strong> Paid, remaining, next date, and a bar filling up. No separate loan tracker.</p>
+      <p><strong>Mark each rule Essential / Nice-to-have / Can drop.</strong> On a tight day the sheet already knows what to cut first — and how much comes back per month.</p>
+      <p><strong>One number worth staring at:</strong> your repeats added up for the year. <em>"₹14L is owed no matter what happens."</em> People cancel subscriptions on that line alone.</p>
+    </section>
+
+    <section id="s6">
+      <h2>Watchlist — the fastest thing in the sheet</h2>
+      <p><strong>Type any name, get its whole story.</strong> In, out, net, share, twelve-month trend. A client, an account, a tag, a project code.</p>
+      <p><strong>Add a row to compare.</strong> Two clients, two months, two lines of work — side by side, no report to build.</p>
+      <p><strong>Ready-made periods.</strong> This month · 90 days · FY · All · Custom. Blank means all time.</p>
+      <p><strong>Ask a question, get an answer, delete the row.</strong> It's scratch paper. Nothing you type there can break anything.</p>
+      <p><strong>Parent words work here.</strong> Type <code>staff</code> and every person you pay is in that one number.</p>
+    </section>
+
+    <section id="s7">
+      <h2>Limits and goals</h2>
+      <p><strong>A limit is a ceiling, a goal is a floor.</strong> "Chai under ₹500 a week." "₹30L from events this year." Same small table.</p>
+      <p><strong>Point them at anything</strong> — a name, a tag, an account. Not just spending categories.</p>
+      <p><strong>Rolling windows, not just calendar months.</strong> "Last 30 days" keeps moving with you.</p>
+      <p><strong>Colour is the alert.</strong> Green fills, amber at 80%, red over. Nothing pops up, nothing nags.</p>
+      <p><strong>Break the same limit three times and it argues back</strong> — with a number from your own history. <em>"₹871 is more realistic."</em> A budget you always break is a wrong number, not a discipline problem.</p>
+    </section>
+
+    <section id="s8">
+      <h2>Reading the numbers</h2>
+      <p><strong>The Chase List is the highest-paying screen in the sheet.</strong> Money you've already earned, not yet collected. Chasing it beats finding a new customer, every time.</p>
+      <p><strong>It also learns your payers.</strong> Once there's history, it tells you how late each one usually runs — so you plan around them instead of hoping.</p>
+      <p><strong>The monthly snapshot colours itself.</strong> A month sinking toward your cushion goes darker months before it arrives, while you can still do something.</p>
+      <p><strong>Last year sits in the same table.</strong> This September against last September, no work.</p>
+      <p><strong>Where the profit went, in three lines.</strong> Invested, loan, took home — the three things that eat cash without ever showing as a cost. This is the answer to "the year was profitable, so where's the money?"</p>
+      <p><strong>Streams are ranked by share, not size.</strong> Big orders and small ones get judged fairly.</p>
+      <p><strong>The report grades itself.</strong> Income sitting on no stream shows up as its own row, with the exact rows listed and a link to each. When it hits zero, it disappears.</p>
+      <p><strong>Untick Planned and the chase closes itself.</strong> The due date stays behind so the sheet remembers how late it ran.</p>
+      <p><strong>Paid in parts?</strong> Log what came, shrink the planned row to what's still due. The chase keeps tracking the rest. Or link each part to the planned row instead and the sheet keeps score for you — <em>paid ₹2.5L, ₹1.5L left</em>. <em>Guide, section 14.</em></p>
+    </section>
+
+    <section id="s9">
+      <h2>Free, because it's a spreadsheet</h2>
+      <p>Every one of these is Google Sheets, not Hisaab. You already own them.</p>
+      <h3>Entering and fixing</h3>
+      <p><strong>Ctrl+D repeats the row above.</strong> Most rows are near-copies of the last one.</p>
+      <p><strong>It finishes your names for you.</strong> Start typing in a column and it suggests what you've typed before — Enter accepts, Escape refuses. Free protection against two spellings of one client.</p>
+      <p><strong>Ctrl+Shift+V pastes plain.</strong> Copying from WhatsApp or a bank statement brings their colours and fonts with it. This strips all of that and keeps only what matters.</p>
+      <p><strong>Drag the little blue square</strong> at a cell's corner to fill dates or repeat a name down twenty rows.</p>
+      <p><strong>Ctrl+Z, and Ctrl+Shift+Z to put it back.</strong> Then version history behind both.</p>
+      <h3>Getting around</h3>
+      <p><strong>Ctrl+F finds anything.</strong> A name, an amount, half a word in a description. Faster than any filter.</p>
+      <p><strong>Ctrl+↓ jumps to the last row.</strong> The bottom of a 2,000-row Log, instantly.</p>
+      <p><strong>Click a column heading to sort.</strong> Sort the Log by amount and the biggest spends of your life are at the top in one click.</p>
+      <p><strong>Filter views slice without disturbing anyone.</strong> This month, one account, untagged rows — saved, reusable, invisible to whoever else is looking at the same file.</p>
+      <p><strong>Select any set of amounts and read the corner.</strong> Bottom right shows the sum, live. Ctrl+click to pick scattered rows and it still adds them. A calculator you never open — and click it to switch to average, count, or highest.</p>
+      <p><strong>Hide the columns you never use.</strong> Ref #, link — right-click, hide. Nothing is deleted, the sheet just gets quieter.</p>
+      <p><strong>Group rows to fold them away.</strong> Old months collapse behind a little +. Your history stays; your screen doesn't.</p>
+      <p><strong>Open the same file in two windows.</strong> Log on one screen, Dashboard on the other, both live. Type a row, watch the numbers move.</p>
+      <h3>Working with people</h3>
+      <p><strong>Right-click a row → Comment.</strong> Stick the invoice number, a photo link, or "ask Ramesh about this" on the row itself.</p>
+      <p><strong>Put @their-email in a comment</strong> and it becomes their job — they get the mail, they reply on the row, it ticks off when done. <em>"@ramesh what was this ₹40,000?"</em> Your questions stop living in WhatsApp.</p>
+      <p><strong>Share it with your CA, read-only.</strong> They see everything, change nothing. No export, no email, no version confusion.</p>
+      <p><strong>Get an email when anyone edits.</strong> Tools → Notification settings. Useful the day you let staff enter rows.</p>
+      <h3>Keeping and carrying it</h3>
+      <p><strong>It's on your phone.</strong> Same file, Google Sheets app. Add a row standing at the shop.</p>
+      <p><strong>It works with no network.</strong> Turn on offline in the app; type at the godown, type on a flight. It syncs when the signal comes back.</p>
+      <p><strong>Download as PDF</strong> — the Dashboard, one page, for the bank or the CA.</p>
+      <p><strong>Download as Excel or CSV</strong> for a hard backup that doesn't depend on Google.</p>
+      <p><strong>Make a copy any time.</strong> That's a snapshot of your finances on that date, kept forever. Free year-end archive.</p>
+      <p><strong>Undo is forever.</strong> File → Version history → go back to any day. You cannot permanently break this file. Try things.</p>
+      <h3>Making it yours</h3>
+      <p><strong>Add a tab for anything.</strong> Right-click at the bottom, new sheet, name it. Which nominee is on which account, policy numbers, the locker key, who to call when something goes wrong. Most families keep all that on one piece of paper and lose it; a business has ten times more of it and nowhere to put it. Now it lives next to the money it belongs to, in the one file you already open. <em>Names, numbers and nominees, yes — passwords and OTPs, never, here or anywhere.</em></p>
+      <p><strong>Your own formulas are welcome.</strong> Add a column, write a SUM, build the one view only you need. It's your file.</p>
+      <p><strong>Add your own colour rules.</strong> Conditional formatting — "anything over ₹50,000 turns yellow." The sheet starts flagging what <em>you</em> care about.</p>
+      <p><strong>Set your locale to India, once.</strong> File → Settings. Dates read 06/08 as 6 August and ₹ behaves. Two clicks that prevent a year of confusion.</p>
+    </section>
+
+    <section id="s10">
+      <h2>Safety net</h2>
+      <p><strong>The bank check catches every kind of error at once.</strong> Type your real bank balance; the gap <em>is</em> the missing story — a bounced EMI, a forgotten sale, a typo.</p>
+      <p><strong>A bounced payment takes two seconds.</strong> Re-tick Planned, move the date forward. It goes back to "coming" and the balance corrects itself.</p>
+      <p><strong>Rough beats missing.</strong> One line — <em>−40,000 · bank → misc · "catching up June"</em> — and you're current again. No streaks, no guilt.</p>
+      <p><strong>Words and tags are yours to change forever.</strong> What happened — date, amount, who to whom — keep that true. Everything on top of it can be reinterpreted any time.</p>
+      <p><em>None of this needed a new button. It fell out of four columns and a slash.</em></p>
+    </section>
+
+    <div class="finale">
+      <p><em>None of this was built. All of it falls out of how the sheet is shaped — which is the whole idea.</em></p>
+    </div>
+
+  </article>
+</div>
+
+<footer class="docfoot">
+  <div class="wrap">
+    <nav class="docnav">
+      <a href="index.html">Home</a>
+      <a href="guide.html">Guide</a>
+      <a href="ai.html">AI prompts</a>
+      <span class="navsep" aria-hidden="true"></span>
+      <a class="lgl" href="privacy.html">Privacy</a>
+      <a class="lgl" href="terms.html">Terms</a>
+      <a class="lgl" href="refund.html">Refunds</a>
+      <a class="lgl" href="shipping.html">Shipping</a>
+      <a class="lgl" href="contact.html">Contact</a>
+    </nav>
+    <small>Hisaab by CraftyCrow</small>
+  </div>
+</footer>
+
+<button class="fab fab-contents show" id="fabContents" type="button" aria-label="Open contents">
+  <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg> Contents
+</button>
+<button class="fab fab-top" id="fabTop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="theme.js"></script>
+<script>
+(function(){
+  var toc=document.getElementById("toc");
+  var links=[].slice.call(toc.querySelectorAll("a"));
+  var sections=links.map(function(a){return document.getElementById(a.getAttribute("href").slice(1));});
+
+  var bar=document.getElementById("progress");
+  var fabTop=document.getElementById("fabTop");
+  var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var blocks=[].slice.call(document.querySelectorAll(
+    ".gcontent section > *, .gcontent > h1, .gcontent > p, .gcontent .finale > *"));
+  var FOCUS_MIN=0.45,focusPaused=false,ticking=false;
+  function updateFocus(){
+    if(reduce||focusPaused)return;
+    var vh=innerHeight,focusY=vh*0.35,clear=vh*0.05,span=vh*0.35;
+    for(var i=0;i<blocks.length;i++){
+      var el=blocks[i],r=el.getBoundingClientRect();
+      if(r.bottom<-300||r.top>vh+300)continue;
+      var dist=focusY<r.top?r.top-focusY:(focusY>r.bottom?focusY-r.bottom:0);
+      var t=(dist-clear)/span;t=t<0?0:t>1?1:t;
+      el.style.opacity=(1-t*(1-FOCUS_MIN)).toFixed(3);
+    }
+  }
+  function onScroll(){
+    var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+    bar.style.width=(max>0?(h.scrollTop/max*100):0)+"%";
+    fabTop.classList.toggle("show",h.scrollTop>600);
+    if(!ticking){requestAnimationFrame(function(){updateFocus();ticking=false;});ticking=true;}
+  }
+  addEventListener("scroll",onScroll,{passive:true});
+  addEventListener("resize",updateFocus,{passive:true});
+  onScroll();updateFocus();
+
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          links.forEach(function(a){a.classList.remove("active");});
+          var i=sections.indexOf(e.target);
+          if(i>=0)links[i].classList.add("active");
+        }
+      });
+    },{rootMargin:"-45% 0px -50% 0px"});
+    sections.forEach(function(s){if(s)io.observe(s);});
+  }
+
+  function openTOC(){toc.classList.add("open");focusPaused=true;for(var i=0;i<blocks.length;i++)blocks[i].style.opacity="";}
+  function closeTOC(){toc.classList.remove("open");focusPaused=false;updateFocus();}
+  document.getElementById("fabContents").addEventListener("click",openTOC);
+  document.getElementById("tocClose").addEventListener("click",closeTOC);
+  links.forEach(function(a){a.addEventListener("click",closeTOC);});
+  fabTop.addEventListener("click",function(){scrollTo({top:0,behavior:"smooth"});});
+})();
+</script>
+</body>
+</html>

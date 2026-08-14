@@ -70,6 +70,10 @@ a{color:var(--accent-ink);text-underline-offset:2px}
 .docnav a{color:var(--ink-soft);text-decoration:none;transition:color .2s}
 .docnav a:hover{color:var(--ink)}
 .docnav a[href="guide.html"]{color:var(--accent-ink);font-weight:900}
+/* legal links stay reachable, just quieter than the product ones */
+.docnav .navsep{width:1px;align-self:stretch;min-height:1em;background:var(--line)}
+.docnav a.lgl{font-size:var(--fs-xs);color:var(--ink-faint)}
+.docnav a.lgl:hover{color:var(--ink-soft)}
 .docfoot small{color:var(--ink-faint);font-weight:700}
 @media(max-width:560px){
   .docfoot .wrap{justify-content:center;text-align:center}

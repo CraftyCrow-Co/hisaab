@@ -26,6 +26,7 @@ script-full-tour.md
 video-outlines.md
 missing-little-things.md
 little-things-you-can-do.md
-money-that-grows.md
+# leading slash: ignore the source at the repo root only, never the docs/ copy
+/money-that-grows.md
 starter-rows.md
 hisaab-guide.md

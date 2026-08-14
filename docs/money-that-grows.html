@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Money that grows — Hisaab</title>
+<meta name="description" content="Tracking what you own and what you owe, in the same four columns. Investments, debt, and the one number that tells you where you stand." />
+<link rel="canonical" href="https://hisaab.craftycrow.co/money-that-grows.html" />
+<meta property="og:title" content="Money that grows — Hisaab" />
+<meta property="og:description" content="Tracking what you own and what you owe, in the same four columns. Investments, debt, and the one number that tells you where you stand." />
+<meta property="og:type" content="article" />
+<script>try{var t=localStorage.getItem("hisaab-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="legal.css" />
+<link rel="stylesheet" href="guide.css" />
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header class="topbar">
+  <div class="wrap">
+    <a href="index.html" class="brand">Hisaab <small>by CraftyCrow</small></a>
+    <button class="iconbtn" id="theme" aria-label="Switch light and dark (press T)">
+      <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/></svg>
+      <svg class="moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="glayout">
+
+  <nav class="toc" id="toc" aria-label="Contents">
+    <button class="iconbtn toc-close" id="tocClose" aria-label="Close contents">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <h2>Money that grows</h2>
+    <ol>
+      <li><a href="#s1">Spent or parked</a></li>
+      <li><a href="#s2">Every place gets a name</a></li>
+      <li><a href="#s3">Buying and selling</a></li>
+      <li><a href="#s4">The one number that tells you where you stand</a></li>
+      <li><a href="#s5">Debt is the same thing, backwards</a></li>
+      <li><a href="#s6">Check in whenever you like</a></li>
+      <li><a href="#s7">Is your debt working?</a></li>
+      <li><a href="#s8">Log at the wall, not inside the pocket</a></li>
+      <li><a href="#s9">SIPs are just repeats</a></li>
+      <li><a href="#s10">What matters is what moved</a></li>
+      <li><a href="#s11">Except when the wait is long</a></li>
+      <li><a href="#s12">Before you invest anything</a></li>
+      <li><a href="#s13">Your investments become a line of work</a></li>
+      <li><a href="#s14">Growing a business</a></li>
+      <li><a href="#s15">Things that look like investments and aren't</a></li>
+      <li><a href="#s16">The awkward ones, handled</a></li>
+      <li><a href="#s17">Five habits</a></li>
+    </ol>
+  </nav>
+
+  <article class="gcontent">
+
+    <h1>Money that grows</h1>
+    <p class="tagline"><em>Part three. The Guide answered "do I have enough?" — the fast question. This one answers the slow one: <strong>is it growing?</strong></em></p>
+    <p class="introlede">Investments, loans and building wealth need no new skill and no new way of writing a row. Everything here falls out of what you already know: a sign, two names, and a Purpose. There's one screen you haven't met — <strong>Wealth</strong> — and every number on it is computed from rows you were already writing.</p>
+    <section id="s1">
+      <h2>Spent or parked</h2>
+      <p>Two rows can both be minus and mean opposite things.</p>
+      <p>₹450 on dinner is <strong>gone</strong>. ₹1,00,000 into an FD is <strong>still yours</strong> — it just sits somewhere else. Your bank balance fell the same in both cases. Your wealth fell in only one.</p>
+      <p>That difference is the whole subject, and one dropdown carries it:</p>
+      <ul><li><strong>Running cost · Specific cost</strong> — spent. It made you poorer.</li><li><strong>Invested</strong> — parked. It moved, it didn't leave.</li></ul>
+      <p>Pick it as the row goes in and you never have to think about this again. The reports keep the two apart forever: spending sits above the line, parking below it.</p>
+      <blockquote><p><em>A minus is not automatically a cost.</em></p></blockquote>
+    </section>
+
+    <section id="s2">
+      <h2>Every place gets a name</h2>
+      <p>Anywhere money sits and waits is just a name in <strong>To</strong> — same as a shop, a client, a bank.</p>
+      <pre>fd/hdfc        mf/parag        gold           epf
+fd/sbi         mf/quant        plot/nashik    nps
+                stocks/zerodha</pre>
+      <p>The slash does what it always does: <code>mf</code> totals every fund, <code>fd</code> totals every deposit, and each one still counts on its own. You never build a portfolio list — your typing built it.</p>
+      <p>Business money that lasts works identically: <code>machine/oven</code>, <code>deposit/shop</code>, <code>laptop</code>.</p>
+    </section>
+
+    <section id="s3">
+      <h2>Buying and selling</h2>
+      <p>Buying is one row. Money leaves the bank, arrives at the holding.</p>
+      <div class="scroll"><table><thead><tr><th>Date</th><th>Amount</th><th>From</th><th>To</th><th>Purpose</th></tr></thead><tbody><tr><td>05-Aug</td><td>−1,00,000</td><td>bank/hdfc</td><td>fd/hdfc</td><td>Invested</td></tr></tbody></table></div>
+      <p><strong>Paying for it in pieces?</strong> A ₹5L machine, three payments whenever cash allowed. Enter the whole purchase once as a planned row, then link each payment to it as it happens — <em>paid ₹3L, ₹2L left</em>. Only the plan carries the tick, so the money still counts exactly once. <em>Guide, section 14.</em></p>
+      <p>Selling — or an FD maturing — is <strong>two</strong> rows, and the second row is the point.</p>
+      <div class="scroll"><table><thead><tr><th>Date</th><th>Amount</th><th>From</th><th>To</th><th>Purpose</th><th>Tags</th></tr></thead><tbody><tr><td>05-Aug</td><td>+1,00,000</td><td>fd/hdfc</td><td>bank/hdfc</td><td>Invested</td><td></td></tr><tr><td>05-Aug</td><td>+7,000</td><td>fd/hdfc</td><td>bank/hdfc</td><td>Earned</td><td>returns</td></tr></tbody></table></div>
+      <p>One is your own money coming back. The other is what it made. Getting your money returned is not income — only the ₹7,000 is. Split them once, at entry, and every report downstream tells the truth by itself.</p>
+      <blockquote><p><em>Return <strong>of</strong> your money, and return <strong>on</strong> it. Never the same line.</em></p></blockquote>
+    </section>
+
+    <section id="s4">
+      <h2>The one number that tells you where you stand</h2>
+      <p>Open <strong>Watchlist</strong>, type a holding's name, set the period to <strong>All</strong>.</p>
+      <pre>fd/hdfc      out 1,00,000    in 1,07,000    net    +7,000
+mf/parag     out 3,60,000    in         0   net −3,60,000</pre>
+      <p>Read it like this:</p>
+      <ul><li><strong>Net is negative</strong> — it's still running. That figure is what you have parked there.</li><li><strong>Net is positive</strong> — it's closed. That figure is what it earned you.</li></ul>
+      <p>One number, two jobs, decided by the sign.</p>
+      <blockquote><p><strong><em>Net while it's open is your position. Net when it's closed is the verdict.</em></strong></p></blockquote>
+      <p>Type one row per holding and you're looking at your portfolio. No report to build.</p>
+    </section>
+
+    <section id="s5">
+      <h2>Debt is the same thing, backwards</h2>
+      <p>Borrowing is a plus. Repaying is a minus. Purpose <strong>Loan</strong> on both — because borrowed money is not income, however good the month suddenly looks.</p>
+      <p>Then the mirror runs by itself:</p>
+      <pre>loan/car     in 5,00,000    out 6,20,000    net −1,20,000</pre>
+      <ul><li><strong>Net positive</strong> while it runs — that's what you still owe.</li><li><strong>Net negative</strong> when it ends — that's what borrowing cost you.</li></ul>
+      <p>₹1,20,000, without opening an amortisation table.</p>
+      <p>And that number does one more job. Clearing a loan early <em>earns</em> you the interest you'd have paid. Set it against what an investment might return, and the loan usually wins — because its return is certain and the other one isn't.</p>
+      <p>Every loan you're carrying is listed together on the <strong>Wealth</strong> tab, under what you own — still owed, per month, and the month it ends:</p>
+      <pre>WHAT YOU OWE
+Loan            Still owed    Per month     Ends
+loan/car          3,15,000      −18,400     Mar-2028
+loan/gold         2,00,000      −12,000     Nov-2027</pre>
+      <p>Sitting them directly below your holdings is the point. Wealth is one minus the other, and both halves belong on one screen.</p>
+      <p><strong>When the lender pays the seller directly</strong> — most car and machine loans never touch your bank. Write it as a pair, same date:</p>
+      <div class="scroll"><table><thead><tr><th>Date</th><th>Amount</th><th>From</th><th>To</th><th>Purpose</th></tr></thead><tbody><tr><td>05-Aug</td><td>+5,00,000</td><td>loan/car</td><td>bank/hdfc</td><td>Loan</td></tr><tr><td>05-Aug</td><td>−5,00,000</td><td>bank/hdfc</td><td>asset/car</td><td>Invested</td></tr></tbody></table></div>
+      <p>The money never really passed through your bank, but writing it that way costs nothing and gets everything right: the two rows cancel each other, you own a car, you owe a loan, and both show up where they belong. It's the same pair you already use for moving your own money.</p>
+    </section>
+
+    <section id="s6">
+      <h2>Check in whenever you like</h2>
+      <p>One small table at the bottom of Wealth. The date, what you're worth that day, and a note if you want one.</p>
+      <pre>Date          Net worth     Change       Note
+12-May-2026   28,43,000        —
+05-Aug-2026   30,53,000   +2,10,000      sold the plot
+14-Nov-2026   31,10,000     +57,000</pre>
+      <p>Add a row every quarter, twice a year, or whenever you remember. The sheet fills in the change since your last row by itself, and draws the line so you can see the shape of it.</p>
+      <p>There's no schedule to keep and nothing goes wrong if you skip a year. Two rows is already a story.</p>
+      <p>And if your figure and the sheet's figure disagree, it says so — <em>sheet says ₹30.5L, you say ₹30.1L, off by ₹40,000.</em> That gap is nearly always a holding whose value moved, or one you never listed. Same trick as the bank check, one level up.</p>
+    </section>
+
+    <section id="s7">
+      <h2>Is your debt working?</h2>
+      <p>Two loans can feel identical the day the money lands and end up nothing alike. One buys you something, or earns you more. The other is just spent.</p>
+      <p>The sheet never asks you where the loan went. Nobody can answer that honestly — money mixes the moment it's in your bank. It asks two easier questions instead.</p>
+      <p><strong>First: are you earning more each month than your loans take each month?</strong></p>
+      <pre>You earn         +34,000 a month more than last time
+Your loans take  −30,400 a month</pre>
+      <p>If yes, the debt is working — whatever it was spent on. That's the whole test. It even covers the loan you took for stock or wages, which never becomes anything you <em>own</em>; it becomes next month's income. Assets alone would call that a disaster.</p>
+      <p><strong>If not — do you at least own something new?</strong> A machine that hasn't earned yet is still a machine. That's a purchase, not a plan, but you're not poorer.</p>
+      <p><strong>Neither?</strong> The money's gone and the payments aren't. That's the only one worth worrying about.</p>
+      <blockquote><p><strong><em>Good debt isn't about what you bought. It's whether you now earn more than it costs you.</em></strong></p></blockquote>
+      <p>One honest note: this looks at all your borrowing together, not loan by loan. Splitting it per loan would mean guessing which rupee went where — and a guess that looks like a fact is worse than no answer.</p>
+    </section>
+
+    <section id="s8">
+      <h2>Log at the wall, not inside the pocket</h2>
+      <p>A broker account, a mutual fund platform, a trading app — money goes in, money comes out, and a hundred things happen inside.</p>
+      <p><strong>Log the wall.</strong> Money into <code>stocks/zerodha</code>, money out of <code>stocks/zerodha</code>. What happened inside is the broker's statement's job; they already do it better than you will. Watchlist's Net on that one name is your real result.</p>
+      <p>Forty rows a year instead of four hundred — and more accurate, because forty is a number you'll actually keep up with.</p>
+      <p><strong>Trading works the same way.</strong> If you're in and out of positions, you don't need a different tool — you need a smaller question. Judging the <em>account</em>? Log the wall. Judging one position? Give it its own name — <code>stocks/tatamotors</code> — and log its buys and sells to that name. Net answers whichever question you asked.</p>
+      <p>Both at once is fine too. Wall for the money, names for the ones you're actually watching.</p>
+    </section>
+
+    <section id="s9">
+      <h2>SIPs are just repeats</h2>
+      <p>One line in <strong>Recurring</strong>: <em>−10,000 · bank → mf/parag · Monthly · Day 5 · Purpose Invested.</em> Written once, runs forever, no ticking.</p>
+      <p>Two things it gives back:</p>
+      <p><strong>The yearly number.</strong> <em>₹1,20,000 goes into investments this year whether you notice or not.</em> Most people have never seen that figure about themselves.</p>
+      <p><strong>Importance: Essential.</strong> On a tight month, the sheet already knows this is not what to cut. Investing is mostly the habit of not stopping — so tell the sheet it's not optional, and let it argue for you.</p>
+    </section>
+
+    <section id="s10">
+      <h2>What matters is what moved</h2>
+      <p>Money out, money back, and the difference. That is what the sheet holds, and it is the only part that's certainly true — because it happened.</p>
+      <blockquote><p><strong><em>A gain isn't yours until it's a row.</em></strong></p></blockquote>
+      <p>A holding that's up 40% on screen has paid you nothing. That's a price, not a payment, and it can be 20% by Friday. The day you sell, two rows go in, Net turns positive — and now it's a fact. Booking is what turns a number into money.</p>
+      <p>So the sheet's silence about prices isn't a gap. It's the same rule as everywhere else here: <em>money isn't real until it lands.</em></p>
+    </section>
+
+    <section id="s11">
+      <h2>Except when the wait is long</h2>
+      <p>One case earns an exception.</p>
+      <p>Something you'll hold for ten or twenty years — the fund, the plot, the policy — can go quietly wrong for years and the Log will never say a word, because nothing moved. Nothing moving is exactly the problem. A fund that's flat since 2019 looks identical to a good one until you look outside the sheet.</p>
+      <p>So for the long ones only, value them once a quarter — not to feel clever about a gain, but to answer one question: <strong>is this still worth holding, or does it need restructuring?</strong></p>
+      <p>This is the <strong>Wealth</strong> tab — the slow one, the only screen here measured in years. Name a holding once, and it's filled in from that day on, with a single column left empty for you:</p>
+      <pre>HOLDINGS                                          as of  05-Aug-2026
+
+Holding           Parked     Value today     On paper     % a year
+mf/parag        3,60,000        4,15,000      +55,000         9.8%
+gold            2,00,000        2,48,000      +48,000         3.7%
+plot/nashik    18,00,000       22,00,000    +4,00,000         2.5%
+stocks/zerodha  1,20,000        1,05,000      −15,000        −8.2%
+epf             4,40,000               —            —            —</pre>
+      <p><strong>Everything but one column is already known.</strong> <em>Parked</em> is what you've put in minus what's come back. The last two stay blank until you type a value — and the moment you do, they answer. Fill one row, fill all five, fill none for a year; the block never nags and never breaks. Empty is a perfectly good state.</p>
+      <p>The percentage is the real one, not a rough one. Every rupee you sent that holding is already in the Log with its date, and that — dates plus signed amounts — is exactly what a proper return calculation eats. Your SIP into <code>mf/parag</code> didn't land on day one, and the number knows it: measured lazily it reads 4.8%, measured properly, 9.8%. Twice the answer, same rows.</p>
+      <p>That's the column that drives the decision. ₹4,00,000 up on <code>plot/nashik</code> sounds like a win until it's read as 2.5% a year for eight years — at which point it's a conversation.</p>
+      <p><strong>This block sits outside the Log, and that matters.</strong> A valuation is not a cash event — type it as a row and you've just told your bank balance a lie. The same rule that keeps planned money out of your balance keeps paper gains out of it too.</p>
+      <p>And this is why <strong>In Hand</strong> doesn't count your investments, and shouldn't:</p>
+      <blockquote><p><strong><em>In Hand is what you can spend. It was never what you're worth.</em></strong></p></blockquote>
+      <p>What you're worth is a different sum, and the Wealth tab keeps it at the top:</p>
+      <pre>Net worth      30,53,000      ▲ 2,10,000 since 12-May
+  In hand       6,48,000      spendable today
+  Parked       29,20,000      at value, where you've given one
+  Owed         −5,15,000</pre>
+      <p>Anything you haven't valued is counted at what you paid for it — so the number can be out of date, but it can never flatter you. Stamp it each quarter and the arrow starts working: not what you're worth, but <strong>whether it's moving.</strong></p>
+    </section>
+
+    <section id="s12">
+      <h2>Before you invest anything</h2>
+      <p>Three steps, in this order, always:</p>
+      <ol><li><strong>Cushion first.</strong> <em>Months of cover</em> must clear your target. The cushion is not spare money — it's the reason a bad quarter stays a bad quarter instead of becoming the end.</li><li><strong>Then expensive debt.</strong> You already know what each loan costs you. Anything above what a safe investment returns gets cleared before anything gets bought.</li><li><strong>Then invest — from Usable for Growth.</strong> That card is In Hand <em>after</em> the cushion is safe. It is the honest answer to "can I afford this?", and it's the only pot investments should ever come from.</li></ol>
+      <p>Investing the cushion is how a business dies in a good year. Nothing was wrong with the investment; the money simply wasn't free.</p>
+    </section>
+
+    <section id="s13">
+      <h2>Your investments become a line of work</h2>
+      <p>Tag every return <code>returns</code> — interest, dividends, rent, profit on a sale.</p>
+      <p>Now look at <strong>Which work pays</strong>. <code>returns</code> is sitting there as a stream, with income and no work cost behind it. It cost you no hours at all.</p>
+      <pre>tiffins      in 4,20,000 · work costs 2,52,000  →  drops 1,68,000
+events       in 5,00,000 · work costs 4,35,000  →  drops    65,000
+returns      in   58,000 · work costs        0  →  drops    58,000</pre>
+      <p>Watch that last line across years. It only ever grows if you keep feeding it.</p>
+      <p>And the finish line has a definition, sitting at the bottom of the <strong>Wealth</strong> tab, counted for you:</p>
+      <pre>THE SLOW LINE
+Going in         ₹10,000 a month  ·  ₹1,20,000 this year
+Coming back      returns ₹58,000 this year
+Costs to exist   ₹3,36,000 this year
+
+your returns cover 17% of your running costs</pre>
+      <p><strong>The day that reaches 100%, working becomes a choice.</strong> That's all "wealth" means here — not a number someone else picked for you. It's <em>Months of cover</em> asked about a whole life instead of one bad quarter.</p>
+      <p>Seventeen percent is not close. It also isn't zero, and it moved because you fed it. Three numbers, one page, checked four times a year.</p>
+    </section>
+
+    <section id="s14">
+      <h2>Growing a business</h2>
+      <p>Same machinery, different words.</p>
+      <p><strong>Money that buys something lasting</strong> — the oven, the laptop, the shop deposit — is Purpose <strong>Invested</strong>, not a cost. It's why the <em>Used to grow</em> card exists, and why an owner who's had a heavy year can look poor on paper and be building.</p>
+      <p><strong>A bet is a tag.</strong> <code>bet/second-shop</code>, <code>marketing/instagram</code>, <code>product/tiffins-v2</code>. Tag both sides — the spending <em>and</em> whatever comes back. Watchlist reads it out: Net negative is what the bet has cost you so far; the month Net turns positive is your payback. No spreadsheet built, no formula written.</p>
+      <p><strong>Growth eats cash before it makes cash.</strong> The new shop's rent starts in September; its customers arrive in January. Put both in as planned rows and the Monthly Snapshot shows you the dip — months before you're standing in it.</p>
+      <blockquote><p><em>Growth is a cash-flow problem long before it's a profit problem.</em></p></blockquote>
+    </section>
+
+    <section id="s15">
+      <h2>Things that look like investments and aren't</h2>
+      <p><strong>Term insurance.</strong> A cost, not an investment — Running cost. <em>If it only pays out when something bad happens, it's a cost.</em> That's not a criticism; it's the best money most people spend.</p>
+      <p><strong>Endowment plans and ULIPs.</strong> Part cost, part parking, and the split is usually hidden. Call the premium <strong>Invested</strong> and let the maturity settle the argument: years from now, Watchlist's Net on that name is exactly what the whole thing earned you. Very few people ever see that number.</p>
+      <p><strong>Your car, your phone.</strong> Parked, but shrinking. Give them names if you like — just value them honestly in the quarterly table, and don't count a five-year-old car at what you paid.</p>
+      <p><strong>Money lent to a friend.</strong> <code>lent/rahul</code>, Purpose Invested. It comes back or it doesn't, and Net will say which without you having to ask twice.</p>
+    </section>
+
+    <section id="s16">
+      <h2>The awkward ones, handled</h2>
+      <p><strong>PF deducted by your employer.</strong> It never touched your bank, so don't log it as cash. Put the balance in the quarterly value table and move on. <em>(Logging gross salary instead? Then log the deduction too — <code>salary → epf</code> — and the two stay in step.)</em></p>
+      <p><strong>Dividends reinvested automatically.</strong> No cash moved; skip the row. The quarterly valuation picks it up.</p>
+      <p><strong>Property.</strong> Registration, stamp duty, brokerage, the broker's cousin — every one of them is another <strong>Invested</strong> row to the same name. Net becomes your <em>true</em> cost, which is the number everyone forgets and every seller relies on.</p>
+      <p><strong>Gold bought at a wedding.</strong> One row to <code>gold</code>. Twenty years of those rows is a holding nobody planned and everybody has.</p>
+    </section>
+
+    <section id="s17">
+      <h2>Five habits</h2>
+      <ul><li><strong>Purpose on every rupee that leaves.</strong> Spent or parked. Thirty seconds a day.</li><li><strong>Same name, every time.</strong> A holding split across two spellings is two half answers.</li><li><strong>Tag every return <code>returns</code>.</strong> One word, and your investments become a stream.</li><li><strong>Book it, then believe it.</strong> A sale is two rows: your money back, and the profit. Until then it's a price.</li><li><strong>One valuing morning a quarter.</strong> Long holds only, on the Wealth tab. Ten minutes, in the calendar, and stamp the net worth before you close it.</li><li><strong>Never invest the cushion.</strong> Not once, not "just this time".</li></ul>
+      <p><em>The Guide told you what's in the bank and what it means. Part two showed how far four columns stretch. This part is the slow one — a line that barely moves for two years, and then is the only line that matters.</em></p>
+      <p><strong>Spend, and it's gone. Park it, and it's still working.</strong></p>
+    </section>
+
+    <div class="finale">
+      <p><em>Wealth isn't what you earn. It's what you kept, and what it's doing while you sleep.</em></p>
+    </div>
+
+  </article>
+</div>
+
+<footer class="docfoot">
+  <div class="wrap">
+    <nav class="docnav">
+      <a href="index.html">Home</a>
+      <a href="guide.html">Guide</a>
+      <a href="ai.html">AI prompts</a>
+      <span class="navsep" aria-hidden="true"></span>
+      <a class="lgl" href="privacy.html">Privacy</a>
+      <a class="lgl" href="terms.html">Terms</a>
+      <a class="lgl" href="refund.html">Refunds</a>
+      <a class="lgl" href="shipping.html">Shipping</a>
+      <a class="lgl" href="contact.html">Contact</a>
+    </nav>
+    <small>Hisaab by CraftyCrow</small>
+  </div>
+</footer>
+
+<button class="fab fab-contents show" id="fabContents" type="button" aria-label="Open contents">
+  <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg> Contents
+</button>
+<button class="fab fab-top" id="fabTop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="theme.js"></script>
+<script>
+(function(){
+  var toc=document.getElementById("toc");
+  var links=[].slice.call(toc.querySelectorAll("a"));
+  var sections=links.map(function(a){return document.getElementById(a.getAttribute("href").slice(1));});
+
+  var bar=document.getElementById("progress");
+  var fabTop=document.getElementById("fabTop");
+  var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var blocks=[].slice.call(document.querySelectorAll(
+    ".gcontent section > *, .gcontent > h1, .gcontent > p, .gcontent .finale > *"));
+  var FOCUS_MIN=0.45,focusPaused=false,ticking=false;
+  function updateFocus(){
+    if(reduce||focusPaused)return;
+    var vh=innerHeight,focusY=vh*0.35,clear=vh*0.05,span=vh*0.35;
+    for(var i=0;i<blocks.length;i++){
+      var el=blocks[i],r=el.getBoundingClientRect();
+      if(r.bottom<-300||r.top>vh+300)continue;
+      var dist=focusY<r.top?r.top-focusY:(focusY>r.bottom?focusY-r.bottom:0);
+      var t=(dist-clear)/span;t=t<0?0:t>1?1:t;
+      el.style.opacity=(1-t*(1-FOCUS_MIN)).toFixed(3);
+    }
+  }
+  function onScroll(){
+    var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+    bar.style.width=(max>0?(h.scrollTop/max*100):0)+"%";
+    fabTop.classList.toggle("show",h.scrollTop>600);
+    if(!ticking){requestAnimationFrame(function(){updateFocus();ticking=false;});ticking=true;}
+  }
+  addEventListener("scroll",onScroll,{passive:true});
+  addEventListener("resize",updateFocus,{passive:true});
+  onScroll();updateFocus();
+
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          links.forEach(function(a){a.classList.remove("active");});
+          var i=sections.indexOf(e.target);
+          if(i>=0)links[i].classList.add("active");
+        }
+      });
+    },{rootMargin:"-45% 0px -50% 0px"});
+    sections.forEach(function(s){if(s)io.observe(s);});
+  }
+
+  function openTOC(){toc.classList.add("open");focusPaused=true;for(var i=0;i<blocks.length;i++)blocks[i].style.opacity="";}
+  function closeTOC(){toc.classList.remove("open");focusPaused=false;updateFocus();}
+  document.getElementById("fabContents").addEventListener("click",openTOC);
+  document.getElementById("tocClose").addEventListener("click",closeTOC);
+  links.forEach(function(a){a.addEventListener("click",closeTOC);});
+  fabTop.addEventListener("click",function(){scrollTo({top:0,behavior:"smooth"});});
+})();
+</script>
+</body>
+</html>
