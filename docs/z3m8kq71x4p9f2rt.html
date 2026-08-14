@@ -94,7 +94,28 @@
   var dpr=Math.min(window.devicePixelRatio||1,2),W,H;
   function size(){W=cv.width=innerWidth*dpr;H=cv.height=innerHeight*dpr;}
   size();addEventListener("resize",size);
-  var colors=["#5B7553","#8AA87C","#A6C09A","#E8B84B","#F8F4EB","#D98C3F"];
+  // House palette, and the flag palette for the two national days.
+  // Flag colours are BIS IS 1:1968: India saffron, white, India green, chakra navy.
+  var HOUSE=["#5B7553","#8AA87C","#A6C09A","#E8B84B","#F8F4EB","#D98C3F"];
+  var FLAG=["#FF9933","#FFFFFF","#138808"];
+  var CHAKRA="#000080";
+
+  // 15 Aug and 26 Jan, by the IST calendar — not the visitor's clock, which may be
+  // anywhere. Recurring every year, so there is nothing to switch off afterwards.
+  function isNationalDay(){
+    var ist=new Date(Date.now()+5.5*3600*1000);
+    var m=ist.getUTCMonth()+1, d=ist.getUTCDate();
+    return (m===8&&d===15)||(m===1&&d===26);
+  }
+  // ?flag=1 forces it on, so the day can be previewed without waiting for it
+  var flagDay=isNationalDay()||location.search.indexOf("flag=1")>-1;
+  var navyLeft=flagDay?1+(Math.random()*2|0):0;   // one or two chakra flakes, never more
+  function pickColor(){
+    if(!flagDay)return HOUSE[(Math.random()*HOUSE.length)|0];
+    if(navyLeft>0&&Math.random()<0.05){navyLeft--;return CHAKRA;}
+    return FLAG[(Math.random()*FLAG.length)|0];
+  }
+
   var G=0.32*dpr, DRAG=0.992, parts=[];
   // launch a fountain from the bottom centre; extra cannons for width
   function spawn(n,ox,oy,power,spread){
@@ -105,7 +126,7 @@
         x:ox*dpr,y:oy*dpr,
         vx:Math.cos(a)*v,vy:Math.sin(a)*v,
         s:(4+Math.random()*5)*dpr,                            // size
-        c:colors[(Math.random()*colors.length)|0],
+        c:pickColor(),
         rot:Math.random()*Math.PI,vr:(Math.random()-0.5)*0.4,
         rib:Math.random()<0.5,                                // ribbon vs chip
         life:0,ttl:90+Math.random()*50
@@ -128,8 +149,16 @@
       if(fade<=0||p.y>H+40){parts.splice(i,1);continue;}
       cx.save();cx.translate(p.x,p.y);cx.rotate(p.rot);
       cx.globalAlpha=fade;cx.fillStyle=p.c;
-      if(p.rib)cx.fillRect(-p.s*0.35,-p.s,p.s*0.7,p.s*2);     // ribbon
-      else cx.fillRect(-p.s/2,-p.s/2,p.s,p.s);                // chip
+      var x,y,w,hh;
+      if(p.rib){x=-p.s*0.35;y=-p.s;w=p.s*0.7;hh=p.s*2;}      // ribbon
+      else{x=-p.s/2;y=-p.s/2;w=p.s;hh=p.s;}                   // chip
+      cx.fillRect(x,y,w,hh);
+      // white is the real flag colour, but it disappears on the cream background —
+      // keep the fill accurate and give it an edge instead
+      if(p.c==="#FFFFFF"){
+        cx.strokeStyle="rgba(0,0,0,.20)";cx.lineWidth=Math.max(1,dpr*0.6);
+        cx.strokeRect(x,y,w,hh);
+      }
       cx.restore();
     }
     frames++;
