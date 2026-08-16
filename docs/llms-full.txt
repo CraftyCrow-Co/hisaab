@@ -128,9 +128,10 @@ Most money stress — in a home or a business — is one of these two questions,
 ## 2. Make it yours (five minutes, once)
 
 1. Open the link → **File → Make a copy**. It's now your file, in your Google Drive. Nothing you type ever leaves it.
-2. It arrives with sample rows so no screen is blank. Poke them, change a number, watch things move — then delete them and begin yours.
-3. Tell it what you have today. One row per place money sits: today's date, the amount as a plus, the account's name in **To** (`bank/idfc`, `bank/kotak`, `cash`), and Mode = **Opening Balance**. That label keeps it out of your income reports; the balance picks it up on its own.
-4. Four settings, one tab: your **income goal**, your **cushion** (how many months of expenses to keep safe — 6 is good), how far ahead to look, and how many past months to average. Don't overthink these. Change them any time.
+2. On the **Start Here** tab, click the **Set this copy up** button — or use the **Actions** menu → **⚠ Set up this copy**, which does the same thing. Google asks permission once, and asks narrowly: to work with **this spreadsheet only**, and to run when you're not watching — that second one is what makes repeating entries appear on their own. It cannot see anything else in your Drive. If a screen tells you the app isn't verified, that's Google's standard wording for any sheet carrying its own code; **Advanced → Continue** goes through it. Skipping this step is the one way to break Hisaab — the sheet looks perfect and quietly does nothing. You'll know it worked when that menu item reads **Re-run setup**.
+3. It arrives with sample rows so no screen is blank. Poke them, change a number, watch things move — then delete them and begin yours.
+4. Tell it what you have today. One row per place money sits: today's date, the amount as a plus, the account's name in **To** (`bank/idfc`, `bank/kotak`, `cash`), and Mode = **Opening Balance**. That label keeps it out of your income reports; the balance picks it up on its own.
+4. Three settings, one tab: your **income goal**, your **months to survive** (how long you could run with nothing coming in — 6 is the least worth aiming at), and the month your **financial year** starts. That's all you're asked for; everything else the sheet works out from your own rows. Change them any time.
 
 ---
 
@@ -149,7 +150,7 @@ Two habits, and they are the whole skill:
 
 **From and To are the two ends of the movement,** in your own words.
 
-Why both? They answer different questions. From → To says *who to whom*. The sign says *did my money grow or shrink* — without you ever teaching the sheet which names are "you". Anjuman hands you ₹5,000: `anjuman → cash, +5,000`. You return it next week: `cash → anjuman, −5,000`. Same two names, opposite signs, everything clear.
+Why both? They answer different questions. From → To says *who to whom*. The sign says *did my money grow or shrink* — without you ever teaching the sheet which names are "you". Ravi hands you ₹5,000: `ravi → cash, +5,000`. You return it next week: `cash → ravi, −5,000`. Same two names, opposite signs, everything clear.
 
 Use `/` when a name has family: `bank/idfc`, `bank/kotak`, `hr/payroll`, `ops/purchase`. Later, "bank" totals all of them and "bank/idfc" totals one. Detail costs nothing — use words you'd say aloud.
 
@@ -219,7 +220,7 @@ Expecting ₹1L from a client in August? One planned row. Considering a ₹2L ma
 
 The rule underneath is the one you already know: **whatever isn't a payment of its own gets the tick.** A plan hasn't been paid yet. A piece was paid as part of something bigger. Neither moved money by itself, so neither touches your balance — and the money counts exactly once. *(Worked through in section 14.)*
 
-The **Monthly Snapshot** shows last month, this month, and the next twelve: in, out, net, balance, and a small bar per month. The bar's colour deepens as a month sinks toward your cushion — so your scariest month is visible long before it arrives, while there's still time to do something about it.
+The **Monthly Snapshot** shows last month, this month, and the next twelve: in, out, net, balance, and a small bar per month. The bar's colour deepens as a month sinks toward your safety money — so your scariest month is visible long before it arrives, while there's still time to do something about it.
 
 A word on order: this is a *forecast*, not a budget. A budget is what you intend; a forecast is what's coming. Most of us run on gut feel and surprises — so see what's coming first. Discipline (section 11) is easy to add once you can see.
 
@@ -237,16 +238,18 @@ The Dashboard reduces everything to a row of answers:
 | **Breakeven** | what you need — *"You need ₹3.5L to cover the next 30 days"* |
 | **Avg Expense** | what a normal month costs you, from your own history |
 | **In vs Out** | how you spend — *"for every ₹1 you earn, you spend 93 paise"* |
-| **Usable for Growth** | unused money — what's left after your cushion is safe |
+| **Usable for Growth** | unused money — what's left after your safety money is safe |
 | **Used to Grow** | money put to work — how much of your spending *built* something |
 
 Three of these deserve a second look:
 
-**Breakeven** counts your committed payments plus your own average of everyday spending — and it never counts money you're merely expecting. A cheque in the post pays no bills. It also teaches the honest shape of money: the next 30 days never stop coming. The question is never *am I done?* — it's *can I keep running?* That's not bleak; that's just the game, seen clearly. Your cushion (months you could run with nothing coming in) is the calmest number in money.
+**Breakeven** counts your committed payments plus your own average of everyday spending — and it never counts money you're merely expecting. A cheque in the post pays no bills. It also teaches the honest shape of money: the next 30 days never stop coming. The question is never *am I done?* — it's *can I keep running?* That's not bleak; that's just the game, seen clearly. Months of cover — how long you could run with nothing coming in — is the calmest number in money.
 
 **Usable for Growth** is your true "can I afford it?" — for the machine, the hire, the holiday. Not what's in the bank; what's *left after* the next months are safe. When it's negative it flips into a target, not a scolding: *"You still have to earn ₹X to be safe."*
 
 **Used to Grow** shows the percentage *and* the rupees. *"Only ₹2,876 went toward growth"* stings precisely because it's true — and rises the moment you act on it.
+
+**And when a big payment lands**, the sheet translates it into the only unit that matters: *"₹5.2 L landed in the last month — that's 3.4 months of running costs covered."* A lump becomes runway. This is the whole bind of project work in one sentence — costs arrive monthly, income arrives in lumps — and the line stays silent unless something notable actually turns up, which is what makes it feel like the sheet noticed rather than the sheet talking.
 
 And one glance worth making a habit: both sides of your money move at a *speed*. Earning ₹X a month and rising, spending ₹Y and rising **faster** — that crossing is the single most dangerous pattern in a small business, and here it's visible months before it bites.
 
@@ -304,6 +307,10 @@ Start with one kind of word — your lines of work. Add more kinds when the firs
 Choose any name — a client, an account, a tag — and its row fills in: money in, money out, net, share, and a twelve-month trend line. Want a comparison? Add a second row. That's the entire feature.
 
 "How is X actually doing?" — rent this year, chai this month, what Sharma is really worth to you — one row each, no report-building, no formulas.
+
+For a job, one column earns a second look: **Money life** — *Jun 26 → Aug 26 · 3 mths · 5 in · 9 out*. When the money started, when it stopped, how long it ran, and how many payments went each way. Five milestones and nine supplier bills is a very different job from one and one.
+
+It is deliberately *money* life, not project life. The sheet doesn't know when your project started — it knows when money moved, and those are not the same thing. That difference is exactly the point: a two-month job can be a five-month cash story. Advance in June, costs through July, the balance in October. Nothing else shows you that gap, and in project work the gap is what actually hurts. Leave the period blank and you see the whole life; set one and you see that window.
 
 And here the slash pays off: because you named things `staff/salary`, `staff/wages`, the word `staff` alone totals every person you pay. Departments, teams, projects — you never design them. Your words already built them.
 
@@ -546,8 +553,8 @@ by side. You'll see which family of spending is really the big one.
 **Minus left you, plus came to you.** That's it. Green in, red out — the colour
 says it back.
 
-**You never tell the sheet which names are "you".** Anjuman gives you ₹5,000:
-`anjuman → cash, +5,000`. You return it: `cash → anjuman, −5,000`. Same names,
+**You never tell the sheet which names are "you".** Ravi gives you ₹5,000:
+`ravi → cash, +5,000`. You return it: `cash → ravi, −5,000`. Same names,
 opposite signs, both clear.
 
 **Moving your own money isn't income.** Bank to cash — enter the pair, Mode:
@@ -682,7 +689,7 @@ every time.
 **It also learns your payers.** Once there's history, it tells you how late each
 one usually runs — so you plan around them instead of hoping.
 
-**The monthly snapshot colours itself.** A month sinking toward your cushion goes
+**The monthly snapshot colours itself.** A month sinking toward your safety money goes
 darker months before it arrives, while you can still do something.
 
 **Last year sits in the same table.** This September against last September, no
@@ -784,7 +791,8 @@ type on a flight. It syncs when the signal comes back.
 **Download as Excel or CSV** for a hard backup that doesn't depend on Google.
 
 **Make a copy any time.** That's a snapshot of your finances on that date, kept
-forever. Free year-end archive.
+forever. Free year-end archive. A copy's automation isn't wired until you run
+**Actions → Set up this copy** — an archive doesn't need it.
 
 **Undo is forever.** File → Version history → go back to any day. You cannot
 permanently break this file. Try things.
@@ -1170,16 +1178,16 @@ arrow starts working: not what you're worth, but **whether it's moving.**
 
 Three steps, in this order, always:
 
-1. **Cushion first.** *Months of cover* must clear your target. The cushion is
-   not spare money — it's the reason a bad quarter stays a bad quarter instead
+1. **Safety money first.** *Months of cover* must clear your months to survive.
+   It is not spare money — it's the reason a bad quarter stays a bad quarter instead
    of becoming the end.
 2. **Then expensive debt.** You already know what each loan costs you. Anything
    above what a safe investment returns gets cleared before anything gets bought.
-3. **Then invest — from Usable for Growth.** That card is In Hand *after* the
-   cushion is safe. It is the honest answer to "can I afford this?", and it's
+3. **Then invest — from Usable for Growth.** That card is In Hand *after* your
+   safety money is safe. It is the honest answer to "can I afford this?", and it's
    the only pot investments should ever come from.
 
-Investing the cushion is how a business dies in a good year. Nothing was wrong
+Investing your safety money is how a business dies in a good year. Nothing was wrong
 with the investment; the money simply wasn't free.
 
 ---
@@ -1290,7 +1298,7 @@ holding nobody planned and everybody has.
   profit. Until then it's a price.
 - **One valuing morning a quarter.** Long holds only, on the Wealth tab. Ten
   minutes, in the calendar, and stamp the net worth before you close it.
-- **Never invest the cushion.** Not once, not "just this time".
+- **Never invest your safety money.** Not once, not "just this time".
 
 ---
 

@@ -70,8 +70,8 @@ by side. You'll see which family of spending is really the big one.
 **Minus left you, plus came to you.** That's it. Green in, red out — the colour
 says it back.
 
-**You never tell the sheet which names are "you".** Anjuman gives you ₹5,000:
-`anjuman → cash, +5,000`. You return it: `cash → anjuman, −5,000`. Same names,
+**You never tell the sheet which names are "you".** Ravi gives you ₹5,000:
+`ravi → cash, +5,000`. You return it: `cash → ravi, −5,000`. Same names,
 opposite signs, both clear.
 
 **Moving your own money isn't income.** Bank to cash — enter the pair, Mode:
@@ -308,7 +308,8 @@ type on a flight. It syncs when the signal comes back.
 **Download as Excel or CSV** for a hard backup that doesn't depend on Google.
 
 **Make a copy any time.** That's a snapshot of your finances on that date, kept
-forever. Free year-end archive.
+forever. Free year-end archive. A copy's automation isn't wired until you run
+**Actions → Set up this copy** — an archive doesn't need it.
 
 **Undo is forever.** File → Version history → go back to any day. You cannot
 permanently break this file. Try things.

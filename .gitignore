@@ -7,12 +7,25 @@ launch-sequence.md
 marketing-bank.md
 NOTES.md
 doc-bank.md
+ads/
 
 # personal data — never commit
 knowledge/
 *.zip
 *.jpeg
 *.jpg
+
+# the product runtime. THIS REPO IS PUBLIC — scripts/ is the thing being sold
+scripts/
+_backups/
+
+# workshop tools and working notes at the repo root. Leading slash: root only,
+# so docs/llms-full.txt and anything else published from docs/ is untouched.
+# "named functions.txt" is the eleven named functions verbatim — that IS the product.
+/*.gs
+/*.txt
+/formula-fixes.md
+/demo-data-handoff.md
 
 # internal — strategy, specs, unreleased content. THIS REPO IS PUBLIC.
 CLAUDE.md

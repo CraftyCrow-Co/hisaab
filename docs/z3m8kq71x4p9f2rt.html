@@ -24,6 +24,8 @@
   .btn-copy:hover{opacity:.9}
   :root[data-theme="dark"] .btn-copy{color:var(--bg)}
   .payid{color:var(--ink-faint);font-size:var(--fs-sm);font-weight:700}
+  .sample{font-size:var(--fs-sm);color:var(--ink-faint)}
+  .sample a{font-weight:800}
   [hidden]{display:none !important}
   /* confetti canvas — physics sim, fills viewport, never intercepts clicks */
   #confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:9}
@@ -52,6 +54,10 @@
     <a class="btn-copy" href="https://ccro.in/s7k2m9x">Copy Hisaab into my Drive</a>
 
     <div class="note"><p><strong>Tap it now — phone works fine.</strong> Google asks "Make a copy?", you say yes, and the copy lands in your Google Drive, yours forever. Then open it later on a computer; a spreadsheet deserves the bigger screen.</p></div>
+
+    <!-- Sample sheet: replace PASTE_SAMPLE_URL with the copy link.
+         Stays hidden until then. -->
+    <p class="sample" id="sample" hidden>Want a filled one to poke at? <a href="PASTE_SAMPLE_URL" id="sampleLink">Copy <em>Hisaab — Sample Data</em></a> — a separate file, so yours stays clean.</p>
 
     <h2>Then learn to fly it</h2>
     <p>Ten minutes in <a href="guide.html">the guide</a> and the sheet starts doing the explaining — forecasting, tags, and the report that finally shows where your profit went.</p>
@@ -86,6 +92,12 @@
 </footer>
 
 <script src="theme.js"></script>
+<script src="analytics.js"></script>
+<script>
+// sample-sheet line shows itself only once a real URL replaces the placeholder
+(function(){var a=document.getElementById("sampleLink"),p=document.getElementById("sample");
+  if(a&&p&&a.getAttribute("href")!=="PASTE_SAMPLE_URL")p.hidden=false;})();
+</script>
 <canvas id="confetti" aria-hidden="true"></canvas>
 <script>
 (function(){
