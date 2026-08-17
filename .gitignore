@@ -26,6 +26,7 @@ _backups/
 /*.txt
 /formula-fixes.md
 /demo-data-handoff.md
+/phase-2-handoff.md
 
 # internal — strategy, specs, unreleased content. THIS REPO IS PUBLIC.
 CLAUDE.md
@@ -43,3 +44,4 @@ little-things-you-can-do.md
 /money-that-grows.md
 starter-rows.md
 hisaab-guide.md
+/releases.md

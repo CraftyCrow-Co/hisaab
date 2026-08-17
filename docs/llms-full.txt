@@ -127,11 +127,11 @@ Most money stress — in a home or a business — is one of these two questions,
 
 ## 2. Make it yours (five minutes, once)
 
-1. Open the link → **File → Make a copy**. It's now your file, in your Google Drive. Nothing you type ever leaves it.
-2. On the **Start Here** tab, click the **Set this copy up** button — or use the **Actions** menu → **⚠ Set up this copy**, which does the same thing. Google asks permission once, and asks narrowly: to work with **this spreadsheet only**, and to run when you're not watching — that second one is what makes repeating entries appear on their own. It cannot see anything else in your Drive. If a screen tells you the app isn't verified, that's Google's standard wording for any sheet carrying its own code; **Advanced → Continue** goes through it. Skipping this step is the one way to break Hisaab — the sheet looks perfect and quietly does nothing. You'll know it worked when that menu item reads **Re-run setup**.
+1. Open the link you were sent. Google shows one button — **Make a copy**. Click it, and the sheet is yours, in your own Google Drive. Nothing you type ever leaves it.
+2. On the **Start Here** tab, click the big **Setup / Repair** button (the **Actions** menu has the same thing). Google asks permission once, and asks narrowly: to work with **this spreadsheet only**, and to run when you're not watching — that second one is what makes repeating entries appear on their own. It cannot see anything else in your Drive. If a screen tells you the app isn't verified, that's Google's standard wording for any sheet carrying its own code; **Advanced → Continue** goes through it. Skipping this step is the one way to break Hisaab — the sheet looks perfect and quietly does nothing. You'll know it worked when the warning above the button turns into **✓ All set up!**
 3. It arrives with sample rows so no screen is blank. Poke them, change a number, watch things move — then delete them and begin yours.
 4. Tell it what you have today. One row per place money sits: today's date, the amount as a plus, the account's name in **To** (`bank/idfc`, `bank/kotak`, `cash`), and Mode = **Opening Balance**. That label keeps it out of your income reports; the balance picks it up on its own.
-4. Three settings, one tab: your **income goal**, your **months to survive** (how long you could run with nothing coming in — 6 is the least worth aiming at), and the month your **financial year** starts. That's all you're asked for; everything else the sheet works out from your own rows. Change them any time.
+5. Three settings, one tab: your **income goal**, your **months to survive** (how long you could run with nothing coming in — 6 is the least worth aiming at), and the month your **financial year** starts. That's all you're asked for; everything else the sheet works out from your own rows. Change them any time.
 
 ---
 
