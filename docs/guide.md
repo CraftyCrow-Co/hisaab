@@ -25,6 +25,8 @@ Most money stress — in a home or a business — is one of these two questions,
 3. Tell it what you have today. One row per place money sits: today's date, the amount as a plus, the account's name in **To** (`bank/idfc`, `bank/kotak`, `cash`), and Mode = **Opening Balance**. That label keeps it out of your income reports; the balance picks it up on its own.
 4. Three settings, one tab: your **income goal**, your **months to survive** (how long you could run with nothing coming in — 6 is the least worth aiming at), and the month your **financial year** starts. That's all you're asked for; everything else the sheet works out from your own rows. Change them any time.
 
+**One sheet, for good — don't start a new file each April.** That last setting is *why*: it slices the financial year *inside* this file, so your tax view is right without cutting your history in half. And history is where the good numbers live — your six-month average, months of cover, "up from 22% over the last 12 months", a client who has grown from a fifth of your income to a third. Split the file and every one of those starts again from zero. Old accounting software taught everyone to close the books and open a new company; a sheet has no such need, and obeying the habit costs you the best of it.
+
 ---
 
 ## 3. Your first row
