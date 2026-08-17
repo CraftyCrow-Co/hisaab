@@ -45,3 +45,8 @@ little-things-you-can-do.md
 starter-rows.md
 hisaab-guide.md
 /releases.md
+
+# the differential test harness and the lifted script changelog. Both describe
+# scripts/, which is the thing being sold, so they follow it out of the public repo.
+test/
+script-changelog.md

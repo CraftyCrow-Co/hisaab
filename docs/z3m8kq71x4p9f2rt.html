@@ -51,13 +51,17 @@
 
     <p class="lead">Hisaab is ready to become yours — one click copies it into your own Google Drive, and from that moment we can't see it, touch it, or take it back.</p>
 
+    <!-- Goes through the shortlink on purpose — this click is the activation metric.
+         The slug must point at the CURRENT master's /copy URL. Repointing it is step 6
+         of the release procedure; the master's id lives in releases.md, which is
+         gitignored, and not here, which is public. -->
     <a class="btn-copy" href="https://ccro.in/s7k2m9x">Copy Hisaab into my Drive</a>
 
     <div class="note"><p><strong>Tap it now — phone works fine.</strong> Google asks "Make a copy?", you say yes, and the copy lands in your Google Drive, yours forever. Then open it later on a computer; a spreadsheet deserves the bigger screen.</p></div>
 
-    <!-- Sample sheet: replace PASTE_SAMPLE_URL with the copy link.
-         Stays hidden until then. -->
-    <p class="sample" id="sample" hidden>Want a filled one to poke at? <a href="PASTE_SAMPLE_URL" id="sampleLink">Copy <em>Hisaab — Sample Data</em></a> — a separate file, so yours stays clean.</p>
+    <!-- Sample sheet: view-only, copy and download turned off. So this line says open,
+         not copy — the buyer's own filled sheet is the one they already have. -->
+    <p class="sample" id="sample">Want a filled one to poke at? <a href="https://docs.google.com/spreadsheets/d/1dCx1LoKB7EAoq1Jb7nFKnoZnJEbb1T_bXIEAYVYGASI/edit?usp=sharing" id="sampleLink" target="_blank" rel="noopener">Open <em>Hisaab — Sample Data</em></a> — read-only, a real business's months already in it, so yours stays clean.</p>
 
     <h2>Then learn to fly it</h2>
     <p>Ten minutes in <a href="guide.html">the guide</a> and the sheet starts doing the explaining — forecasting, tags, and the report that finally shows where your profit went.</p>
@@ -93,11 +97,6 @@
 
 <script src="theme.js"></script>
 <script src="analytics.js"></script>
-<script>
-// sample-sheet line shows itself only once a real URL replaces the placeholder
-(function(){var a=document.getElementById("sampleLink"),p=document.getElementById("sample");
-  if(a&&p&&a.getAttribute("href")!=="PASTE_SAMPLE_URL")p.hidden=false;})();
-</script>
 <canvas id="confetti" aria-hidden="true"></canvas>
 <script>
 (function(){

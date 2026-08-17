@@ -469,9 +469,10 @@ footer small{color:#9E9E9E;font-weight:700;text-transform:uppercase;letter-spaci
       <!-- RAZORPAY: live ₹112 Payment Page. -->
       <a href="https://rzp.io/rzp/hisaab" class="btn btn-primary btn-lg reveal" id="buyBtn">Buy now</a>
 
-      <!-- Demo: replace PASTE_DEMO_URL with the published /pubhtml link.
-           Stays hidden until then, so this can ship before the URL exists. -->
-      <p class="peek reveal" id="peek" hidden><a href="PASTE_DEMO_URL" id="demoLink" target="_blank" rel="noopener">Have a look inside first</a> — a filled sheet, read-only.</p>
+      <!-- Demo: 'Hisaab — Sample Data', shared anyone-with-link → Viewer, with copy and
+           download turned off. The /edit URL is correct: a viewer gets the real Sheets UI
+           in view-only mode, tabs and all, which is the whole point of looking inside. -->
+      <p class="peek reveal" id="peek"><a href="https://docs.google.com/spreadsheets/d/1dCx1LoKB7EAoq1Jb7nFKnoZnJEbb1T_bXIEAYVYGASI/edit?usp=sharing" id="demoLink" target="_blank" rel="noopener">Have a look inside first</a> — a filled sheet, read-only.</p>
 
       <div class="trust reveal">
         <span><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg>Nothing to sign into</span>
@@ -561,10 +562,6 @@ footer small{color:#9E9E9E;font-weight:700;text-transform:uppercase;letter-spaci
       }
     });
   }
-
-  // demo link — shows itself only once a real URL replaces the placeholder
-  var demoLink=document.getElementById("demoLink"),peek=document.getElementById("peek");
-  if(demoLink&&peek&&demoLink.getAttribute("href")!=="PASTE_DEMO_URL")peek.hidden=false;
 
   // capture — posts to CraftyForms
   var CRAFTY_FORM="https://crafty-form-server.fly.dev/api/incoming-webhook/092f09b0feb36b850c5b0aa54fd27d7e9b5f4f7f/86ee5fad-4a0c-46b6-95dd-7efdb2c15ca5";
