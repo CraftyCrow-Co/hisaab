@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- The bridge page. Links inside the sheet point here, never straight at
+     craftycrow.co — a spreadsheet handing you an agency homepage is a cold jump,
+     and the thought dies mid-air. This page finishes the sentence the sheet
+     started, then hands over.
+
+     Two openers, chosen by ?from= :
+       ?from=sheet   the buyer, in their own file, own data. Quiet.
+       ?from=demo    someone who was forwarded the sample. Louder — it's proof.
+       (no param)    neutral, for a link whose origin we don't know.
+
+     Every arrival fires built_view with the source, so /hisaab/rp ÷ built_view
+     ÷ enquiry gives the whole chain. See selling/numbers.md §5. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex,nofollow" />
+<title>Who built this — Hisaab</title>
+<meta name="description" content="Hisaab was designed by CraftyCrow. The same thinking, pointed at a business." />
+<script>try{var t=localStorage.getItem("hisaab-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="legal.css" />
+<style>
+  .cols{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.86em;font-weight:700;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:var(--sp-4) var(--sp-5);margin:var(--sp-5) 0;overflow-x:auto;color:var(--ink-soft)}
+  .cols b{color:var(--accent-ink)}
+  .ask{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:var(--sp-5);margin:var(--sp-6) 0}
+  .ask h2{margin-top:0}
+  .ask p{max-width:none}
+  .field{display:flex;gap:var(--sp-2);flex-wrap:wrap;margin-top:var(--sp-4)}
+  .field input{flex:1 1 220px;background:var(--bg);border:1px solid var(--gray);color:var(--ink);
+    border-radius:999px;padding:.7em 1.1em;font:inherit;font-size:var(--fs-sm)}
+  .field input::placeholder{color:var(--ink-faint)}
+  .field input:focus{outline:none;border-color:var(--accent)}
+  .btn{display:inline-flex;align-items:center;font-family:inherit;font-weight:700;
+    font-size:var(--fs-sm);padding:.7em 1.4em;border-radius:999px;border:1px solid transparent;
+    background:var(--accent);color:var(--cream);cursor:pointer;text-decoration:none;
+    transition:opacity .2s}
+  .btn:hover{opacity:.9}
+  :root[data-theme="dark"] .btn{color:var(--bg)}
+  .capnote{min-height:1.2em;margin-top:var(--sp-3);font-size:var(--fs-sm);
+    color:var(--accent-ink);font-weight:700;opacity:0;transition:opacity .3s}
+  .capnote.show{opacity:1}
+  .fineprint{font-size:var(--fs-xs);color:var(--ink-faint);margin-top:var(--sp-3)}
+  [hidden]{display:none !important}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a href="index.html" class="brand">Hisaab <small>by CraftyCrow</small></a>
+    <button class="iconbtn" id="theme" aria-label="Switch light and dark (press T)">
+      <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/></svg>
+      <svg class="moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="doc">
+  <div class="wrap">
+
+    <!-- opener A — the buyer, in their own sheet, looking at their own money -->
+    <div id="openBuyer" hidden>
+      <h1>Four columns did that.</h1>
+      <p class="lead">No software, no login, no monthly fee. From → To, an amount with a sign, and a word for what it was for. Everything you just read off that report came out of those four things.</p>
+    </div>
+
+    <!-- opener B — someone forwarded the sample. Louder; this one is the portfolio piece -->
+    <div id="openDemo" hidden>
+      <h1>Someone sent you a spreadsheet.</h1>
+      <p class="lead">What you were actually looking at is a full accounting system — forecasting, tagging, net worth, a report that shows where the profit went — running on four columns in a Google Sheet. No software behind it. That was the point.</p>
+    </div>
+
+    <!-- opener C — origin unknown -->
+    <div id="openPlain" hidden>
+      <h1>Who built this.</h1>
+      <p class="lead">Hisaab is a complete accounting tool that runs on four columns in a Google Sheet. No software, no login, no monthly fee. That constraint was chosen, not worked around.</p>
+    </div>
+
+    <div class="cols">
+      <b>From</b> → <b>To</b> &nbsp;·&nbsp; <b>Amount</b> (+ in, − out) &nbsp;·&nbsp; <b>Purpose</b>
+    </div>
+
+    <p>Most finance tools would ask you for account types, entity paths, a chart of accounts, and a category tree you have to maintain forever. Hisaab asks for none of it. The hierarchy comes out of how you name things. The reports come out of one column with seven values.</p>
+
+    <p><strong>That is not a spreadsheet trick.</strong> It is what is left after asking, for months, which parts of accounting are actually load-bearing and which are habit. Almost all of it turned out to be habit.</p>
+
+    <h2>Your business has the same problem</h2>
+
+    <p>Orders, stock, staff, cash, clients, jobs. Every one of them has a version of the question Hisaab had to answer: <em>what is the smallest set of things I must record for everything else to fall out on its own?</em></p>
+
+    <p>The usual answer is to add screens. A field for this, a report for that, a tool per department — and two years later nobody can say where a number came from, so nobody trusts any of them.</p>
+
+    <p><strong>The better answer is almost always fewer things, named correctly.</strong> Find the handful that genuinely matter, define how they relate, and let the rest be derived. That is the work — and it is the same work whether the subject is money, inventory, or how a job moves through your shop.</p>
+
+    <div class="ask">
+      <h2>A free look at yours</h2>
+      <p>Tell us what you run and we will come back with what we would look at first — where the real bottleneck probably sits, and what it would take to fix it. No charge, no pitch deck, no obligation. If there is nothing worth doing, we will say so.</p>
+
+      <div class="field">
+        <input id="whatIn" type="text" placeholder="What do you run? (e.g. a 12-person catering business)" aria-label="What do you run?" />
+      </div>
+      <div class="field">
+        <input id="mailIn" type="email" placeholder="Your email address" aria-label="Your email address" />
+        <button class="btn" id="sendBtn" type="button">Send it over</button>
+      </div>
+      <div class="capnote" id="note">On its way.</div>
+      <p class="fineprint">Goes to a person, not a list. We reply within two working days.</p>
+    </div>
+
+    <h2>Who we are</h2>
+
+    <p><strong>CraftyCrow</strong> designs systems for businesses — the structure underneath the software, which is the part that decides whether the software is any good. Hisaab is our own work, in public, at ₹112, so the thinking can be judged rather than described.</p>
+
+    <p>More at <a href="https://craftycrow.co" target="_blank" rel="noopener" id="ccLink">craftycrow.co</a>, or write to <a href="mailto:support@craftycrow.co">support@craftycrow.co</a>.</p>
+
+    <p class="lead">Either way — thank you for using the thing we made.</p>
+
+  </div>
+</main>
+
+<footer class="docfoot">
+  <div class="wrap">
+    <nav class="docnav">
+      <a href="index.html">Home</a>
+      <a href="guide.html">Guide</a>
+      <a href="ai.html">AI prompts</a>
+      <span class="navsep" aria-hidden="true"></span>
+      <a class="lgl" href="privacy.html">Privacy</a>
+      <a class="lgl" href="terms.html">Terms</a>
+      <a class="lgl" href="refund.html">Refunds</a>
+      <a class="lgl" href="shipping.html">Shipping</a>
+      <a class="lgl" href="contact.html">Contact</a>
+    </nav>
+    <small>Hisaab by CraftyCrow</small>
+  </div>
+</footer>
+
+<script src="theme.js"></script>
+<script src="analytics.js"></script>
+<script>
+(function(){
+  "use strict";
+
+  /* ---- which opener ----
+     Unknown values fall through to the plain one rather than showing nothing. */
+  var from = (new URLSearchParams(location.search).get("from") || "").toLowerCase();
+  var pick = from === "sheet" ? "openBuyer" : from === "demo" ? "openDemo" : "openPlain";
+  document.getElementById(pick).hidden = false;
+
+  /* Arrival is the denominator for everything downstream — how many people
+     reached this page at all, split by which link sent them. */
+  if (window.hisaab && window.hisaab.track) {
+    window.hisaab.track("built_view", null, { source: from || "unknown" });
+  }
+
+  /* ---- the enquiry ----
+     Shares index.html's CraftyForms endpoint for now, so this works from the
+     first minute. The field names are that form's, hence the odd suffixes;
+     the context is packed into the second field. If enquiries ever get real
+     volume, make a dedicated CraftyForm and swap the URL below — nothing else
+     on this page needs to change. */
+  var CRAFTY_FORM = "https://crafty-form-server.fly.dev/api/incoming-webhook/092f09b0feb36b850c5b0aa54fd27d7e9b5f4f7f/86ee5fad-4a0c-46b6-95dd-7efdb2c15ca5";
+
+  var mailIn = document.getElementById("mailIn"),
+      whatIn = document.getElementById("whatIn"),
+      note   = document.getElementById("note"),
+      btn    = document.getElementById("sendBtn");
+
+  function say(msg, warn){
+    note.textContent = msg;
+    note.style.color = warn ? "var(--warn)" : "var(--accent-ink)";
+    note.classList.add("show");
+  }
+
+  btn.addEventListener("click", function(){
+    var mail = mailIn.value.trim(), what = whatIn.value.trim();
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(mail)){ say("Add a valid email first.", true); mailIn.focus(); return; }
+    if(what.length < 3){ say("One line about what you run, so the reply is useful.", true); whatIn.focus(); return; }
+
+    btn.disabled = true;
+    note.style.color = "var(--ink-faint)";
+    note.textContent = "Sending…";
+    note.classList.add("show");
+
+    fetch(CRAFTY_FORM, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        email_id_0: mail,
+        opt_ins_1: "CraftyCrow enquiry · from=" + (from || "unknown") + " · " + what
+      })
+    }).then(function(r){
+      if(!r.ok) throw new Error("bad status");
+      say("Got it. We'll write back within two working days.");
+      mailIn.value = ""; whatIn.value = "";
+      if (window.hisaab && window.hisaab.track) {
+        window.hisaab.track("craftycrow_enquiry", "Lead", { source: from || "unknown" });
+      }
+    }).catch(function(){
+      say("That didn't send. Email support@craftycrow.co and we'll pick it up.", true);
+    }).then(function(){
+      btn.disabled = false;
+    });
+  });
+
+  /* Enter submits from either field — the form is two inputs, a submit button
+     shouldn't be the only way out of them. */
+  [mailIn, whatIn].forEach(function(el){
+    el.addEventListener("keydown", function(e){ if(e.key === "Enter") btn.click(); });
+  });
+
+  /* Clicking through to craftycrow.co is a different outcome from enquiring
+     here, and worth telling apart. */
+  document.getElementById("ccLink").addEventListener("click", function(){
+    if (window.hisaab && window.hisaab.track) {
+      window.hisaab.track("craftycrow_visit", null, { source: from || "unknown" });
+    }
+  });
+})();
+</script>
+</body>
+</html>
