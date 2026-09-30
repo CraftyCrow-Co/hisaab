@@ -107,274 +107,277 @@ DOCUMENT: The Guide   (https://hisaab.craftycrow.co/guide.md)
 
 # Hisaab — The Guide
 
-*Ten minutes to read. After that, the sheet does the explaining.*
+*Ten minutes to read. After that, the sheet explains itself.*
 
-Read top to bottom the first time — each section quietly builds on the one before it, and by the end nothing should feel complicated. Coming back for one thing? Jump straight to it — every section past the basics opens with the little it needs.
+The first time, read it top to bottom. Each section builds on the one before. Coming back for one thing? Jump to it. Every section after the basics starts with the little you need to know.
 
 ---
 
 ## 1. What this is
 
-Hisaab is a mirror for your money. Not a budget — nobody here will tell you to stop buying chai.
+Hisaab shows you where your money stands. It is not a budget. Nobody here will tell you to stop buying chai.
 
-You write money down as it moves: in, out, expected. The sheet turns those lines into answers to the only two questions that matter:
+You write money down as it moves: in, out, and expected. The sheet turns those rows into answers to two questions:
 
 **Do I have enough right now? Is enough coming in on time?**
 
-Most money stress — in a home or a business — is one of these two questions, unanswered. You do the writing. The sheet does the math, the remembering, and the warning.
+Most money worry, at home or in a business, comes from not knowing one of these. You do the writing. The sheet does the maths, remembers what's due, and warns you early.
 
 ---
 
 ## 2. Make it yours (five minutes, once)
 
-1. Open the link you were sent. Google shows one button — **Make a copy**. Click it, and the sheet is yours, in your own Google Drive. Nothing you type ever leaves it.
-2. On the **Start Here** tab, click the big **Setup / Repair** button (the **Actions** menu has the same thing). Google asks permission once, and asks narrowly: to work with **this spreadsheet only**, and to run when you're not watching — that second one is what makes repeating entries appear on their own. It cannot see anything else in your Drive. If a screen tells you the app isn't verified, that's Google's standard wording for any sheet carrying its own code; **Advanced → Continue** goes through it. Skipping this step is the one way to break Hisaab — the sheet looks perfect and quietly does nothing. You'll know it worked when the warning above the button turns into **✓ All set up!**
-3. It arrives with sample rows so no screen is blank. Poke them, change a number, watch things move — then delete them and begin yours.
-4. Tell it what you have today. One row per place money sits: today's date, the amount as a plus, the account's name in **To** (`bank/idfc`, `bank/kotak`, `cash`), and Mode = **Opening Balance**. That label keeps it out of your income reports; the balance picks it up on its own.
-5. Three settings, one tab: your **income goal**, your **months to survive** (how long you could run with nothing coming in — 6 is the least worth aiming at), and the month your **financial year** starts. That's all you're asked for; everything else the sheet works out from your own rows. Change them any time.
+1. Open the link you were sent. Google shows one button, **Make a copy**. Click it. The sheet is now yours, in your own Google Drive. Nothing you type leaves it.
+2. On the **Start Here** tab, click the big button. (The **Actions** menu has the same thing: **Set up this copy**.) It takes two clicks, once: the first gives permission, the second runs the setup. Google asks for two things: to work with **this spreadsheet only**, and to run when you're not using it. The second is what lets repeating entries appear by themselves. It cannot see anything else in your Drive. If a screen says the app isn't verified, that's Google's standard message for any sheet with its own code. Click **Advanced → Continue**. Don't skip this step. Without it the sheet looks fine but does nothing on its own. When it works, the warning above the button changes to **✓ All set up!**
+3. Enter what you have today. One row for each place your money sits: today's date, the amount as a plus, the account's name in **To** (`bank/idfc`, `bank/kotak`, `cash`), and Mode **Opening Balance**. That Mode keeps it out of your income reports. The balance picks it up by itself.
+4. Fill in three settings on the same tab: your **income goal**, your **months to survive** (how long you could manage with nothing coming in; aim for at least 6), and the month your **financial year** starts. That's all it asks. The sheet works out everything else from your rows. You can change these any time.
 
-**One sheet, for good — don't start a new file each April.** That last setting is *why*: it slices the financial year *inside* this file, so your tax view is right without cutting your history in half. And history is where the good numbers live — your six-month average, months of cover, "up from 22% over the last 12 months", a client who has grown from a fifth of your income to a third. Split the file and every one of those starts again from zero. Old accounting software taught everyone to close the books and open a new company; a sheet has no such need, and obeying the habit costs you the best of it.
+**Keep one sheet. Don't start a new file each April.** The financial-year setting handles the year inside this file, so your tax view is right and your history stays whole. Many of the useful numbers need that history: your six-month average, months of cover, a client who went from a fifth of your income to a third. Start a new file and all of them start again from zero. Old accounting software made people close the books every year. A sheet doesn't need to.
 
 ---
 
 ## 3. Your first row
 
-A money event is one line. Date, Amount, From, To — a description if you feel like it.
+Each money movement is one row: Date, Amount, From, To, and a description if you like.
 
 | Date | Amount | From | To | Description |
 |---|---|---|---|---|
 | 05-Aug | −450 | bank/hdfc | swiggy | dinner |
 | 07-Aug | +60,000 | acme | bank/hdfc | August retainer |
 
-Two habits, and they are the whole skill:
+There are two habits to learn, and that's the whole skill.
 
-**The sign is the direction of your money.** Minus — it left you. Plus — it came to you. The colour says it back: green in, red out.
+**The sign shows which way your money went.** Minus means it left you. Plus means it came to you. The colour matches: green in, red out.
 
-**From and To are the two ends of the movement,** in your own words.
+**From and To are where the money came from and where it went,** in your own words.
 
-Why both? They answer different questions. From → To says *who to whom*. The sign says *did my money grow or shrink* — without you ever teaching the sheet which names are "you". Ravi hands you ₹5,000: `ravi → cash, +5,000`. You return it next week: `cash → ravi, −5,000`. Same two names, opposite signs, everything clear.
+Why both? They answer different questions. From → To says who paid whom. The sign says whether your money went up or down, so you never have to tell the sheet which names are "you". Ravi gives you ₹5,000: `ravi → cash, +5,000`. You pay it back next week: `cash → ravi, −5,000`. Same two names, opposite signs.
 
-Use `/` when a name has family: `bank/idfc`, `bank/kotak`, `hr/payroll`, `ops/purchase`. Later, "bank" totals all of them and "bank/idfc" totals one. Detail costs nothing — use words you'd say aloud.
+Use `/` to group names: `bank/idfc`, `bank/kotak`, `hr/payroll`, `ops/purchase`. Later, `bank` totals all of them and `bank/idfc` totals one. Extra detail costs nothing. Use the words you'd say out loud.
 
-**A name reads like a postal address — left to right, big to small.**
+**Read a name like an address: left to right, big to small.**
 
 `india / maharashtra / nashik`
 
-Ask for **india** and you get everything in india. Ask for **india/maharashtra** and you narrow to that state. Ask for **maharashtra** on its own and this address doesn't answer — its front door is india. (Name something `maharashtra/nashik` and of course `maharashtra` totals it — it's the front door there.)
+Ask for **india** and you get everything in India. Ask for **india/maharashtra** and you get that state. Ask for **maharashtra** on its own and this name won't match, because it starts with india. (A name like `maharashtra/nashik` would match `maharashtra`, because that's its first word.)
 
-**You always start at the front door.** A word finds names that *start* with it, never names that merely contain it. So `kitchen` totals `kitchen/gas` and `kitchen/oven`. It does not total `repairs/kitchen` — that one's front door is repairs. It only *mentions* the kitchen.
+**A search only matches names that start with the word.** It never matches names that just contain it. So `kitchen` totals `kitchen/gas` and `kitchen/oven`, but not `repairs/kitchen`. That one starts with repairs.
 
-**Which means the first word decides what you can total. Pick it on purpose.**
+**So the first word decides what you can total. Choose it on purpose.**
 
-- `kitchen/repairs` → you can total everything kitchen
+- `kitchen/repairs` → you can total everything for the kitchen
 - `repairs/kitchen` → you can total all repairs, everywhere
 
-Want both? Tag it — that's section 9.
+Want both? Add a tag. That's section 9.
 
-Two levels is nearly always enough. Three is where people stop recording money and start building a filing system.
+Two levels are nearly always enough. At three, people stop recording money and start building a filing system.
 
-One rule that never bends: **same thing, same spelling.** "Acme" and "Acme Pvt Ltd" become two strangers, and every total splits between them. The dropdowns remember your words — pick from them, and the problem never starts.
+One rule always holds: **same thing, same spelling.** "Acme" and "Acme Pvt Ltd" are two different names to the sheet, and every total gets split between them. The dropdowns remember names you've used. Pick from them and this never happens.
 
-**Moving your own money?** Bank to bank, bank to cash — that's not earning or spending, just your money changing pockets. It's one row: the amount as a minus, From the account it left, To the account it reached, and Purpose: **Self**. That last part is what stops the reports calling it income. Mode stays free for how it moved.
+**Moving your own money?** Bank to bank, or bank to cash, isn't earning or spending. It's one row: the amount as a minus, From the account it left, To the account it reached, and Purpose **Self**. Purpose Self stops the reports counting it as income. Mode is still yours to fill in however it moved.
 
-That's everything you *must* know. The sheet is fully working from here. Everything below is optional power, added when you want it.
+That's all you need to know. The sheet fully works from here. Everything below is optional, for when you want it.
 
 ---
 
 ## 4. Watch it react
 
-Next to every row, **Balance** — your total money, across every account, as of that line. No bank shows you this number. Each shows its own slice; Hisaab shows the whole.
+Every row has a **Balance**: your total money across all accounts, as of that row. No bank shows you this. Each bank shows only its own part.
 
-The **Timeline** tab is the same story laid flat: every movement, past and future, in date order, balance running alongside. Look, don't type — entries live in Log and Repeats; Timeline only shows.
+The **Timeline** tab shows the same thing as one list: every movement, past and future, in date order, with the balance beside it. You don't type here. You type in Log and Recurring, and Timeline shows the result.
 
-Now the quiet trick: give a row a *future* date and read the balance beside it. That's your money on that day, if today's plans hold. Type a date, see your future — that is most of what "forecasting" means, and you already have it.
+Give a row a future date and look at the balance beside it. That's how much money you'll have on that day if things go as planned. That is most of what "forecasting" means, and you already have it.
 
 ---
 
 ## 5. Money that repeats
 
-Rent. Salaries. EMIs. Subscriptions. The retainer that arrives every month. Write each **once**, in **Repeats** — not twelve times a year in Log.
+Rent, salaries, EMIs, subscriptions, a monthly retainer. Write each one **once**, in the **Recurring** tab, instead of twelve times a year in Log.
 
-A rule reads like a sentence you'd say: *−25,000 · bank → landlord · Monthly · Day 5.* Plain dropdowns cover every pattern — Monthly, Weekly, Every 2 weeks, Yearly; on Day 5, Last day, Third Fri; both 1st *and* 15th if that's how a payment runs. **End**: leave it blank for "never", type a number for "that many times", a date for "stop then".
+A rule reads like a sentence: *−25,000 · bank → landlord · Monthly · Day 5.* The dropdowns cover most patterns: Monthly, Weekly, Every 2 weeks, Yearly; on Day 5, the last day, the third Friday; or both the 1st and the 15th. **End**: leave it blank for "never", type a number for "this many times", or a date for "stop then".
 
-From that one line, the sheet writes every future occurrence into your timeline by itself. When a date passes, the row becomes real by itself — nothing to tick. One month was different — date slipped, paid by another mode? Edit that single row. Your edits are respected; the machine never overwrites a row you've touched.
+From that one row, the sheet writes every future payment into the **Auto-entries** tab, and from there into your Timeline. When a date passes, that payment counts as done. You don't need to tick anything. If one month was different, say the date moved or you paid another way, edit that one row in Auto-entries. The sheet never overwrites a row you've edited.
 
-Each rule also reports back:
+Each rule also shows:
 
-- **Monthly bite** — what it really costs per month. An ₹18,000 yearly insurance is ₹1,500 a month; seeing everything in ₹/month lets anything be compared with anything.
-- **Paid / Remaining / Next date** — for an EMI, a bar slowly filling. Payments left, amount left, end in sight.
-- **Importance** — Essential, Nice-to-have, Can drop. Set once. On a tight day, the sheet already knows what to cut first — and how much per month comes back.
+- **Monthly bite**: what it costs per month. ₹18,000 a year of insurance is ₹1,500 a month. With everything in ₹ per month, you can compare anything with anything.
+- **Paid / Remaining / Next date**: for an EMI, a bar that fills up. How many payments are left, how much is left, and when it ends.
+- **Importance**: Essential, Nice-to-have or Can drop. Set it once. In a tight month you already know what to cut first, and how much a month it saves.
 
-And one number worth a long look: your recurring outflows added up for the year. *"You owe ₹14L this year no matter what happens."* People cancel subscriptions on that sentence alone.
+To see what your commitments add up to, look at **Safety money** on the Dashboard. Set months to survive to 12, and it's a year of what goes out whether you work or not. Most people cancel something after seeing that number.
 
 ---
 
 ## 6. Tomorrow, already visible
 
-A row with a future date and a tick in **Planned** is a hope, not a fact. Planned rows never touch your balance — **money isn't real until it lands** — but they appear in the future view, dated, waiting. Two dates ride along: **Planned on** holds when it was *due*; Date holds when it actually happens. The gap between them is how the sheet learns who runs late.
+A row with a future date and a tick in **Is Planned** is something you expect, not something that has happened. Planned rows never change your balance, because **money isn't real until it arrives**. They still show up in the future view, on their date. Two dates are kept: **Planned on** is when it was due, and Date is when it actually happens. The gap between them is how the sheet learns who pays late.
 
-Expecting ₹1L from a client in August? One planned row. Considering a ₹2L machine in October? One planned row. The months ahead redraw instantly. **To try out any future, add a planned row and look.** Delete it, and the future goes back. There is no separate "simulator" — the sheet is the simulator.
+Expecting ₹1 L from a client in August? Add one planned row. Thinking of buying a ₹2 L machine in October? Add one planned row. The months ahead update straight away. **To try out a decision, add a planned row and look.** Delete it and everything goes back. You don't need a separate "what if" tool. The sheet already is one.
 
-**The tick has a second job.** When two rows are linked (section 14), it marks which side is the ghost — and it's always exactly one side:
+**The tick has a second use.** When two rows are linked (section 14), it marks which side isn't a real payment. It's always exactly one side:
 
-- **One thing, paid in pieces** — a ₹5L machine, three payments. The **plan** is ticked; the payments are real.
-- **One bill, many jobs** — a ₹10,000 bill covering two jobs. The **bill** is real; the **pieces** are ticked.
+- **One thing, paid in parts**: a ₹5 L machine, paid in three payments. The **plan** is ticked; the payments are real.
+- **One bill, several jobs**: a ₹10,000 bill covering two jobs. The **bill** is real; the **parts** are ticked.
 
-The rule underneath is the one you already know: **whatever isn't a payment of its own gets the tick.** A plan hasn't been paid yet. A piece was paid as part of something bigger. Neither moved money by itself, so neither touches your balance — and the money counts exactly once. *(Worked through in section 14.)*
+The rule is the same in both: **whatever isn't a payment on its own gets the tick.** A plan hasn't been paid yet. A part was paid as part of something bigger. Neither moved money by itself, so neither changes your balance, and the money is counted once. *(Section 14 walks through it.)*
 
-The **Monthly Snapshot** shows last month, this month, and the next twelve: in, out, net, balance, and a small bar per month. The bar's colour deepens as a month sinks toward your safety money — so your scariest month is visible long before it arrives, while there's still time to do something about it.
+The **Monthly Snapshot**, at the bottom of the Dashboard, shows last month, this month and the next twelve: incoming, outgoing, net, balance, and a small bar for each month. Next to each month is **Minimum Needed**: what that month will cost, or a normal month's cost if that's more. The bar is green when the balance covers it, amber when it covers at least half, and red when it covers less. You see a tight month well before it arrives, while there's still time to act. A **Last year** column lets you compare this October with last October.
 
-A word on order: this is a *forecast*, not a budget. A budget is what you intend; a forecast is what's coming. Most of us run on gut feel and surprises — so see what's coming first. Discipline (section 11) is easy to add once you can see.
+This is a forecast, not a budget. A budget is what you plan to spend. A forecast is what's actually coming. Most people run on gut feel and get surprised, so start by seeing what's coming. Limits (section 11) are easy to add once you can see.
 
 ---
 
 ## 7. The numbers that watch you
 
-The Dashboard reduces everything to a row of answers:
+The Dashboard shows six numbers, each with a sentence under it:
 
-| Number | In one breath |
+| Number | What it tells you |
 |---|---|
-| **In Hand** | what you have — all accounts, one number, now |
-| **Inflow** | what's coming — next 30 days, from Repeats. Hopes show on their own line beside it, never added in |
-| **Outflow** | what's going — next 30 days, already booked |
-| **Breakeven** | what you need — *"You need ₹3.5L to cover the next 30 days"* |
-| **Avg Expense** | what a normal month costs you, from your own history |
-| **In vs Out** | how you spend — *"for every ₹1 you earn, you spend 93 paise"* |
-| **Usable for Growth** | unused money — what's left after your safety money is safe |
-| **Used to Grow** | money put to work — how much of your spending *built* something |
+| **In Hand** | what you have: all accounts, one number, now |
+| **Months of Cover** | how many months In Hand would last with nothing coming in |
+| **Breakeven** | what the next 30 days need: *"Needed for next 30 days. ₹1.6 L coming in. ₹3.0 L to go."* |
+| **Avg Expense** | what a normal month costs, from your last six months |
+| **Owed to you** | what's overdue: *"₹2.0 L expected but overdue from 1 source."* |
+| **Used to grow** | how much of what went out was invested in something lasting |
 
-Three of these deserve a second look:
+Three of these are worth a closer look.
 
-**Breakeven** counts your committed payments plus your own average of everyday spending — and it never counts money you're merely expecting. A cheque in the post pays no bills. It also teaches the honest shape of money: the next 30 days never stop coming. The question is never *am I done?* — it's *can I keep running?* That's not bleak; that's just the game, seen clearly. Months of cover — how long you could run with nothing coming in — is the calmest number in money.
+**Months of Cover** is In Hand divided by what usually goes out in a month. Its sentence changes with the number. Under three: *"Under 3 months. One bad month and you're borrowing."* Over six: *"Solid. A bad quarter stays a bad quarter."* Over twelve, it says the extra is free to invest, and it says so if you haven't invested any of it. This is the honest answer to "can I afford it?", whether it's a machine, a new hire or a holiday. What matters isn't what's in the bank. It's what's left once the next few months are safe.
 
-**Usable for Growth** is your true "can I afford it?" — for the machine, the hire, the holiday. Not what's in the bank; what's *left after* the next months are safe. When it's negative it flips into a target, not a scolding: *"You still have to earn ₹X to be safe."*
+**Breakeven** adds your fixed payments to your usual everyday spending. It never counts money you're only expecting. A cheque in the post doesn't pay bills. The next 30 days always keep coming, so the question is never "am I done?". It's "can I keep going?"
 
-**Used to Grow** shows the percentage *and* the rupees. *"Only ₹2,876 went toward growth"* stings precisely because it's true — and rises the moment you act on it.
+**Used to grow** shows the rupees, and the percentage once it's 20% or more: *"Only ₹1.4 L went toward growing your wealth."* It goes up as soon as you invest.
 
-**And when a big payment lands**, the sheet translates it into the only unit that matters: *"₹5.2 L landed in the last month — that's 3.4 months of running costs covered."* A lump becomes runway. This is the whole bind of project work in one sentence — costs arrive monthly, income arrives in lumps — and the line stays silent unless something notable actually turns up, which is what makes it feel like the sheet noticed rather than the sheet talking.
+**When a big payment arrives**, the sheet tells you how long it will last: *"₹5.2 L landed in the last month! That's 3.4 months of running costs covered."* This matters in project work, where costs come every month but income comes in lumps. The line only appears when a payment is big enough to matter.
 
-And one glance worth making a habit: both sides of your money move at a *speed*. Earning ₹X a month and rising, spending ₹Y and rising **faster** — that crossing is the single most dangerous pattern in a small business, and here it's visible months before it bites.
+Below the numbers are **Alerts**. There are never more than three, and they're always about your money: *"⚠ Your balance drops below your safety money (₹14.7 L) in Jul 2026."* When nothing is wrong, it says so: *"✅ Nothing needs your attention right now."* When a month ahead looks tight, one line tells you what cutting back would buy: *"Every ₹10,000 a month you cut buys you 2 more months of runway."*
 
-Below the numbers, the sheet speaks in sentences: *"Things are steady — keep an eye on next month's numbers."* When all is well, it says so. And where one payer dominates your steady income, it says what that means: *"If the Techpark contract stops, your runway drops to X months."* A consequence you can act on — not a statistic you have to interpret.
+One more habit worth having: compare the **Last year** column in the Snapshot with this year. If your spending is growing faster than your earning, that's the most dangerous pattern in a small business, and you can see it here months before it hurts.
 
 ---
 
 ## 8. Who owes you
 
-> *Jumped straight here? One habit powers this: when someone promises you money, enter it as a **planned** row with the due date (section 6). The rest is automatic.*
+> *Came straight here? You need one habit: when someone promises you money, enter it as a **planned** row on the date it's due (section 6). The rest happens by itself.*
 
-The moment a promised payment's date passes with no money landed, it appears on the **Chase List**: who, how much, days late — and once there's history, how late that payer *usually* runs. *"Sharma runs about 12 days late"* changes how you plan around Sharma.
+When a promised payment's date passes and the money hasn't arrived, it appears on the **Chase List**: who, how much, and how many days late. Once there's history, the **Avg Waiting Time** column shows how late that person usually pays. Knowing Sharma usually pays 12 days late changes how you plan.
 
-No scores, no status ceremony. You already know in your gut who's slow — the list just refuses to let you forget. It sits at the top of Cash Flows because for a business it's the highest-paying report in the sheet: **money already earned, not yet collected.** Chasing it beats finding a new customer every single time.
+There are no scores to keep up. You probably already know who pays late. The list makes sure you don't forget. It's at the top of the **Cash Flow** tab because, for a business, it's the most valuable list in the sheet: **money you've already earned but not collected.** Collecting it is easier than finding a new customer.
 
-When it lands, put the real date on that same row and untick Planned — the row becomes the fact, and the chase closes itself. The due date stays in Planned on, so the sheet remembers how late it ran. Paid in part? Log what came as its own row and shrink the planned one to what's still due — or link the parts to it instead and let the sheet keep score (section 14). Never coming? Delete it — and keep the lesson.
+When the money arrives, put the real date on that same row and untick Is Planned. The row becomes a real payment and leaves the list. The due date stays in Planned on, so the sheet remembers how late it was. Paid in part? Add what came as its own row and reduce the planned row to what's still due. Or link the parts to it and let the sheet keep track (section 14). Never coming? Delete the row.
 
-The chase sits at the top of the **Cash Flows** tab. Below it, the rest of your money's rhythm: who pays you and where it goes, side by side, top five each; every tag's in, out and net; and the full dated list of everything ahead — because timing is the whole point. It's rarely the month that hurts; it's the *week* when things collide.
+Next to the Chase List is **To Pay**: what you owe, and when. Below them: who pays you and where your money goes, side by side, each with its share; every tag's money in and out; and a dated list of everything ahead. Timing matters. The problem is usually one week when several payments land together, not the whole month.
+
+If one client pays most of your income, **Top 3 Clients** tells you what losing them would mean. Either *"If foodapp stops paying, your other income still covers your usual costs,"* or how much you'd fall short each month and how long your money would last. Then how it's changing: *"foodapp now makes up 48% of income — up from 28% over the last 12 months."*
 
 ---
 
 ## 9. Tags — words that count
 
-> *Jumped here? You need two facts: amounts carry a sign (+ in, − out), and the sheet's dropdowns remember your words. That's all.*
+> *Came straight here? You need two things: amounts have a sign (+ in, − out), and the dropdowns remember your words.*
 
-Forget what "tags" means elsewhere. Here, **a tag is a calculator you name.**
+A tag is a word you put on rows so you can total them.
 
-Write `sharma-reception` on every row that belongs to that order — the advance (+), the ingredients (−), the event staff (−) — and *sharma-reception adds itself up*. No formula, no math. The sign decides add or subtract; the word decides where it counts.
+Write `sharma-reception` on every row for that order: the advance (+), the ingredients (−), the event staff (−). The sheet adds them up for you. No formula needed. The sign decides whether a row adds or subtracts. The word decides which total it goes into.
 
-**Three columns describe every rupee, and each has exactly one job.**
+**Three columns describe every rupee. Each has one job.**
 
-| | Like | Rule |
+| | Think of it as | Rule |
 |---|---|---|
-| **From / To** | folders | where the money sits — one place each |
-| **Count Under** | sticky notes | stick on as many as you like, or none |
+| **From / To** | folders | where the money is. One place each |
+| **Count Under** | sticky notes | as many as you like, or none |
 | **Purpose** | a stamp | exactly one, always |
 
-Folders locate it. Sticky notes cut across folders. The stamp is the only one that adds to 100% — that's section 12.
+Folders say where the money is. Sticky notes group rows across folders. The stamp is the only one that adds up to 100%. That's section 12.
 
-**Every tag is a small business inside your business** — its own money in, its own money out, its own answer. Name one for anything you want judged: a line of work (`tiffins`, `events`), a client, one big order, a channel (`instagram`), a bet (`diwali-orders`). A row can carry several words — festive boxes can be `tiffins, packaging` — and every word counts it. Three calculators running at once, no extra effort.
+**Each tag works like a small business of its own**: its own money in, its own money out, its own result. Make one for anything you want to judge: a line of work (`tiffins`, `events`), a client, one big order, a channel (`instagram`), an experiment (`diwali-orders`). A row can carry several tags. Festive boxes can be `tiffins, packaging`, and the full amount counts in both.
 
-Really did spend ₹60 on one and ₹40 on the other? Write two rows. Then it's true instead of guessed.
+Did ₹60 really go to one thing and ₹40 to another? Write two rows. Then the numbers are true, not guessed.
 
-Two rules keep the answers honest:
+Two rules keep the totals honest:
 
-1. **Tag both sides.** The job's income *and* the job's costs. Tag only the income and every job looks brilliant.
-2. **Only tag money you can point at.** Paneer that went into the Sharma reception — you can point at it, tag it. Rent? You can't point at where rent went; it runs the whole shop. Rent never gets a job's word. (What rent *is*, and where it's judged, is sections 12–13.)
+1. **Tag both sides.** The job's income and the job's costs. If you tag only the income, every job looks great.
+2. **Only tag money you can trace to the job.** The paneer that went into the Sharma reception: tag it. Rent: don't. You can't say which job rent went into. It keeps the whole shop running. (Sections 12 and 13 cover where rent belongs.)
 
-Start with one kind of word — your lines of work. Add more kinds when the first ones prove useful. Five kinds of tags is real power; five kinds on day one is confusion.
+Start with one kind of tag, such as your lines of work. Add other kinds once those prove useful. Five kinds of tag is powerful. Five kinds on day one is confusing.
 
 ---
 
 ## 10. Watchlist — pick a thing, see everything
 
-Choose any name — a client, an account, a tag — and its row fills in: money in, money out, net, share, and a twelve-month trend line. Want a comparison? Add a second row. That's the entire feature.
+On the **Watchlist** tab, enter any name, tag or payment mode, and its row fills in: money in, money out, net, its money life, and a trend line. Put names in the **For** column and tags in the **Count Under** column. Want to compare? Add another row.
 
-"How is X actually doing?" — rent this year, chai this month, what Sharma is really worth to you — one row each, no report-building, no formulas.
+"How is this actually doing?" Rent this year, chai this month, what Sharma is really worth to you: one row each, no report to build.
 
-For a job, one column earns a second look: **Money life** — *Jun 26 → Aug 26 · 3 mths · 5 in · 9 out*. When the money started, when it stopped, how long it ran, and how many payments went each way. Five milestones and nine supplier bills is a very different job from one and one.
+For a job, look at **Money life**: *Jun 26 ▸ Aug 26 · 3 mths · 5 in · 9 out*. When money started moving, when it stopped, how many months that was, and how many payments went each way. Five milestone payments and nine supplier bills is a very different job from one and one.
 
-It is deliberately *money* life, not project life. The sheet doesn't know when your project started — it knows when money moved, and those are not the same thing. That difference is exactly the point: a two-month job can be a five-month cash story. Advance in June, costs through July, the balance in October. Nothing else shows you that gap, and in project work the gap is what actually hurts. Leave the period blank and you see the whole life; set one and you see that window.
+It's called money life, not project life, because the sheet only knows when money moved. That's often different from when the work happened. A two-month job can tie up your cash for five months: advance in June, costs through July, final payment in October. In project work, that gap is what hurts. Leave the period blank to see the whole life. Set dates to see just that window.
 
-And here the slash pays off: because you named things `staff/salary`, `staff/wages`, the word `staff` alone totals every person you pay. Departments, teams, projects — you never design them. Your words already built them.
+This is also where the slash pays off. Because you named things `staff/salary` and `staff/wages`, the word `staff` totals everyone you pay. You never set up departments. Your names already made them.
 
 ---
 
 ## 11. Limits & goals
 
-> *Standalone: a **Limit** is a ceiling — "chai under ₹500 a week." A **Goal** is a floor — "₹30L from events this year." Both live in one small table.*
+> *A **limit** is a ceiling: "chai under ₹500 a week." A **goal** is a floor: "₹30 L from events this year." Both go in one small table.*
 
-Pick a *For* (any name or tag), an amount, a period — weekly, monthly, yearly, or rolling windows like "last 30 days". The sheet fills a bar and speaks plainly: **Under · Warning · Over** for limits, **Behind · Almost there · Reached** for goals. Green fills, amber warns at 80%, red is over — the colour is the alert; no popup needed.
+On the **Limits & Goals** tab, choose a *For* (any name or tag), an amount, and a period: weekly, monthly, yearly, or a rolling window like "last 30 days". The sheet fills a bar and gives a verdict. A broken limit reads **Over by 1.7x**. A goal reads **Behind**, **Almost there** or **Reached**. The bar fills green, and anything over a limit shows red. The colour is the alert. There are no pop-ups.
 
-Then the part a notebook can't do. Miss the same limit three periods in a row and the sheet stops nagging and starts advising:
+Break the same limit three periods in a row and the sheet suggests a better number:
 
-> *"Over 3 in a row. ₹871 is more realistic."*
+> *"Over 3 in a row. ₹900 is more realistic."*
 
-— computed from your own history, leaning on your recent weeks. A budget you break every single month isn't a discipline problem — **it's a wrong number.** Fix the number; save the discipline for where it's real.
+It works this out from your own spending, weighted towards recent weeks. If you break a budget every month, the problem isn't discipline. **The number is wrong.** Fix the number, and save your discipline for the limits that matter.
 
 ---
 
 ## 12. Purpose — what is this money for?
 
-> *Standalone-ready: this is one dropdown on outgoing money. Five options, picked once per repeating rule, per row for one-offs. It funds section 13 — the best report in the sheet.*
+> *Came straight here? Purpose is one dropdown. Every row picks one of seven. Set it once for a repeating rule, and per row for one-offs. It powers section 13.*
 
-Every rupee that leaves is doing exactly one of five jobs:
+Every rupee is doing one of seven things:
 
-- **Specific work** — went *into* the work: materials, site labour, that job's transport. You can point at where it went.
-- **Running cost** — keeps the shop open: rent, salaries, internet, software. There whether you sold or not.
-- **Investment** — bought something that lasts: a machine, a laptop, gold.
-- **Loan** — borrowed money going back. And when a loan *arrives*, it's a plus with Purpose Loan — because **borrowing is not income**, however good the month suddenly looks.
-- **Pocket** — money moving between the business and *you*. Minus is you taking money home; plus is you rescuing a bad month. (Tracking only personal money? Everything is already your pocket — simply ignore this one.)
+- **Earned**: money from work, or a return on money. A client's payment, interest, a dividend.
+- **Specific cost**: spent on one particular job. Materials, site labour, that job's transport. You can say which job it went into.
+- **Running cost**: keeps the business open. Rent, salaries, internet, software. You pay it whether you sell anything or not.
+- **Invested**: put somewhere, not spent. A machine, an FD, a SIP. It's still yours. When it comes back, only the gain is Earned. The amount you put in, coming back, is Invested again.
+- **Loan**: borrowed or repaid. When a loan arrives, it's a plus with Purpose Loan, because **borrowed money isn't income**, however good the month looks.
+- **Took home**: money moving between the business and you. Minus is money you took home. Plus is money you put back in a bad month. (Only tracking personal money? Leave this one out.)
+- **Self**: your own money moving between your own accounts (section 3). Not earned, not spent.
 
-Stuck between the first two? One test settles it: **would I still be paying this if I did zero work this month?** Yes → Running cost. No → Specific work.
+Not sure if a cost is Running or Specific? Ask: **would I still pay this if I did no work this month?** Yes means Running cost. No means Specific cost.
 
-A cousin worth naming: GST you've collected is money in your account that was never yours — a short loan from the government. Mark it so, and filing day stops being a surprise.
+The key difference: **Running cost and Specific cost make you poorer. Invested, Loan and Took home only move money**: into something you own, against a debt, or into your personal life. Not every minus is a cost.
 
-Thirty seconds a day. Section 13 pays it back with the answer most owners have never seen in their lives.
+One more: GST you've collected sits in your account but was never yours. It's like a short loan from the government. Mark it that way and filing day won't surprise you.
+
+It takes thirty seconds a day. Section 13 shows what it gives you back.
 
 ---
 
 ## 13. Where the profit went
 
-> *Standalone: all this needs is — signs (+ in, − out), tags (words that add rows up, section 9), and Purpose (what each outgoing rupee was for, section 12).*
+> *Came straight here? You need three things: signs (+ in, − out), tags (words that total rows, section 9), and Purpose (what each rupee was for, section 12).*
 
-Every owner has lived this: **"The year was profitable. So where is the money?"** Your accountant answers next September, about last year, in a language you don't enjoy. This report answers today, in yours. It has three parts, and they read top to bottom.
+Most owners have asked this: **"We made a profit this year. So where's the money?"** Your accountant answers next September, about last year. The **Real Picture** tab answers today. It has three parts. Read them top to bottom.
 
-**Part one — what each line of work really earns.**
+**Part one: what each line of work really earns.**
 
-A dosa sells for ₹50. Its batter cost ₹20. That dosa drops **₹30 into the shop's common pot**. That's what a stream truly earns — its income minus the costs that went *into that work* — and the sheet computes it from your words alone:
-
-```
-tiffins    in 4,20,000 · work costs 2,52,000  →  drops 1,68,000   40%
-events     in 5,00,000 · work costs 4,35,000  →  drops    65,000   13%
-```
-
-The weddings get the congratulations. The boring daily tiffins pay the rent — two and a half times over. Now you know what to sell more of — and what to reprice. The rupees say which stream fed you; the percentage ranks them fairly, big orders and small alike.
-
-**Part two — the pot pays for the shop.**
-
-Every stream pours what it earns into one pot. Out of that pot — once, and only there — go the running costs, ranked biggest first:
+A dosa sells for ₹50. The batter cost ₹20. So that dosa adds **₹30 to the shop's common pot**. That's what a line of work really earns: its income minus the costs that went into that work. The sheet works it out from your tags:
 
 ```
-comes in from all work       2,33,000
+tiffins    in 4,20,000 · work costs 2,52,000  →  adds 1,68,000
+events     in 5,00,000 · work costs 4,35,000  →  adds    65,000
+```
+
+The weddings get the attention. The daily tiffins pay the rent, more than twice over. Now you know what to sell more of, and what to reprice.
+
+**Part two: the pot pays for the shop.**
+
+Every line of work adds what it earns to one pot. The running costs come out of that pot, once, and nowhere else:
+
+```
+added from all work          2,33,000
 running costs
   salaries                   1,08,000
   rent                         75,000
@@ -384,97 +387,99 @@ running costs
 left                            5,000
 ```
 
-The layout is the lesson: the shop's costs sit visibly attached to no stream. What survives the pot is profit — here, five thousand rupees. Barely breathing.
+The running costs aren't attached to any line of work, and that's the point. What's left in the pot is profit. Here it's five thousand rupees: barely above zero.
 
-Here lives the rule that saves businesses: **never split the rent across your streams to judge them.** Do that, and a perfectly good stream can look like a loser. You kill it. The rent doesn't shrink — it lands on the survivors, who now look sick too. Judge every stream by what it *drops in the pot*: if it drops anything at all, killing it only makes the pot poorer. The only truly losing stream is one whose own work costs exceed its own income.
+The most important rule: **never split rent across your lines of work to judge them.** If you do, a perfectly good line can look like it loses money. You drop it. The rent doesn't go down. It just lands on the lines you kept, and now they look bad too. Judge each line by what it adds to the pot. If it adds anything at all, dropping it makes the pot smaller. A line only truly loses money when its own work costs are more than its own income.
 
-And when the pot isn't covering the shop, one division tells you which war to fight — *total dropped ÷ running costs*. Low because streams drop little? Pricing and mix — work on the streams. Low because running costs swelled? Overhead — the ranked list has already found the whales.
+When the pot doesn't cover the running costs, divide one by the other: *total added ÷ running costs*. If it's low because the lines of work add little, look at pricing and what you sell. If it's low because running costs grew, look at your overheads. The running-costs list shows where they went.
 
-**Part three — profit vs cash.**
+**Part three: profit vs cash.**
 
-The pot said ₹5,000 left — and yet the bank went down by nearly *two lakh*. Three things eat cash **without ever appearing as a cost**, and your Purpose column has been quietly naming them all along:
+The pot says ₹5,000 was left, yet the bank balance fell by nearly two lakh. Three things take cash **without being costs**, and your Purpose column has been recording them:
 
 ```
-Investment   −1,35,000    the oven, the SIP
+Invested     −1,35,000    the oven, the SIP
 Loan           −45,000    EMIs paid back
-Pocket         −15,000    taken home, net
+Took home      −15,000    taken home, net
 ```
 
-Profit was real. The cash went *there*. Line by line, named. *"You took ₹45,000 home this quarter — and put ₹30,000 back in a lean month"* — most owners have never once seen that sentence about themselves. This is the page that shows it.
+The profit was real. The cash went to these three places. The first block on the tab shows the whole story in nine lines, from what you earned to what your bank actually did: **Earned · less work costs · Contribution · Running cost · Profit · Invested · Loan · Took home · Change in cash**. *"You took ₹45,000 home this quarter, and put ₹30,000 back in a slow month."* Most owners have never seen that about themselves. This page shows it.
 
-Two honesty notes, both automatic: if "rent" ever appears marked both Running cost *and* Specific work, the sheet flags the contradiction quietly at the bottom — one of them is wrong, by definition. Same for work costs carrying no tag — real work money landing on no stream means some stream is reporting less than it earned. (A word on a *running cost*, though, does no damage — contribution counts only Specific-work rows. The word just buys you a bonus view: rent by location, salaries by branch.) And judge an order over the *order*, not the month: a wedding's advance lands in May, the ingredient bills hit June, the balance comes in July — June alone looks like disaster, July like a miracle. The tag's lifetime total is the true number.
+The tab also checks itself. It tells you how much *"of income isn't on any stream"*, and lists those rows under **Missing Counts**. Income with no tag doesn't count towards any line of work, so some line looks smaller than it is. Tag those rows and the numbers settle. (Tagging a running cost does no harm, because this only counts Specific-cost rows. It just gives you an extra view, like rent by location or salaries by branch.)
+
+Judge an order over its whole life, not month by month. A wedding's advance arrives in May, the ingredient bills in June, the final payment in July. June alone looks terrible and July looks amazing. The tag's total over the whole order is the real number.
 
 ---
 
 ## 14. Linked payments
 
-Two shapes a single row can't say. One column says both.
+Some things take more than one row to describe. One column handles both cases.
 
-**One thing, paid in pieces.** A ₹5L machine paid ₹1L + ₹2L + ₹2L, whenever cash allowed. An invoice collected in three parts. A project billed by milestone, on no schedule anyone can predict. Enter the whole thing once as a planned row (the hope). Link each real payment to it as it happens. The sheet keeps score: *paid ₹3L, ₹2L left* — for money going out and money coming in alike.
+**One thing, paid in parts.** A ₹5 L machine paid ₹1 L + ₹2 L + ₹2 L, whenever you had the cash. An invoice paid to you in three parts. A project billed by milestone, on no fixed schedule. Enter the whole amount once as a planned row. Link each real payment to it as it happens. The sheet keeps count: *paid ₹3 L, ₹2 L left*. This works for money going out and money coming in.
 
-**One payment, many purposes.** A ₹10,000 hardware bill — ₹6,000 into the kitchen job, ₹4,000 into the wardrobe. Shops hand you one bill for two jobs; this unbundles it. Easiest answer, and usually the right one: **write two rows, tag each, done.** Same totals, nothing new to learn.
+**One payment, several purposes.** A ₹10,000 hardware bill: ₹6,000 for the kitchen job and ₹4,000 for the wardrobe. Shops often give you one bill for two jobs. The simplest answer, and usually the right one: **write two rows and tag each.** Same totals, nothing new to learn.
 
-Want one row that matches the ₹10,000 line on your bank statement? Keep the bill whole as one real row, then put the pieces beneath it — each piece points at the bill and gets **Planned** ticked, so the money is only spent once. Two pieces or five, split four ways among friends: every piece points at the same bill. Pieces never point at each other, so nothing gets harder as they multiply.
+Want one row that matches the ₹10,000 line on your bank statement? Keep the bill as one real row, then add the parts below it. Each part links to the bill and has **Is Planned** ticked, so the money is only counted once. Two parts or five, or a dinner split four ways, every part links to the same bill. Parts never link to each other, so more parts don't make it harder.
 
-The same **Planned** tick from section 6 tells the two shapes apart, so you never have to remember which: in *paid in pieces* the **parent** is ticked (it hasn't happened yet); in *many purposes* the **pieces** are ticked (the money already left, once). Exactly one side of a link is ever ticked — that is the whole mechanic.
+The same **Is Planned** tick from section 6 tells the two cases apart. In *paid in parts*, the **main row** is ticked, because it hasn't happened yet. In *several purposes*, the **parts** are ticked, because the money already left once. In every link, exactly one side is ticked.
 
-Never put a share or a percentage inside a tag. A tag counts its row in full, always. Half-and-half is two rows — never half a word.
+Never put a share or a percentage in a tag. A tag always counts the full row. If it's half and half, write two rows.
 
-Rule of thumb: **link only when the money is not new** — when a payment pays down something already written. Everyday rows: no link, leave it blank. EMIs don't need it either — Repeats already counts paid and remaining on its own.
+As a rule, **only link when the money isn't new**: when a payment pays off something already written down. Everyday rows don't need a link. EMIs don't either, because Recurring already tracks what's paid and what's left.
 
 ---
 
 ## 15. When life happens
 
-Skipped a week? A month? One rough line — *−40,000 · bank → misc · "catching up June"* — and you're current. **Approximate beats absent.** A rough sheet still answers the two questions; an abandoned one answers nothing. There are no streaks here, no guilt. The sheet waits.
+Missed a week? A month? Add one rough row, like *−40,000 · bank → misc · "catching up June"*, and you're up to date. **Roughly right is better than missing.** A rough sheet still answers the two questions. An abandoned one answers nothing. There are no streaks to keep here. The sheet waits for you.
 
-Doubt the numbers? Run the bank check: type today's *actual* bank balance, and the sheet shows the gap. *Sheet says ₹4.2L · Bank says ₹4.45L · off by ₹25,000.* That gap **is** the missing story — a bounced EMI, a forgotten sale, a typo — one number that catches every kind of error at once.
+Not sure the numbers are right? Do a check. On the **Wealth** tab, under **Checks**, add today's date and what you actually have: every account and every holding, minus what you owe. The sheet shows the difference: *sheet says ₹4.2 L · you say ₹4.5 L · off by ₹25,000.* That gap is whatever's missing: a bounced EMI, a forgotten sale, a typo. One number catches every kind of mistake.
 
-And the bounced-EMI case has a two-second fix: the sheet marked it done, but the money never left — re-tick Planned (section 6) and move its date forward. It goes back to "coming," and the balance corrects itself.
+A bounced EMI is quick to fix. The sheet marked it paid, but the money never left. Tick Is Planned again (section 6) and move the date forward. It goes back to "coming", and the balance corrects itself.
 
-And relax about small wrongness. The decisions this sheet powers are *rankings* — kitchen over wardrobe, cut this before that — and ₹2L versus ₹40k survives a few mislabelled rows. You'll *feel* a wrong number long before any audit would find it. You are the audit.
+Don't worry about small mistakes. This sheet helps you rank things: the kitchen job over the wardrobe, cut this before that. A gap like ₹2 L against ₹40,000 still shows clearly with a few rows wrong. You'll notice a wrong number long before an audit would.
 
 ---
 
 ## 16. Small habits that keep it clean
 
-- **Same word, every time.** Pick from the dropdowns; never re-type a name from memory.
-- **Tag both sides.** Income-only tags look brilliant; cost-only tags look dying. A number that looks too good is usually missing rows — the too-good number *is* the alarm.
-- **Clear the untagged-income line** now and then — income that lands as an untagged lump makes every stream look like it's starving.
-- **Type only in Log and Repeats.** Timeline and the generated tabs are views — they show, you don't touch.
-- **A number looks wrong?** In order: bank check → hunt missing rows → check spellings. It's one of the three.
+- **Same word, every time.** Pick from the dropdowns. Don't retype a name from memory.
+- **Tag both sides.** Income-only tags look great. Cost-only tags look terrible. A number that looks too good usually has rows missing.
+- **Clear the untagged-income line** now and then. Untagged income makes every line of work look smaller than it is.
+- **Type only in Log and Recurring.** Timeline and the reports only show results. (The one exception: edit a single month in Auto-entries when it was different.)
+- **A number looks wrong?** Check in this order: do a check on Wealth, look for missing rows, check spellings. It's almost always one of these.
 
 ---
 
 ## 17. Questions people ask
 
-**Whose data is this?** Yours. A Google Sheet in your Drive. No account with us, no server, nothing leaves the file.
+**Whose data is this?** Yours. It's a Google Sheet in your Drive. No account with us, no server. Nothing leaves the file.
 
-**Do I need to know accounting?** No. If you can say "money went from here to there," you're qualified. The sheet carries the rigour so you don't have to.
+**Do I need to know accounting?** No. If you can say "money went from here to there", you can use it. The sheet handles the accounting.
 
-**One person? A family? Three businesses?** Yes — one sheet. Your words make the walls: `personal/…`, `shop/…`, `mom/…`. Watch any one of them, or everything at once. (Starter rows for each of these lives ship with this guide — pick yours, type ten rows, you're running.)
+**One person? A family? Three businesses?** All in one sheet. Start names with whose money it is: `personal/…`, `shop/…`, `mom/…`. Look at any one of them, or all together. (Starter rows for each of these come with this guide. Pick yours, type ten rows, and you're running.)
 
-**Does this replace my CA?** No. Your CA files; this makes *you* the informed one in that meeting. They tell you what happened last year — this tells you what to do this month.
+**Does this replace my CA?** No. Your CA files your taxes. This makes you the informed one in that meeting. They tell you what happened last year. This helps you decide what to do this month.
 
-**Do I get updates?** Your copy can't be changed from outside — that's your privacy working. New versions are announced; moving is copying your rows across, and you'll be walked through it.
+**Do I get updates?** Nobody can change your copy from outside. That protects your privacy. New versions are announced, and moving means copying your rows across. You'll be shown how.
 
-**I entered something wrong.** Fix it. Words, tags, purposes are your *interpretation* — reinterpret freely, forever. What actually happened — date, amount, who to whom — keep true, and everything above it can always be repaired.
+**I entered something wrong.** Fix it. Tags, words and purposes are your own interpretation, so change them whenever you like. Keep the facts true: date, amount, who paid whom. Everything else can always be fixed.
 
 ---
 
 ## 18. Where to next
 
-Two companions, both for once you've been using this a while.
+Two more pages, for once you've used the sheet for a while.
 
 **Little things you can already do** — https://hisaab.craftycrow.co/little-things.html
-Everything the sheet already does that nobody tells you about: naming tricks, date shortcuts, and the Google Sheets features you already own and never use.
+Useful things the sheet already does that are easy to miss: naming tricks, date shortcuts, and Google Sheets features you already have.
 
 **Money that grows** — https://hisaab.craftycrow.co/money-that-grows.html
-What you own and what you owe, in these same four columns. Investments, debt, and the one number that tells you where you actually stand.
+What you own and what you owe, in the same four columns. Investments, debt, and the one number that shows where you really stand.
 
 ---
 
-*How you'll know it's working: fewer surprises. A payment will run late and you'll find you already knew on Tuesday. A "profitable" month won't confuse you, because you'll know where the cash went. That's the whole product —*
+*How you'll know it's working: fewer surprises. A payment runs late, and you already knew on Tuesday. A "profitable" month doesn't confuse you, because you know where the cash went.*
 
 **You know what's in the bank. This tells you what it means.**
 
@@ -485,358 +490,352 @@ DOCUMENT: Little things you can already do   (https://hisaab.craftycrow.co/littl
 
 # Little things you can already do
 
-*A companion to the Guide. Nothing here is a feature you switch on — all of it
-falls out of how the sheet is shaped. Skim it once; you'll keep finding uses.*
+*A companion to the Guide. Nothing here needs switching on. It all comes from how the
+sheet is built. Skim it once, and you'll keep finding uses.*
 
 ---
 
 ## Names that do the work
 
-**A slash makes a family.** `bank/idfc`, `bank/kotak`. Now `bank` totals both,
-`bank/idfc` totals one. You never set up a category list — your typing did it.
+**A slash makes a group.** `bank/idfc`, `bank/kotak`. Now `bank` totals both, and
+`bank/idfc` totals one. You never set up a list of categories. Your naming did it.
 
 **Go as deep as you like.** `mom/union/fd` counts three ways: under `mom`, under
 `mom/union`, and on its own. No setup, no limit.
 
-**Slashes work in tags too,** not just From and To. `marketing/instagram`,
-`marketing/print` — and `marketing` adds them up.
+**Departments, teams and branches, for free.** `staff/salary`, `staff/wages`,
+`staff/bonus`. The word `staff` now totals everyone you pay. You never set up a
+department. You just named things the same way.
 
-**Departments, teams, branches — for free.** `staff/salary`, `staff/wages`,
-`staff/bonus`. The word `staff` is now every person you pay. You never designed
-a department; you just typed consistently.
+**One sheet, many lives.** `personal/…`, `shop/…`, `mom/…`. The first word keeps
+them apart. Look at one, or at everything.
 
-**One sheet, many lives.** `personal/…`, `shop/…`, `mom/…`. The words are the
-walls. Watch one, or watch everything.
-
-**The dropdown remembers every name you've used.** Start typing, pick from the
-list. That's the whole trick to keeping totals clean — never re-type a name from
-memory.
+**The dropdown remembers every name you've used.** Start typing and pick from the
+list. That's the whole trick to clean totals: never retype a name from memory.
 
 **A name can be anything.** A person, a bank, a shop, a machine, a project code
-like `#PROJ-123`. The sheet doesn't care what it is; it just counts it.
+like `#PROJ-123`. The sheet doesn't care what it is. It just counts it.
 
 **Changed your mind about a name? Ctrl+H.** Find `Acme`, replace with
-`Acme Pvt Ltd`, every row at once. Split totals get merged, old habits get
-renamed, and nothing about what happened changes. *(Select the columns first and
-tick "specific range" — then it can only touch what you picked. Do Log and
-Recurring both, or tomorrow's rows come back with the old name.)*
+`Acme Pvt Ltd`, and every row changes at once. Split totals join up, old names
+get updated, and nothing about what happened changes. *(Select the columns first
+and tick "specific range", so it only touches what you picked. Do it in both Log
+and Recurring, or tomorrow's rows come back with the old name.)*
 
-**That's what keeps it fresh.** Reorganising your names is a two-minute job, not
-a project. So you can start rough today and tidy in December, and the whole
-history rewrites itself.
+**So you can start rough.** Renaming takes two minutes, not a project. Start with
+rough names today, tidy them in December, and your whole history updates.
 
-**Fix a spelling and the totals heal.** `Swiggy` and `swiggy ` with a stray space
-were two strangers splitting one number. One replace, one number.
+**Fix a spelling and the totals join up.** `Swiggy` and `swiggy ` (with a stray
+space) were two names splitting one number. One replace, and it's one number
+again.
 
 ---
 
 ## Words that count
 
-**A tag is a calculator you name.** Put `sharma-reception` on the advance, the
-ingredients, the staff — and it adds itself up. Sign decides plus or minus.
+**A tag totals every row that carries it.** Put `sharma-reception` on the advance,
+the ingredients and the staff, and the sheet adds them up. The sign decides plus
+or minus.
 
-**Several words on one row.** `tiffins, packaging` — both count it. Three
-calculators running at once, no extra work.
+**Several words on one row.** `tiffins, packaging`: the full amount counts in
+both. Two totals from one row, no extra work.
 
-**Anything can be a word.** A client, a season (`diwali-2026`), a channel
-(`instagram`), a bet, one big order. If you'd judge it, name it.
+**Anything can be a tag.** A client, a season (`diwali-2026`), a channel
+(`instagram`), an experiment, one big order. If you'll want to judge it later, tag
+it.
 
-**A job that runs across months still reads whole.** Advance in May, costs in
-June, balance in July — the word's total is the true number. Set the period to
-FY or All and the calendar stops lying to you.
+**A job that runs across months still adds up.** Advance in May, costs in June,
+final payment in July. The tag's total is the real number. Set the period to FY or
+All so a single month doesn't mislead you.
 
-**Cash Flow already breaks up your money by the parent word,** in and out, side
-by side. You'll see which family of spending is really the big one.
+**Cash Flow shows who pays you and where it goes,** side by side, with each
+one's share. You'll see where the money really goes.
 
 ---
 
 ## The sign, and the two ends
 
-**Minus left you, plus came to you.** That's it. Green in, red out — the colour
-says it back.
+**Minus means it left you. Plus means it came to you.** That's all. The colour
+matches: green in, red out.
 
 **You never tell the sheet which names are "you".** Ravi gives you ₹5,000:
-`ravi → cash, +5,000`. You return it: `cash → ravi, −5,000`. Same names,
-opposite signs, both clear.
+`ravi → cash, +5,000`. You pay it back: `cash → ravi, −5,000`. Same names,
+opposite signs.
 
-**Moving your own money isn't income.** Bank to cash — enter the pair, Mode:
-**Self**. Your total doesn't move and no report calls it earnings.
+**Moving your own money isn't income.** Bank to cash is one row: the amount as a
+minus, From the account it left, To the one it reached, Purpose **Self**. No
+report counts it as earnings.
 
-**Starting balances have their own mode.** Mode **Opening Balance** keeps day-one
-money out of your income reports while the balance still picks it up.
+**Starting balances have their own mode.** Mode **Opening Balance** keeps
+day-one money out of your income reports. The balance still counts it.
 
-**Mode gives you a second cut of everything** — cash vs bank vs card vs UPI —
-without you tagging anything.
+**Mode gives you a second view of everything:** cash, bank, card or UPI, without
+tagging anything.
 
-**Description is free.** Write anything, or nothing. It never affects a total, so
-it costs you nothing to be chatty.
+**Description is free text.** Write anything, or nothing. It never changes a
+total.
 
 ---
 
-## Dates are a time machine
+## Dates let you see ahead
 
-**Type a future date, read the balance beside it.** That's your money on that day
-if today's plans hold. Most of what "forecasting" means, already done.
+**Type a future date and read the balance beside it.** That's your money on that
+day if things go as planned. That's most of what "forecasting" means.
 
-**Add a planned row to try out any future.** A ₹2L machine in October, a client's
-₹1L in August — the months ahead redraw instantly. Delete it and the future goes
-back. The sheet *is* the simulator.
+**Add a planned row to try out a decision.** A ₹2 L machine in October, a client's
+₹1 L in August: the months ahead update straight away. Delete the row and
+everything goes back.
 
-**Planned rows never touch your balance.** Money isn't real until it lands, so
-hopes stay visible but never counted.
+**Planned rows never change your balance.** Money isn't real until it arrives,
+so expected money is shown but not counted.
 
-**Two dates ride along.** *Planned on* is when it was due, *Date* is when it
-happened. The gap is how the sheet learns who runs late — *"Sharma runs about 12
-days late."*
+**Two dates are kept.** *Planned on* is when it was due. *Date* is when it
+happened. The gap is how the sheet learns who pays late. It shows as
+**Avg Waiting Time** on the Chase List.
 
-**The same tick does the linking too.** Join two rows with a link and exactly one
-side carries the tick. A purchase paid in installments: the *plan* is ticked, the
-payments are real. One bill covering two jobs: the *bill* is real, the *pieces*
-are ticked. Whatever isn't a payment of its own gets the tick — so the money
-counts once, every time. *Guide, sections 6 and 14.*
+**The same tick handles linked rows.** When two rows are linked, exactly one side
+is ticked. A purchase paid in instalments: the *plan* is ticked, the payments are
+real. One bill covering two jobs: the *bill* is real, the *parts* are ticked.
+Whatever isn't a payment on its own gets the tick, so the money is counted once.
+*Guide, sections 6 and 14.*
 
-**Enter next year's rows today.** Nothing stops you. Known school fees, a wedding
-in March, an insurance renewal — put them in once and stop carrying them in your
-head.
+**Enter next year's rows today.** School fees you know are coming, a wedding in
+March, an insurance renewal. Put them in once and stop carrying them in your head.
 
 **Backdate freely.** Forgot a month? Type the rows with their real dates. The
-balance and every report reorder themselves.
+balance and every report sort themselves out.
 
-**A date can carry a time.** `06-Aug 11:30` — and the balance beside it is your
+**A date can include a time.** `06-Aug 11:30`, and the balance beside it is your
 money at 11:30, not at the end of the day. For a shop, that's the morning float,
-the afternoon rush, the evening deposit, each in the right order.
+the afternoon rush and the evening deposit, each in the right order.
 
-**Same-day rows stop guessing.** Ten entries on one date sort themselves the way
-they actually happened, so the running balance is right at every single line —
-not just correct by closing time.
+**Rows on the same day stay in order.** Ten entries on one date sort in the order
+they happened, so the running balance is right on every line, not just at the end
+of the day.
 
-**Ctrl+Shift+Alt+; stamps this exact moment.** Date and time, one keystroke, as
-the sale happens. (Ctrl+; is just the date, Ctrl+Shift+; is just the time.)
+**Ctrl+Shift+Alt+; enters the date and time right now,** in one keystroke.
+(Ctrl+; is just the date. Ctrl+Shift+; is just the time.)
 
 ---
 
-## Repeats — write once, run forever
+## Recurring — write once, runs by itself
 
-**One line covers a year.** Rent, salaries, EMIs, subscriptions, the monthly
+**One row covers a year.** Rent, salaries, EMIs, subscriptions, a monthly
 retainer. Never type them twelve times.
 
-**Odd patterns are covered.** Every 2 weeks, Third Friday, Last day, Day 1 *and*
-Day 15, every 4 months. Pick from dropdowns.
+**Unusual patterns are covered.** Every 2 weeks, the third Friday, the last day,
+both Day 1 *and* Day 15, every 4 months. Pick from the dropdowns.
 
-**End is flexible.** Blank = never. A number = that many times. A date = stop
-then.
+**End is flexible.** Blank means never. A number means that many times. A date
+means stop then.
 
-**Edit one month without breaking the rule.** Date slipped, paid by cash instead
-— change that single row. Your edit is respected; the rule never overwrites it.
+**Change one month without breaking the rule.** Date moved, paid in cash instead?
+Change that one row. The rule never overwrites your edit.
 
-**Every rule tells you its monthly bite.** An ₹18,000 yearly insurance is ₹1,500
-a month. Now anything can be compared with anything.
+**Every rule shows its monthly bite.** ₹18,000 a year of insurance is ₹1,500 a
+month. Now you can compare anything with anything.
 
-**EMIs count themselves down.** Paid, remaining, next date, and a bar filling up.
-No separate loan tracker.
+**EMIs count down by themselves.** Paid, remaining, next date, and a bar filling
+up. No separate loan tracker.
 
-**Mark each rule Essential / Nice-to-have / Can drop.** On a tight day the sheet
-already knows what to cut first — and how much comes back per month.
+**Mark each rule Essential, Nice-to-have or Can drop.** In a tight month you
+already know what to cut first, and how much a month it saves.
 
-**One number worth staring at:** your repeats added up for the year. *"₹14L is
-owed no matter what happens."* People cancel subscriptions on that line alone.
+**One number worth a look:** **Safety money** on the Dashboard. With months to
+survive set to 12, it's a year of what goes out whether you work or not. Most
+people cancel something after seeing it.
 
 ---
 
 ## Watchlist — the fastest thing in the sheet
 
-**Type any name, get its whole story.** In, out, net, share, twelve-month trend.
-A client, an account, a tag, a project code.
+**Type any name and see its whole story.** In, out, net, money life, and a trend
+line. A client, an account, a tag, a project code.
 
-**Add a row to compare.** Two clients, two months, two lines of work — side by
-side, no report to build.
+**Add a row to compare.** Two clients, two months, two lines of work, side by
+side, with no report to build.
 
-**Ready-made periods.** This month · 90 days · FY · All · Custom. Blank means all
-time.
+**Ready-made periods.** This month or this year, the next or last 30 days, 90 days,
+6 months or a year, and more. Or leave Period blank and set your own From and To
+dates.
 
-**Ask a question, get an answer, delete the row.** It's scratch paper. Nothing
-you type there can break anything.
+**Ask a question, get the answer, delete the row.** Use it like scrap paper.
+Nothing you type there can break anything.
 
-**Parent words work here.** Type `staff` and every person you pay is in that one
-number.
+**Group names work here.** Type `staff` and everyone you pay is in one number.
 
 ---
 
 ## Limits and goals
 
-**A limit is a ceiling, a goal is a floor.** "Chai under ₹500 a week." "₹30L from
-events this year." Same small table.
+**A limit is a ceiling. A goal is a floor.** "Chai under ₹500 a week." "₹30 L from
+events this year." Both go in the same small table.
 
-**Point them at anything** — a name, a tag, an account. Not just spending
+**Point them at anything:** a name, a tag, an account. Not just spending
 categories.
 
-**Rolling windows, not just calendar months.** "Last 30 days" keeps moving with
+**Rolling windows, not just calendar months.** "Last 30 days" moves forward with
 you.
 
-**Colour is the alert.** Green fills, amber at 80%, red over. Nothing pops up,
-nothing nags.
+**Colour is the alert.** The bar fills green, and anything over the limit shows
+red. No pop-ups, no nagging.
 
-**Break the same limit three times and it argues back** — with a number from your
-own history. *"₹871 is more realistic."* A budget you always break is a wrong
-number, not a discipline problem.
+**Break the same limit three times and it suggests a better one,** worked out from
+your own spending: *"₹900 is more realistic."* A budget you always break is the
+wrong number, not a lack of discipline.
 
 ---
 
 ## Reading the numbers
 
-**The Chase List is the highest-paying screen in the sheet.** Money you've
-already earned, not yet collected. Chasing it beats finding a new customer,
-every time.
+**The Chase List is the most valuable list in the sheet.** It's money you've
+already earned but not collected. Collecting it is easier than finding a new
+customer.
 
-**It also learns your payers.** Once there's history, it tells you how late each
-one usually runs — so you plan around them instead of hoping.
+**It learns how your clients pay.** Once there's history, it shows how late each
+one usually pays, so you can plan around it.
 
-**The monthly snapshot colours itself.** A month sinking toward your safety money goes
-darker months before it arrives, while you can still do something.
+**The monthly snapshot colours itself.** A month that won't cover what it needs
+turns amber, then red, months before it arrives, while you can still act.
 
-**Last year sits in the same table.** This September against last September, no
-work.
+**Last year is in the same table.** This September next to last September, with no
+extra work.
 
-**Where the profit went, in three lines.** Invested, loan, took home — the three
-things that eat cash without ever showing as a cost. This is the answer to
-"the year was profitable, so where's the money?"
+**Where the profit went, in three lines.** Invested, Loan, Took home: the three
+things that take cash without being a cost. This answers "we made a profit, so
+where's the money?"
 
-**Streams are ranked by share, not size.** Big orders and small ones get judged
-fairly.
+**The report checks itself.** Income that isn't tagged to any line of work shows up
+as its own figure, with the rows listed under Missing Counts. Tag them and it
+clears.
 
-**The report grades itself.** Income sitting on no stream shows up as its own
-row, with the exact rows listed and a link to each. When it hits zero, it
-disappears.
+**Untick Is Planned and the row leaves the Chase List.** The due date is kept, so
+the sheet remembers how late it was.
 
-**Untick Planned and the chase closes itself.** The due date stays behind so the
-sheet remembers how late it ran.
-
-**Paid in parts?** Log what came, shrink the planned row to what's still due.
-The chase keeps tracking the rest. Or link each part to the planned row instead
-and the sheet keeps score for you — *paid ₹2.5L, ₹1.5L left*. *Guide, section 14.*
+**Paid in parts?** Add what came, and reduce the planned row to what's still due.
+The Chase List keeps tracking the rest. Or link each part to the planned row and
+the sheet keeps count for you: *paid ₹2.5 L, ₹1.5 L left*. *Guide, section 14.*
 
 ---
 
 ## Free, because it's a spreadsheet
 
-Every one of these is Google Sheets, not Hisaab. You already own them.
+All of these are Google Sheets features, not Hisaab's. You already have them.
 
 ### Entering and fixing
 
-**Ctrl+D repeats the row above.** Most rows are near-copies of the last one.
+**Ctrl+D copies the row above.** Most rows are nearly the same as the last one.
 
-**It finishes your names for you.** Start typing in a column and it suggests what
-you've typed before — Enter accepts, Escape refuses. Free protection against two
-spellings of one client.
+**It finishes names for you.** Start typing in a column and it suggests what
+you've typed before. Enter accepts, Escape ignores it. That stops two spellings of
+one client.
 
-**Ctrl+Shift+V pastes plain.** Copying from WhatsApp or a bank statement brings
-their colours and fonts with it. This strips all of that and keeps only what
-matters.
+**Ctrl+Shift+V pastes plain text.** Copying from WhatsApp or a bank statement
+brings their colours and fonts along. This keeps only the text.
 
-**Drag the little blue square** at a cell's corner to fill dates or repeat a name
+**Drag the small blue square** at a cell's corner to fill dates or repeat a name
 down twenty rows.
 
-**Ctrl+Z, and Ctrl+Shift+Z to put it back.** Then version history behind both.
+**Ctrl+Z undoes, Ctrl+Shift+Z redoes.** And version history is behind both.
 
 ### Getting around
 
-**Ctrl+F finds anything.** A name, an amount, half a word in a description.
-Faster than any filter.
+**Ctrl+F finds anything.** A name, an amount, part of a description. Faster than
+any filter.
 
 **Ctrl+↓ jumps to the last row.** The bottom of a 2,000-row Log, instantly.
 
-**Click a column heading to sort.** Sort the Log by amount and the biggest spends
-of your life are at the top in one click.
+**Click a column heading to sort.** Sort the Log by amount and your biggest
+payments are at the top.
 
-**Filter views slice without disturbing anyone.** This month, one account,
-untagged rows — saved, reusable, invisible to whoever else is looking at the same
-file.
+**Filter views let you slice without changing the view for others.** This month,
+one account, untagged rows: saved, reusable, and only you see them.
 
-**Select any set of amounts and read the corner.** Bottom right shows the sum,
-live. Ctrl+click to pick scattered rows and it still adds them. A calculator you
-never open — and click it to switch to average, count, or highest.
+**Select some amounts and look at the bottom-right corner.** It shows the sum.
+Ctrl+click to add scattered rows. Click it to switch to average, count or
+highest.
 
-**Hide the columns you never use.** Ref #, link — right-click, hide. Nothing is
-deleted, the sheet just gets quieter.
+**Hide the columns you never use.** Ref Num, link: right-click, Hide. Nothing is
+deleted. The sheet just looks simpler.
 
-**Group rows to fold them away.** Old months collapse behind a little +. Your
-history stays; your screen doesn't.
+**Group rows to fold them away.** Old months collapse behind a small +. The history
+stays; it's just out of the way.
 
 **Open the same file in two windows.** Log on one screen, Dashboard on the other,
-both live. Type a row, watch the numbers move.
+both live. Type a row and watch the numbers change.
 
 ### Working with people
 
-**Right-click a row → Comment.** Stick the invoice number, a photo link, or "ask
-Ramesh about this" on the row itself.
+**Right-click a row → Comment.** Add the invoice number, a photo link, or "ask
+Ramesh about this" to the row itself.
 
-**Put @their-email in a comment** and it becomes their job — they get the mail,
-they reply on the row, it ticks off when done. *"@ramesh what was this ₹40,000?"*
-Your questions stop living in WhatsApp.
+**Put @their-email in a comment** and it's assigned to them. They get an email,
+they reply on the row, and it's marked done when finished. *"@ramesh what was this
+₹40,000?"* Your questions stop getting lost in WhatsApp.
 
-**Share it with your CA, read-only.** They see everything, change nothing. No
-export, no email, no version confusion.
+**Share it with your CA as view-only.** They see everything and can't change
+anything. No exports, no emails, no confusion about versions.
 
-**Get an email when anyone edits.** Tools → Notification settings. Useful the day
-you let staff enter rows.
+**Get an email when anyone edits.** Tools → Notification settings. Useful once
+staff start entering rows.
 
-### Keeping and carrying it
+### Keeping it safe and taking it with you
 
-**It's on your phone.** Same file, Google Sheets app. Add a row standing at the
-shop.
+**It's on your phone.** Same file, in the Google Sheets app. Add a row standing in
+the shop.
 
-**It works with no network.** Turn on offline in the app; type at the godown,
-type on a flight. It syncs when the signal comes back.
+**It works offline.** Turn on offline mode in the app, and type at the godown or on
+a flight. It syncs when you're back online.
 
-**Download as PDF** — the Dashboard, one page, for the bank or the CA.
+**Download as PDF:** the Dashboard on one page, for the bank or your CA.
 
-**Download as Excel or CSV** for a hard backup that doesn't depend on Google.
+**Download as Excel or CSV** for a backup that doesn't depend on Google.
 
-**Make a copy any time.** That's a snapshot of your finances on that date, kept
-forever. Free year-end archive. A copy's automation isn't wired until you run
-**Actions → Set up this copy** — an archive doesn't need it.
+**Make a copy any time.** It's a snapshot of your finances on that date, kept
+forever. A free year-end archive. A copy's automation doesn't run until you use
+**Actions → Set up this copy**, and an archive doesn't need it.
 
-**Undo is forever.** File → Version history → go back to any day. You cannot
-permanently break this file. Try things.
+**Undo goes back as far as you like.** File → Version history → go back to any
+day. You can't permanently break this file, so try things.
 
 ### Making it yours
 
-**Add a tab for anything.** Right-click at the bottom, new sheet, name it. Which
-nominee is on which account, policy numbers, the locker key, who to call when
-something goes wrong. Most families keep all that on one piece of paper and lose it;
-a business has ten times more of it and nowhere to put it. Now it lives next to the
-money it belongs to, in the one file you already open. *Names, numbers and nominees,
-yes — passwords and OTPs, never, here or anywhere.*
+**Add a tab for anything.** Right-click at the bottom, add a sheet, name it. Which
+nominee is on which account, policy numbers, where the locker key is, who to call
+when something goes wrong. Most families keep this on one piece of paper and lose
+it. A business has ten times more of it and nowhere to keep it. Now it sits next to
+the money it's about, in the file you already open. *Names, numbers and nominees,
+yes. Passwords and OTPs, never, here or anywhere.*
 
-**Your own formulas are welcome.** Add a column, write a SUM, build the one view
-only you need. It's your file.
+**Add your own formulas.** Add a column, write a SUM, build the one view only you
+need. It's your file.
 
-**Add your own colour rules.** Conditional formatting — "anything over ₹50,000
-turns yellow." The sheet starts flagging what *you* care about.
+**Add your own colour rules.** Conditional formatting: "anything over ₹50,000
+turns yellow." The sheet starts highlighting what you care about.
 
-**Set your locale to India, once.** File → Settings. Dates read 06/08 as 6 August
-and ₹ behaves. Two clicks that prevent a year of confusion.
+**Set your locale to India, once.** File → Settings. Then 06/08 reads as 6 August
+and ₹ works properly. Two clicks that prevent a year of confusion.
 
 ---
 
 ## Safety net
 
-**The bank check catches every kind of error at once.** Type your real bank
-balance; the gap *is* the missing story — a bounced EMI, a forgotten sale, a
+**One check catches every kind of mistake.** On Wealth, under Checks, type what you
+actually have. The gap is whatever's missing: a bounced EMI, a forgotten sale, a
 typo.
 
-**A bounced payment takes two seconds.** Re-tick Planned, move the date forward.
-It goes back to "coming" and the balance corrects itself.
+**A bounced payment is quick to fix.** Tick Is Planned again and move the date
+forward. It goes back to "coming", and the balance corrects itself.
 
-**Rough beats missing.** One line — *−40,000 · bank → misc · "catching up June"*
-— and you're current again. No streaks, no guilt.
+**Roughly right is better than missing.** One row, *−40,000 · bank → misc ·
+"catching up June"*, and you're up to date. No streaks to keep.
 
-**Words and tags are yours to change forever.** What happened — date, amount, who
-to whom — keep that true. Everything on top of it can be reinterpreted any time.
+**Tags and words are yours to change any time.** Keep what happened true: date,
+amount, who paid whom. Everything else can be changed whenever you like.
 
 ---
 
-*None of this needed a new button. It fell out of four columns and a slash.*
+*None of this needed a new button. It all comes from four columns and a slash.*
 
 
 ==============================================================================
@@ -845,41 +844,40 @@ DOCUMENT: Money that grows   (https://hisaab.craftycrow.co/money-that-grows.md)
 
 # Money that grows
 
-*Part three. The Guide answered "do I have enough?" — the fast question.
-This one answers the slow one: **is it growing?***
+*Part three. The Guide answered the quick question: "do I have enough?" This one
+answers the slow one: **is it growing?***
 
-Investments, loans and building wealth need no new skill and no new way of
-writing a row. Everything here falls out of what you already know: a sign, two
-names, and a Purpose. There's one screen you haven't met — **Wealth** — and every
-number on it is computed from rows you were already writing.
+Investments, loans and building wealth need no new skill and no new way of writing
+a row. It all works with what you already know: a sign, two names and a Purpose.
+There's one tab you haven't used yet, **Wealth**, and every number on it comes from
+rows you were already writing.
 
 ---
 
 ## Spent or parked
 
-Two rows can both be minus and mean opposite things.
+Two rows can both be a minus and mean opposite things.
 
-₹450 on dinner is **gone**. ₹1,00,000 into an FD is **still yours** — it just
-sits somewhere else. Your bank balance fell the same in both cases. Your wealth
-fell in only one.
+₹450 on dinner is **gone**. ₹1,00,000 into an FD is **still yours**. It's just
+somewhere else. Your bank balance fell the same way both times. Your wealth fell
+only once.
 
-That difference is the whole subject, and one dropdown carries it:
+That difference is what this page is about, and one dropdown records it:
 
-- **Running cost · Specific cost** — spent. It made you poorer.
-- **Invested** — parked. It moved, it didn't leave.
+- **Running cost or Specific cost**: spent. It made you poorer.
+- **Invested**: parked. It moved somewhere, but it's still yours.
 
-Pick it as the row goes in and you never have to think about this again. The
-reports keep the two apart forever: spending sits above the line, parking below
-it.
+Pick it when you enter the row and you never have to think about it again. The
+reports keep the two apart from then on.
 
-> *A minus is not automatically a cost.*
+> *Not every minus is a cost.*
 
 ---
 
 ## Every place gets a name
 
-Anywhere money sits and waits is just a name in **To** — same as a shop, a
-client, a bank.
+Anywhere your money sits and waits is just a name in **To**, like a shop, a client
+or a bank.
 
 ```
 fd/hdfc        mf/parag        gold           epf
@@ -887,46 +885,46 @@ fd/sbi         mf/quant        plot/nashik    nps
                 stocks/zerodha
 ```
 
-The slash does what it always does: `mf` totals every fund, `fd` totals every
-deposit, and each one still counts on its own. You never build a portfolio
-list — your typing built it.
+The slash works as it always does: `mf` totals every fund, `fd` totals every
+deposit, and each one still counts on its own. You never build a portfolio list.
+Your naming builds it.
 
-Business money that lasts works identically: `machine/oven`, `deposit/shop`,
+Business things that last work the same way: `machine/oven`, `deposit/shop`,
 `laptop`.
 
 ---
 
 ## Buying and selling
 
-Buying is one row. Money leaves the bank, arrives at the holding.
+Buying is one row. Money leaves the bank and goes to the holding.
 
 | Date | Amount | From | To | Purpose |
 |---|---|---|---|---|
 | 05-Aug | −1,00,000 | bank/hdfc | fd/hdfc | Invested |
 
-**Paying for it in pieces?** A ₹5L machine, three payments whenever cash allowed.
-Enter the whole purchase once as a planned row, then link each payment to it as it
-happens — *paid ₹3L, ₹2L left*. Only the plan carries the tick, so the money still
-counts exactly once. *Guide, section 14.*
+**Paying in parts?** A ₹5 L machine, paid in three payments whenever you had the
+cash. Enter the whole purchase once as a planned row, then link each payment to it
+as it happens: *paid ₹3 L, ₹2 L left*. Only the plan is ticked, so the money is
+counted once. *Guide, section 14.*
 
-Selling — or an FD maturing — is **two** rows, and the second row is the point.
+Selling, or an FD maturing, takes **two** rows. The second row is the important one.
 
 | Date | Amount | From | To | Purpose | Tags |
 |---|---|---|---|---|---|
 | 05-Aug | +1,00,000 | fd/hdfc | bank/hdfc | Invested | |
 | 05-Aug | +7,000 | fd/hdfc | bank/hdfc | Earned | returns |
 
-One is your own money coming back. The other is what it made. Getting your money
-returned is not income — only the ₹7,000 is. Split them once, at entry, and
-every report downstream tells the truth by itself.
+The first is your own money coming back. The second is what it earned. Getting your
+own money back isn't income. Only the ₹7,000 is. Split them once, when you enter
+them, and every report stays right.
 
-> *Return **of** your money, and return **on** it. Never the same line.*
+> *Money coming back and money earned are never the same row.*
 
 ---
 
 ## The one number that tells you where you stand
 
-Open **Watchlist**, type a holding's name, set the period to **All**.
+Open **Watchlist**, type a holding's name, and set the period to **All**.
 
 ```
 fd/hdfc      out 1,00,000    in 1,07,000    net    +7,000
@@ -935,380 +933,382 @@ mf/parag     out 3,60,000    in         0   net −3,60,000
 
 Read it like this:
 
-- **Net is negative** — it's still running. That figure is what you have parked
-  there.
-- **Net is positive** — it's closed. That figure is what it earned you.
+- **Net is negative**: it's still running. That figure is what you have put in.
+- **Net is positive**: it's finished. That figure is what it earned you.
 
-One number, two jobs, decided by the sign.
+The sign tells you which.
 
-> ***Net while it's open is your position. Net when it's closed is the verdict.***
+> ***While it's running, Net is what you have in it. When it's finished, Net is what
+> it made.***
 
-Type one row per holding and you're looking at your portfolio. No report to
-build.
+One row per holding, and you're looking at your portfolio. No report to build.
 
 ---
 
 ## Debt is the same thing, backwards
 
-Borrowing is a plus. Repaying is a minus. Purpose **Loan** on both — because
-borrowed money is not income, however good the month suddenly looks.
+Borrowing is a plus. Repaying is a minus. Use Purpose **Loan** on both, because
+borrowed money isn't income, however good the month looks.
 
-Then the mirror runs by itself:
+Then it works the other way round:
 
 ```
 loan/car     in 5,00,000    out 6,20,000    net −1,20,000
 ```
 
-- **Net positive** while it runs — that's what you still owe.
-- **Net negative** when it ends — that's what borrowing cost you.
+- **Net positive** while the loan runs: that's what you still owe.
+- **Net negative** when it's finished: that's what borrowing cost you.
 
-₹1,20,000, without opening an amortisation table.
+₹1,20,000, without an amortisation table.
 
-And that number does one more job. Clearing a loan early *earns* you the
-interest you'd have paid. Set it against what an investment might return, and
-the loan usually wins — because its return is certain and the other one isn't.
+That number is useful for one more thing. Paying a loan off early saves you the
+interest you would have paid. Compare that with what an investment might earn. The
+loan usually wins, because its saving is certain and the investment's return isn't.
 
-Every loan you're carrying is listed together on the **Wealth** tab, under what
-you own — still owed, per month, and the month it ends:
+All your loans are listed together on the **Wealth** tab, next to what you own:
+what's still owed, the monthly payment, and when it ends.
 
 ```
 WHAT YOU OWE
-Loan            Still owed    Per month     Ends
+Loan            Still owed    Per Month     Ends
 loan/car          3,15,000      −18,400     Mar-2028
 loan/gold         2,00,000      −12,000     Nov-2027
 ```
 
-Sitting them directly below your holdings is the point. Wealth is one minus the
-other, and both halves belong on one screen.
+They sit next to your holdings on purpose. What you're worth is one minus the
+other, so both belong on one screen.
 
-**When the lender pays the seller directly** — most car and machine loans never
-touch your bank. Write it as a pair, same date:
+**When the lender pays the seller directly.** Most car and machine loans never pass
+through your bank. Write it as two rows on the same date:
 
 | Date | Amount | From | To | Purpose |
 |---|---|---|---|---|
 | 05-Aug | +5,00,000 | loan/car | bank/hdfc | Loan |
 | 05-Aug | −5,00,000 | bank/hdfc | asset/car | Invested |
 
-The money never really passed through your bank, but writing it that way costs
-nothing and gets everything right: the two rows cancel each other, you own a car,
-you owe a loan, and both show up where they belong. It's the same pair you already
-use for moving your own money.
+The money never really went through your bank, but writing it this way gets
+everything right. The two rows cancel out in your bank balance, you own a car, you
+owe a loan, and both show up in the right place.
 
 ---
 
 ## Check in whenever you like
 
-One small table at the bottom of Wealth. The date, what you're worth that day,
-and a note if you want one.
+There's a small table on Wealth called **Checks**: the date, what you're worth that
+day, and a note if you like.
 
 ```
-Date          Net worth     Change       Note
-12-May-2026   28,43,000        —
-05-Aug-2026   30,53,000   +2,10,000      sold the plot
+Date          NetWorth     Change       Notes & Strategies
+12-May-2026   28,43,000
+05-Aug-2026   30,53,000   +2,10,000     sold the plot
 14-Nov-2026   31,10,000     +57,000
 ```
 
-Add a row every quarter, twice a year, or whenever you remember. The sheet fills
-in the change since your last row by itself, and draws the line so you can see the
-shape of it.
+Add a row every quarter, twice a year, or whenever you remember. The sheet fills in
+the change since your last row.
 
-There's no schedule to keep and nothing goes wrong if you skip a year. Two rows is
-already a story.
+There's no schedule to keep, and nothing goes wrong if you skip a year. Two rows
+already show a direction.
 
-And if your figure and the sheet's figure disagree, it says so — *sheet says
-₹30.5L, you say ₹30.1L, off by ₹40,000.* That gap is nearly always a holding whose
-value moved, or one you never listed. Same trick as the bank check, one level up.
+If your figure and the sheet's figure are different, it tells you: *sheet says
+₹30.5 L · you say ₹30.1 L · off by ₹40,000.* The gap is almost always a holding
+whose value changed, or one you never entered.
 
 ---
 
 ## Is your debt working?
 
-Two loans can feel identical the day the money lands and end up nothing alike.
-One buys you something, or earns you more. The other is just spent.
+Two loans can look the same on the day the money arrives and turn out completely
+differently. One buys you something, or helps you earn more. The other just gets
+spent.
 
-The sheet never asks you where the loan went. Nobody can answer that honestly —
-money mixes the moment it's in your bank. It asks two easier questions instead.
+The sheet never asks where the loan money went. Nobody can answer that honestly,
+because money gets mixed together once it's in your bank. It asks two easier
+questions instead.
 
 **First: are you earning more each month than your loans take each month?**
 
 ```
-You earn         +34,000 a month more than last time
+You Earn         +34,000 a month more than last time
 Your loans take  −30,400 a month
 ```
 
-If yes, the debt is working — whatever it was spent on. That's the whole test.
-It even covers the loan you took for stock or wages, which never becomes anything
-you *own*; it becomes next month's income. Assets alone would call that a
-disaster.
+If yes, the debt is working, whatever it was spent on. That's the whole test. It
+also covers a loan taken for stock or wages, which never becomes something you
+*own*. It becomes next month's income. Judged by assets alone, that loan would look
+like a failure.
 
-**If not — do you at least own something new?** A machine that hasn't earned yet
-is still a machine. That's a purchase, not a plan, but you're not poorer.
+**If not, do you at least own something new?** A machine that hasn't started
+earning is still a machine. You bought something. You're not poorer.
 
-**Neither?** The money's gone and the payments aren't. That's the only one worth
-worrying about.
+**Neither?** The money's gone and the payments continue. That's the one to worry
+about.
 
-> ***Good debt isn't about what you bought. It's whether you now earn more than
-> it costs you.***
+The sheet gives its verdict in one line: *"Debt that earns"*, *"Debt that owns"*,
+or *"Debt that vanished"*.
 
-One honest note: this looks at all your borrowing together, not loan by loan.
-Splitting it per loan would mean guessing which rupee went where — and a guess
-that looks like a fact is worse than no answer.
+> ***Good debt isn't about what you bought. It's whether you now earn more than it
+> costs you.***
 
----
-
-## Log at the wall, not inside the pocket
-
-A broker account, a mutual fund platform, a trading app — money goes in, money
-comes out, and a hundred things happen inside.
-
-**Log the wall.** Money into `stocks/zerodha`, money out of `stocks/zerodha`.
-What happened inside is the broker's statement's job; they already do it better
-than you will. Watchlist's Net on that one name is your real result.
-
-Forty rows a year instead of four hundred — and more accurate, because forty is
-a number you'll actually keep up with.
-
-**Trading works the same way.** If you're in and out of positions, you don't need
-a different tool — you need a smaller question. Judging the *account*? Log the
-wall. Judging one position? Give it its own name — `stocks/tatamotors` — and log
-its buys and sells to that name. Net answers whichever question you asked.
-
-Both at once is fine too. Wall for the money, names for the ones you're actually
-watching.
+One note: this looks at all your borrowing together, not loan by loan. Splitting it
+by loan would mean guessing which rupee went where, and a guess that looks like a
+fact is worse than no answer.
 
 ---
 
-## SIPs are just repeats
+## Record what goes in and out, not what happens inside
 
-One line in **Recurring**: *−10,000 · bank → mf/parag · Monthly · Day 5 ·
-Purpose Invested.* Written once, runs forever, no ticking.
+A broker account, a mutual fund platform, a trading app: money goes in, money comes
+out, and a hundred things happen inside.
 
-Two things it gives back:
+**Record only what crosses the edge.** Money into `stocks/zerodha`, money out of
+`stocks/zerodha`. What happens inside is what the broker's statement is for, and
+they do it better. Watchlist's Net on that one name is your real result.
 
-**The yearly number.** *₹1,20,000 goes into investments this year whether you
-notice or not.* Most people have never seen that figure about themselves.
+That's forty rows a year instead of four hundred, and more accurate, because forty
+is a number you'll actually keep up with.
 
-**Importance: Essential.** On a tight month, the sheet already knows this is not
-what to cut. Investing is mostly the habit of not stopping — so tell the sheet
-it's not optional, and let it argue for you.
+**Trading works the same way.** If you're buying and selling often, you don't need
+a different tool. You need a narrower question. Judging the whole *account*? Record
+the edge. Judging one position? Give it its own name, like `stocks/tatamotors`, and
+record its buys and sells there. Net answers whichever question you asked.
+
+You can do both: the edge for the account, and names for the positions you're
+watching closely.
 
 ---
 
-## What matters is what moved
+## SIPs are just recurring rows
 
-Money out, money back, and the difference. That is what the sheet holds, and it
-is the only part that's certainly true — because it happened.
+One row in **Recurring**: *−10,000 · bank → mf/parag · Monthly · Day 5 ·
+Purpose Invested.* Write it once and it keeps going, with nothing to tick.
+
+It gives you two things:
+
+**The yearly number.** *₹1,20,000 goes into investments this year, whether you
+notice or not.* Most people have never seen that figure for themselves.
+
+**Importance: Essential.** In a tight month, the sheet knows this isn't the thing
+to cut. Investing is mostly the habit of not stopping, so tell the sheet it isn't
+optional.
+
+---
+
+## What counts is what moved
+
+Money out, money back, and the difference. That's what the sheet records, and it's
+the only part that's certainly true, because it happened.
 
 > ***A gain isn't yours until it's a row.***
 
-A holding that's up 40% on screen has paid you nothing. That's a price, not a
-payment, and it can be 20% by Friday. The day you sell, two rows go in, Net turns
-positive — and now it's a fact. Booking is what turns a number into money.
+A holding that's up 40% on screen hasn't paid you anything. That's a price, not a
+payment, and it could be 20% by Friday. The day you sell, two rows go in, Net turns
+positive, and now it's real. Selling is what turns a number into money.
 
-So the sheet's silence about prices isn't a gap. It's the same rule as
-everywhere else here: *money isn't real until it lands.*
+So the sheet not tracking prices isn't a gap. It's the same rule as everywhere else:
+*money isn't real until it arrives.*
 
 ---
 
-## Except when the wait is long
+## Except when you hold for years
 
-One case earns an exception.
+There's one exception.
 
-Something you'll hold for ten or twenty years — the fund, the plot, the policy —
-can go quietly wrong for years and the Log will never say a word, because nothing
-moved. Nothing moving is exactly the problem. A fund that's flat since 2019 looks
-identical to a good one until you look outside the sheet.
+Something you'll hold for ten or twenty years (a fund, a plot, a policy) can go
+wrong quietly for years, and the Log won't show it, because no money moved. That's
+exactly the problem. A fund that hasn't grown since 2019 looks the same as a good
+one until you check outside the sheet.
 
-So for the long ones only, value them once a quarter — not to feel clever about a
-gain, but to answer one question: **is this still worth holding, or does it need
-restructuring?**
+So for long-term holdings only, update their value once a quarter. Not to feel good
+about a gain, but to answer one question: **is this still worth holding, or should
+I change it?**
 
-This is the **Wealth** tab — the slow one, the only screen here measured in years.
-Name a holding once, and it's filled in from that day on, with a single column
-left empty for you:
+That's the **Wealth** tab: the slow one, the only screen measured in years. Once a
+holding has a name, it appears here automatically, with one column for you to fill
+in:
 
 ```
 HOLDINGS                                          as of  05-Aug-2026
 
-Holding           Parked     Value today     On paper     % a year
-mf/parag        3,60,000        4,15,000      +55,000         9.8%
-gold            2,00,000        2,48,000      +48,000         3.7%
-plot/nashik    18,00,000       22,00,000    +4,00,000         2.5%
-stocks/zerodha  1,20,000        1,05,000      −15,000        −8.2%
-epf             4,40,000               —            —            —
+Holdings          Invested   Last checked Value   On Paper   Returns %
+mf/parag          3,60,000             4,15,000    +55,000        9.8%
+gold              2,00,000             2,48,000    +48,000        3.7%
+plot/nashik      18,00,000            22,00,000  +4,00,000        2.5%
+stocks/zerodha    1,20,000             1,05,000    −15,000       −8.2%
+epf               4,40,000                    —          —           —
 ```
 
-**Everything but one column is already known.** *Parked* is what you've put in
-minus what's come back. The last two stay blank until you type a value — and the
-moment you do, they answer. Fill one row, fill all five, fill none for a year;
-the block never nags and never breaks. Empty is a perfectly good state.
+**Everything except one column is already known.** *Invested* is what you've put
+in minus what's come back. The last two stay empty until you type a value, and fill
+in as soon as you do. Fill in one row, all five, or none for a year. It never nags
+and never breaks. Empty is fine. A holding you haven't listed shows as "missing"
+above the table.
 
-The percentage is the real one, not a rough one. Every rupee you sent that
-holding is already in the Log with its date, and that — dates plus signed
-amounts — is exactly what a proper return calculation eats. Your SIP into
-`mf/parag` didn't land on day one, and the number knows it: measured lazily it
-reads 4.8%, measured properly, 9.8%. Twice the answer, same rows.
+The percentage is a proper yearly return. Every rupee you put into that holding is
+already in the Log with its date, and that's exactly what a proper return
+calculation needs. Your SIP into `mf/parag` didn't all go in on day one, and the
+number accounts for that. Measured roughly it reads 4.8%. Measured properly it's
+9.8%. Same rows, twice the answer.
 
 That's the column that drives the decision. ₹4,00,000 up on `plot/nashik` sounds
-like a win until it's read as 2.5% a year for eight years — at which point it's a
-conversation.
+good until you see it's 2.5% a year for eight years. Then it's worth a rethink.
 
-**This block sits outside the Log, and that matters.** A valuation is not a cash
-event — type it as a row and you've just told your bank balance a lie. The same
-rule that keeps planned money out of your balance keeps paper gains out of it too.
+**These values stay out of the Log, on purpose.** A valuation isn't money moving.
+Enter it as a row and your bank balance would be wrong. The same rule that keeps
+planned money out of your balance keeps paper gains out too.
 
-And this is why **In Hand** doesn't count your investments, and shouldn't:
+That's also why **In Hand** doesn't count your investments, and shouldn't:
 
 > ***In Hand is what you can spend. It was never what you're worth.***
 
-What you're worth is a different sum, and the Wealth tab keeps it at the top:
+What you're worth is a different total, shown at the top of the Wealth tab:
 
 ```
-Net worth      30,53,000      ▲ 2,10,000 since 12-May
+Net Worth      30,53,000      ▲ 2,10,000 since 12-May
   In hand       6,48,000      spendable today
   Parked       29,20,000      at value, where you've given one
   Owed         −5,15,000
 ```
 
-Anything you haven't valued is counted at what you paid for it — so the number
-can be out of date, but it can never flatter you. Stamp it each quarter and the
-arrow starts working: not what you're worth, but **whether it's moving.**
+Anything you haven't valued is counted at what you paid for it. So the number can
+be out of date, but it never makes you look richer than you are. Add a check each
+quarter and the arrow starts to mean something: not just what you're worth, but
+**which way it's moving.**
 
 ---
 
 ## Before you invest anything
 
-Three steps, in this order, always:
+Three steps, always in this order:
 
-1. **Safety money first.** *Months of cover* must clear your months to survive.
-   It is not spare money — it's the reason a bad quarter stays a bad quarter instead
-   of becoming the end.
-2. **Then expensive debt.** You already know what each loan costs you. Anything
-   above what a safe investment returns gets cleared before anything gets bought.
-3. **Then invest — from Usable for Growth.** That card is In Hand *after* your
-   safety money is safe. It is the honest answer to "can I afford this?", and it's
-   the only pot investments should ever come from.
+1. **Cushion first.** *Months of cover* must reach your target. The cushion isn't
+   spare money. It's what stops a bad quarter from ending the business.
+2. **Then expensive debt.** You know what each loan costs you. Clear anything that
+   costs more than a safe investment would earn, before you buy anything.
+3. **Then invest, but only what's above the cushion.** In Hand *after* your
+   safety money is the honest answer to "can I afford this?", and it's the only
+   money investments should come from. Past twelve months of cover, the Dashboard
+   tells you so.
 
-Investing your safety money is how a business dies in a good year. Nothing was wrong
-with the investment; the money simply wasn't free.
+Investing the cushion is how a business fails in a good year. Nothing was wrong
+with the investment. The money just wasn't free.
 
 ---
 
 ## Your investments become a line of work
 
-Tag every return `returns` — interest, dividends, rent, profit on a sale.
+Tag every return `returns`: interest, dividends, rent, profit on a sale.
 
-Now look at **Which work pays**. `returns` is sitting there as a stream, with
-income and no work cost behind it. It cost you no hours at all.
-
-```
-tiffins      in 4,20,000 · work costs 2,52,000  →  drops 1,68,000
-events       in 5,00,000 · work costs 4,35,000  →  drops    65,000
-returns      in   58,000 · work costs        0  →  drops    58,000
-```
-
-Watch that last line across years. It only ever grows if you keep feeding it.
-
-And the finish line has a definition, sitting at the bottom of the **Wealth** tab,
-counted for you:
+Now look at **Which work pays** on Real Picture. `returns` shows up as a line of
+work of its own, with income and no work cost. It took none of your time.
 
 ```
-THE SLOW LINE
-Going in         ₹10,000 a month  ·  ₹1,20,000 this year
-Coming back      returns ₹58,000 this year
-Costs to exist   ₹3,36,000 this year
-
-your returns cover 17% of your running costs
+tiffins      in 4,20,000 · work costs 2,52,000  →  adds 1,68,000
+events       in 5,00,000 · work costs 4,35,000  →  adds    65,000
+returns      in   58,000 · work costs        0  →  adds    58,000
 ```
 
-**The day that reaches 100%, working becomes a choice.** That's all "wealth"
-means here — not a number someone else picked for you. It's *Months of cover*
-asked about a whole life instead of one bad quarter.
+Watch that last line over the years. It only grows if you keep adding to it.
 
-Seventeen percent is not close. It also isn't zero, and it moved because you fed
+And the finish line is defined for you, on the **Wealth** tab, under **How
+financially free are you?**:
+
+```
+Going In         ₹10,000 a month  ·  ₹1,20,000 this year
+Coming Back      returns ₹58,000 this year
+Costs To Exist   ₹3,36,000 this year
+
+Your return covers 17% of your Running costs
+```
+
+**When that reaches 100%, working becomes a choice.** That's all "wealth" means
+here, not a number someone else picked for you. It's *Months of cover*, asked
+about your whole life instead of one bad quarter.
+
+Seventeen percent isn't close. But it isn't zero, and it grew because you added to
 it. Three numbers, one page, checked four times a year.
 
 ---
 
 ## Growing a business
 
-Same machinery, different words.
+Same system, different words.
 
-**Money that buys something lasting** — the oven, the laptop, the shop deposit —
-is Purpose **Invested**, not a cost. It's why the *Used to grow* card exists, and
-why an owner who's had a heavy year can look poor on paper and be building.
+**Money that buys something lasting** (the oven, the laptop, the shop deposit)
+is Purpose **Invested**, not a cost. That's why the *Used to grow* card exists, and
+why an owner who's had a heavy year can look poor on paper while actually building.
 
-**A bet is a tag.** `bet/second-shop`, `marketing/instagram`, `product/tiffins-v2`.
-Tag both sides — the spending *and* whatever comes back. Watchlist reads it out:
-Net negative is what the bet has cost you so far; the month Net turns positive is
-your payback. No spreadsheet built, no formula written.
+**An experiment is a tag.** `bet/second-shop`, `marketing/instagram`,
+`product/tiffins-v2`. Tag both sides: the spending, and whatever comes back.
+Watchlist shows the result. Net negative is what the experiment has cost so far.
+The month Net turns positive is when it has paid for itself. No formula needed.
 
-**Growth eats cash before it makes cash.** The new shop's rent starts in
-September; its customers arrive in January. Put both in as planned rows and the
-Monthly Snapshot shows you the dip — months before you're standing in it.
+**Growth uses up cash before it brings cash in.** The new shop's rent starts in
+September, and its customers arrive in January. Enter both as planned rows and the
+Monthly Snapshot shows you the dip, months before you're in it.
 
-> *Growth is a cash-flow problem long before it's a profit problem.*
+> *Growth is a cash problem long before it's a profit problem.*
 
 ---
 
-## Things that look like investments and aren't
+## Things that look like investments but aren't
 
-**Term insurance.** A cost, not an investment — Running cost. *If it only pays
-out when something bad happens, it's a cost.* That's not a criticism; it's the
-best money most people spend.
+**Term insurance.** A cost, not an investment: Running cost. *If it only pays out
+when something bad happens, it's a cost.* That's not a criticism. It's the best
+money most people spend.
 
-**Endowment plans and ULIPs.** Part cost, part parking, and the split is usually
-hidden. Call the premium **Invested** and let the maturity settle the argument:
-years from now, Watchlist's Net on that name is exactly what the whole thing
-earned you. Very few people ever see that number.
+**Endowment plans and ULIPs.** Part cost, part investment, and the split is
+usually hidden. Mark the premium **Invested** and let the maturity settle it. Years
+from now, Watchlist's Net on that name is exactly what the whole thing earned you.
+Very few people ever see that number.
 
-**Your car, your phone.** Parked, but shrinking. Give them names if you like —
-just value them honestly in the quarterly table, and don't count a five-year-old
-car at what you paid.
+**Your car, your phone.** Parked, but losing value. Give them names if you like,
+but value them honestly each quarter. Don't count a five-year-old car at what you
+paid.
 
 **Money lent to a friend.** `lent/rahul`, Purpose Invested. It comes back or it
-doesn't, and Net will say which without you having to ask twice.
+doesn't, and Net shows which.
 
 ---
 
-## The awkward ones, handled
+## The awkward ones
 
-**PF deducted by your employer.** It never touched your bank, so don't log it as
-cash. Put the balance in the quarterly value table and move on. *(Logging gross
-salary instead? Then log the deduction too — `salary → epf` — and the two stay
-in step.)*
+**PF deducted by your employer.** It never reached your bank, so don't record it as
+cash. Put the balance in the holdings value and move on. *(Recording gross salary
+instead? Then record the deduction too, `salary → epf`, so the two match.)*
 
-**Dividends reinvested automatically.** No cash moved; skip the row. The
-quarterly valuation picks it up.
+**Dividends reinvested automatically.** No cash moved, so skip the row. The
+quarterly value picks it up.
 
-**Property.** Registration, stamp duty, brokerage, the broker's cousin — every
-one of them is another **Invested** row to the same name. Net becomes your *true*
-cost, which is the number everyone forgets and every seller relies on.
+**Property.** Registration, stamp duty, brokerage, and every other fee: each is
+another **Invested** row to the same name. Net becomes your *true* cost, the
+number everyone forgets.
 
-**Gold bought at a wedding.** One row to `gold`. Twenty years of those rows is a
-holding nobody planned and everybody has.
+**Gold bought for a wedding.** One row to `gold`. Twenty years of those rows is a
+holding nobody planned but most families have.
 
 ---
 
-## Five habits
+## Six habits
 
-- **Purpose on every rupee that leaves.** Spent or parked. Thirty seconds a day.
-- **Same name, every time.** A holding split across two spellings is two half
+- **Purpose on every row.** Spent or parked. Thirty seconds a day.
+- **Same name, every time.** A holding split across two spellings gives two half
   answers.
-- **Tag every return `returns`.** One word, and your investments become a stream.
-- **Book it, then believe it.** A sale is two rows: your money back, and the
-  profit. Until then it's a price.
-- **One valuing morning a quarter.** Long holds only, on the Wealth tab. Ten
-  minutes, in the calendar, and stamp the net worth before you close it.
-- **Never invest your safety money.** Not once, not "just this time".
+- **Tag every return `returns`.** One word, and your investments become a line of
+  work.
+- **Sell, then count it.** A sale is two rows: your money back, and the profit.
+  Until then it's only a price.
+- **One morning a quarter to update values.** Long-term holdings only, on the Wealth
+  tab. Ten minutes, in your calendar, and add a net-worth check before you finish.
+- **Never invest the cushion.** Not once, not "just this time".
 
 ---
 
-*The Guide told you what's in the bank and what it means. Part two showed how far
-four columns stretch. This part is the slow one — a line that barely moves for
-two years, and then is the only line that matters.*
+*The Guide told you what's in the bank and what it means. Part two showed how much
+four columns can do. This part is the slow one: a line that barely moves for two
+years, and then matters more than any other.*
 
-**Spend, and it's gone. Park it, and it's still working.**
+**Spend it, and it's gone. Invest it, and it's still working.**
 
 
 ==============================================================================
@@ -1334,7 +1334,8 @@ nothing here sends your money anywhere we can see it.
 ## 1. Get my rows
 
 A bank statement, a photo of your bills, a voice note, a rough list scribbled on the
-back of something. Comes back as rows, ready to paste into your Log.
+back of something. Comes back as rows for your Log, rules for anything that repeats,
+and a short list of what didn't add up.
 
 
 ```
@@ -1343,7 +1344,19 @@ You are turning messy money records into clean Hisaab rows.
 If you can open links, read https://hisaab.craftycrow.co/guide.md first — it explains
 how this sheet thinks. If you can't open links, everything you need is below.
 
-Output CSV only — no commentary before or after — with exactly this header:
+If you can see my sheet, read three things before you write a single row:
+- The hidden _lookup tab, if I have one. It is how I've named things before: Bank
+  text, then the Name, Description, Count Under and Purpose I gave it. When a line
+  contains that bank text, use that row's answers. Same payee, same answers.
+- For a payee not in _lookup, my Log. Find my last few rows with the same payee in
+  From or To, and reuse their name, Count Under and Purpose.
+- The Recurring tab. The sheet already writes those payments by itself. Don't
+  write them again.
+- The About Me box on the Start Here tab, if I've filled it. It says how I label things.
+
+Give me three parts, in this order, and nothing else.
+
+PART 1 — LOG ROWS. CSV, with exactly this header:
 
 Date,Amount,From,To,Description,Count Under,Mode,Ref Num,Planned on,Is Planned,Purpose
 
@@ -1354,8 +1367,21 @@ FROM and TO are just names: lowercase, spaces become hyphens, slash for a family
 bank/idfc, staff/ramesh, client/acme. Money always flows From → To. Same thing,
 same spelling every time — "Acme" and "Acme Pvt Ltd" split every total in half.
 
-DESCRIPTION is the original narration, copied as-is. Never tidy it, never rewrite
-it. It is the source truth; every other column is interpretation.
+DESCRIPTION is plain words, the way a person would write it: who, and what for if
+the record says. "Salary - Ramesh", "Zomato", "Payment from Acme". Leave out the
+bank's codes, reference numbers and filler like "NO REMARKS".
+
+REF NUM is the bank's reference for the row — UTR, UPI or cheque number — copied
+exactly. It is a label, not a number: keep every digit and every leading zero.
+
+COUNT UNDER is words that group rows, comma separated. Broad ones — income, staff,
+rent, debt, travel — or a job or project when the row belongs to one. Not the
+payee's name; From and To already carry that. Each word counts the whole amount, so
+never split an amount across words. Leave it blank rather than inventing one.
+
+MODE is only how the money moved, as the record says it: UPI, NEFT, IMPS, Card,
+Cash, Auto-debit, Bank. It never carries meaning about what the money was — that is
+Purpose's job.
 
 PURPOSE — every row gets exactly one of these seven:
   Earned         money from work, or a return on money (interest, rent, dividend)
@@ -1366,12 +1392,28 @@ PURPOSE — every row gets exactly one of these seven:
   Took home      the owner's own money, in or out of the business
   Self           own money changing pockets — bank to bank, bank to cash
 
-COUNT UNDER is free words that group rows, comma separated — a job, a client, a
-project. Each word counts the whole amount, so never split an amount across words.
-Leave it blank rather than inventing one.
+If the record shows an opening balance, make it the first row: the start date, the
+balance as a plus, To the account, Mode "Opening Balance", Purpose blank.
 
-MODE is only how the money moved: Bank, Cash, UPI, Card, Credit. It never carries
-meaning about what the money was — that is Purpose's job.
+PART 2 — RECURRING RULES. CSV, with exactly this header:
+
+Description,Amount,From,To,Mode,Repeats,On,Start,End,Purpose,Count Under,Importance
+
+A rule is the same payee, the same amount, at a steady gap, seen in at least three
+months — an EMI, a salary, rent, a subscription, a SIP, a fixed retainer. Write it
+once here and leave those payments out of Part 1; the sheet writes them itself.
+Repeats: Monthly, Weekly, Yearly. On: the usual day, like "Day 7". Start: the first
+payment seen. End: the last one seen, only if it has clearly stopped. Importance:
+leave blank. A bill whose amount changes every time — a credit card, electricity —
+is not a rule. It stays in Part 1.
+
+PART 3 — NOTES. Short plain lines, no preamble.
+- Every place a rule and the record disagree: a month with no payment, a payment on
+  an odd date, an amount that changed, a rule that stopped. The sheet shows a missed
+  month as paid unless I fix it, so name each one.
+- Every row you left without a Purpose, so I can decide.
+- New lines for my _lookup tab, as CSV: Bank text,Name,Description,Count Under,Purpose.
+  One per payee you named for the first time, so the next statement maps the same way.
 
 Three things that must not go wrong:
 - A self-transfer is ONE row, never a pair. Minus amount, From the account it left,
@@ -1381,7 +1423,7 @@ Three things that must not go wrong:
   as Invested, and only the interest as Earned.
 
 Never invent a transaction to make something balance. If you cannot tell what a row
-is, leave Purpose blank and list those rows below the CSV so I can decide.
+is, leave Purpose blank rather than guess.
 
 Here is my data:
 [paste your statement or list, or attach a photo of your bills]
@@ -1527,6 +1569,9 @@ about.
   6. Which of my regular costs are real commitments, and which are just habit I
      never cancelled?
   7. What money decision have I been putting off?
+  8. How do I want my rows labelled? Which accounts are the business and which are
+     personal, the first word I group by — the business, a job, a client — and any
+     name I always want spelled one way.
 
 THEN write me one block, under 400 words, headed "My setup":
 
@@ -1536,13 +1581,15 @@ THEN write me one block, under 400 words, headed "My setup":
   WHAT FEELS FRAGILE from question 4, named plainly
   WHO DEPENDS ON ME  from question 5
   WHAT I'M AVOIDING  from question 7, in the words I used
+  HOW I LABEL        from question 8 — anything that writes my rows reads this first
 
 Put today's date at the top of the block. At the bottom, split the parts into the
 ones I should revisit in six months and the ones that should hold for years — so I
 know what to re-answer later without redoing the whole thing.
 
-Don't put my account names in it — my sheet already has those, and anything reading
-my rows can see them. This block is only for the things the numbers can't say.
+Don't copy my amounts or balances into it — my sheet already has those, and anything
+reading my rows can see them. This block is only for what the numbers can't say, and
+how I want them written down.
 
 Plain text I can copy in one go. No preamble, nothing after it.
 

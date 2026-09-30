@@ -86,7 +86,7 @@
     </p>
 
     <h2 id="rows">1. Get my rows</h2>
-    <p>A bank statement, a photo of your bills, a voice note, a rough list scribbled on the back of something. Comes back as rows, ready to paste into your Log.</p>
+    <p>A bank statement, a photo of your bills, a voice note, a rough list scribbled on the back of something. Comes back as rows for your Log, rules for anything that repeats, and a short list of what didn't add up.</p>
 
     <div class="pbox collapsed">
       <div class="pbox-top"><span>Prompt · get my rows</span><button class="copy" type="button">Copy</button></div>
@@ -96,7 +96,19 @@
 If you can open links, read https://hisaab.craftycrow.co/guide.md first — it explains
 how this sheet thinks. If you can't open links, everything you need is below.
 
-Output CSV only — no commentary before or after — with exactly this header:
+If you can see my sheet, read three things before you write a single row:
+- The hidden _lookup tab, if I have one. It is how I've named things before: Bank
+  text, then the Name, Description, Count Under and Purpose I gave it. When a line
+  contains that bank text, use that row's answers. Same payee, same answers.
+- For a payee not in _lookup, my Log. Find my last few rows with the same payee in
+  From or To, and reuse their name, Count Under and Purpose.
+- The Recurring tab. The sheet already writes those payments by itself. Don't
+  write them again.
+- The About Me box on the Start Here tab, if I've filled it. It says how I label things.
+
+Give me three parts, in this order, and nothing else.
+
+PART 1 — LOG ROWS. CSV, with exactly this header:
 
 Date,Amount,From,To,Description,Count Under,Mode,Ref Num,Planned on,Is Planned,Purpose
 
@@ -107,8 +119,21 @@ FROM and TO are just names: lowercase, spaces become hyphens, slash for a family
 bank/idfc, staff/ramesh, client/acme. Money always flows From → To. Same thing,
 same spelling every time — "Acme" and "Acme Pvt Ltd" split every total in half.
 
-DESCRIPTION is the original narration, copied as-is. Never tidy it, never rewrite
-it. It is the source truth; every other column is interpretation.
+DESCRIPTION is plain words, the way a person would write it: who, and what for if
+the record says. "Salary - Ramesh", "Zomato", "Payment from Acme". Leave out the
+bank's codes, reference numbers and filler like "NO REMARKS".
+
+REF NUM is the bank's reference for the row — UTR, UPI or cheque number — copied
+exactly. It is a label, not a number: keep every digit and every leading zero.
+
+COUNT UNDER is words that group rows, comma separated. Broad ones — income, staff,
+rent, debt, travel — or a job or project when the row belongs to one. Not the
+payee's name; From and To already carry that. Each word counts the whole amount, so
+never split an amount across words. Leave it blank rather than inventing one.
+
+MODE is only how the money moved, as the record says it: UPI, NEFT, IMPS, Card,
+Cash, Auto-debit, Bank. It never carries meaning about what the money was — that is
+Purpose's job.
 
 PURPOSE — every row gets exactly one of these seven:
   Earned         money from work, or a return on money (interest, rent, dividend)
@@ -119,12 +144,28 @@ PURPOSE — every row gets exactly one of these seven:
   Took home      the owner's own money, in or out of the business
   Self           own money changing pockets — bank to bank, bank to cash
 
-COUNT UNDER is free words that group rows, comma separated — a job, a client, a
-project. Each word counts the whole amount, so never split an amount across words.
-Leave it blank rather than inventing one.
+If the record shows an opening balance, make it the first row: the start date, the
+balance as a plus, To the account, Mode "Opening Balance", Purpose blank.
 
-MODE is only how the money moved: Bank, Cash, UPI, Card, Credit. It never carries
-meaning about what the money was — that is Purpose's job.
+PART 2 — RECURRING RULES. CSV, with exactly this header:
+
+Description,Amount,From,To,Mode,Repeats,On,Start,End,Purpose,Count Under,Importance
+
+A rule is the same payee, the same amount, at a steady gap, seen in at least three
+months — an EMI, a salary, rent, a subscription, a SIP, a fixed retainer. Write it
+once here and leave those payments out of Part 1; the sheet writes them itself.
+Repeats: Monthly, Weekly, Yearly. On: the usual day, like "Day 7". Start: the first
+payment seen. End: the last one seen, only if it has clearly stopped. Importance:
+leave blank. A bill whose amount changes every time — a credit card, electricity —
+is not a rule. It stays in Part 1.
+
+PART 3 — NOTES. Short plain lines, no preamble.
+- Every place a rule and the record disagree: a month with no payment, a payment on
+  an odd date, an amount that changed, a rule that stopped. The sheet shows a missed
+  month as paid unless I fix it, so name each one.
+- Every row you left without a Purpose, so I can decide.
+- New lines for my _lookup tab, as CSV: Bank text,Name,Description,Count Under,Purpose.
+  One per payee you named for the first time, so the next statement maps the same way.
 
 Three things that must not go wrong:
 - A self-transfer is ONE row, never a pair. Minus amount, From the account it left,
@@ -134,7 +175,7 @@ Three things that must not go wrong:
   as Invested, and only the interest as Earned.
 
 Never invent a transaction to make something balance. If you cannot tell what a row
-is, leave Purpose blank and list those rows below the CSV so I can decide.
+is, leave Purpose blank rather than guess.
 
 Here is my data:
 [paste your statement or list, or attach a photo of your bills]</pre>
@@ -270,6 +311,9 @@ about.
   6. Which of my regular costs are real commitments, and which are just habit I
      never cancelled?
   7. What money decision have I been putting off?
+  8. How do I want my rows labelled? Which accounts are the business and which are
+     personal, the first word I group by — the business, a job, a client — and any
+     name I always want spelled one way.
 
 THEN write me one block, under 400 words, headed "My setup":
 
@@ -279,13 +323,15 @@ THEN write me one block, under 400 words, headed "My setup":
   WHAT FEELS FRAGILE from question 4, named plainly
   WHO DEPENDS ON ME  from question 5
   WHAT I'M AVOIDING  from question 7, in the words I used
+  HOW I LABEL        from question 8 — anything that writes my rows reads this first
 
 Put today's date at the top of the block. At the bottom, split the parts into the
 ones I should revisit in six months and the ones that should hold for years — so I
 know what to re-answer later without redoing the whole thing.
 
-Don't put my account names in it — my sheet already has those, and anything reading
-my rows can see them. This block is only for the things the numbers can't say.
+Don't copy my amounts or balances into it — my sheet already has those, and anything
+reading my rows can see them. This block is only for what the numbers can't say, and
+how I want them written down.
 
 Plain text I can copy in one go. No preamble, nothing after it.
 
