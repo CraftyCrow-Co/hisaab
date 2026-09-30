@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>What's new — Hisaab</title>
+<meta name="description" content="What's better in Hisaab, newest first, and how to move to the newest copy." />
+<script>try{var t=localStorage.getItem("hisaab-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="legal.css" />
+<style>
+.doc .note{font-style:italic;color:var(--ink-soft)}
+.doc .note span{font-style:normal;font-weight:700}
+.doc ul.changes{list-style:none;padding-left:0}
+.doc ul.changes li{margin-bottom:var(--sp-4)}
+.doc .how{display:block;color:var(--ink-faint);font-size:var(--fs-sm);margin-top:var(--sp-1)}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a href="index.html" class="brand">Hisaab <small>by CraftyCrow</small></a>
+    <button class="iconbtn" id="theme" aria-label="Switch light and dark (press T)">
+      <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/></svg>
+      <svg class="moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="doc">
+  <div class="wrap">
+    <h1>What's new</h1>
+
+    <p class="lead note">Every change below came from using Hisaab ourselves, or from something you told us. Keep it coming. <span>— Jeet</span></p>
+
+    <h2>30 Sep 2026</h2>
+
+    <ul class="changes"><li><strong>Less to take in on day one.</strong> Your copy opens with five tabs. Tick the others on from Start Here when you want them, even on your phone.<span class="how">Hidden tabs keep calculating in the background, so nothing is lost while a tab is out of sight.</span></li><li><strong>A guide you can read in one go.</strong> Plain words, and every screen it describes now matches your sheet.<span class="how">We read every line against the live sheet and rewrote whatever had fallen behind it.</span></li><li><strong>A clean start.</strong> A new copy opens with no stray dates or error cells.<span class="how">Empty rows were carrying leftover codes that made formulas think they held data. We cleared them.</span></li><li><strong>Your profit report ignores starting balances.</strong> The money you began with is no longer flagged as untagged income.</li><li><strong>Your AI helper gets more accurate with time.</strong> Turning a bank statement into rows, it labels each payee the way you did before.<span class="how">The prompt first checks a short list of how you've named payees, then your own Log.</span></li><li><strong>Your net worth is right.</strong> Investments you owned before you started now count for you, not against you.<span class="how">Money you already had on day one, like an FD or a fund, was being subtracted instead of added.</span></li><li><strong>Budgets judge the right stretch of time.</strong> A weekly limit checks this week, not everything since you set it.<span class="how">Setting a start date quietly turned "this week" into "since the start date". Now the start date only narrows the window.</span></li><li><strong>Client share counts real income only.</strong> Loans, your own top-ups and starting balances no longer inflate who pays you most.<span class="how">Every incoming amount was being counted as income. Now only rows marked Earned count.</span></li><li><strong>See your next 12 months of commitments,</strong> split by what each payment is for.<span class="how">The report now starts from this month and runs twelve months ahead, one column per Purpose.</span></li></ul>
+
+    <h2>3 Sep 2026</h2>
+
+    <ul class="changes"><li><strong>Your dropdowns stay right.</strong> Adding a column no longer risks a dropdown offering the wrong words.<span class="how">After a column was added, a refresh could write one column off and overwrite a list without any warning.</span></li></ul>
+
+    <h2>19 Aug 2026</h2>
+
+    <ul class="changes"><li><strong>Help on WhatsApp.</strong> Message us at wa.me/919920221230, as well as by email.</li></ul>
+
+    <h2>17 Aug 2026</h2>
+
+    <ul class="changes"><li><strong>Hisaab launched.</strong> One Google Sheet that answers two questions: do I have enough, and is enough coming in on time?</li></ul>
+
+    <h2 id="move">Have an older copy?</h2>
+
+    <ol><li>Open the link you got when you bought. It always gives you the newest copy.</li><li>Run the setup on it, the same two clicks as before.</li><li>Copy across what you typed: Log and Recurring rows, plus anything on Watchlist, Limits &amp; Goals or Wealth. Paste with Ctrl+Shift+V. The tinted formula columns fill themselves.</li></ol>
+
+    <h2>Need a hand?</h2>
+
+    <p><a href="https://wa.me/919920221230">WhatsApp wa.me/919920221230</a> · <a href="mailto:support@craftycrow.co">support@craftycrow.co</a><br>We reply as soon as we can, business hours only.</p>
+  </div>
+</main>
+
+<footer class="docfoot">
+  <div class="wrap">
+    <nav class="docnav">
+      <a href="index.html">Home</a>
+      <a href="guide.html">Guide</a>
+      <a href="ai.html">AI prompts</a>
+      <a href="whats-new.html">What&#39;s new</a>
+      <span class="navsep" aria-hidden="true"></span>
+      <a class="lgl" href="privacy.html">Privacy</a>
+      <a class="lgl" href="terms.html">Terms</a>
+      <a class="lgl" href="refund.html">Refunds</a>
+      <a class="lgl" href="shipping.html">Shipping</a>
+      <a class="lgl" href="contact.html">Contact</a>
+    </nav>
+    <small>Hisaab by CraftyCrow</small>
+  </div>
+</footer>
+
+<script src="theme.js"></script>
+<script src="analytics.js"></script>
+</body>
+</html>
