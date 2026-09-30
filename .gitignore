@@ -50,6 +50,8 @@ hisaab-guide.md
 # scripts/, which is the thing being sold, so they follow it out of the public repo.
 test/
 script-changelog.md
+# running changelog: user-facing lines + internal lessons. Mined for SOPs; not for the public repo.
+changelog.md
 
 # Selling, ads and money-in. Real revenue numbers, CAC math and the
 # CraftyCrow funnel — none of it belongs in a public repo.

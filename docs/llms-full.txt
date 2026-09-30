@@ -131,6 +131,7 @@ Most money worry, at home or in a business, comes from not knowing one of these.
 2. On the **Start Here** tab, click the big button. (The **Actions** menu has the same thing: **Set up this copy**.) It takes two clicks, once: the first gives permission, the second runs the setup. Google asks for two things: to work with **this spreadsheet only**, and to run when you're not using it. The second is what lets repeating entries appear by themselves. It cannot see anything else in your Drive. If a screen says the app isn't verified, that's Google's standard message for any sheet with its own code. Click **Advanced → Continue**. Don't skip this step. Without it the sheet looks fine but does nothing on its own. When it works, the warning above the button changes to **✓ All set up!**
 3. Enter what you have today. One row for each place your money sits: today's date, the amount as a plus, the account's name in **To** (`bank/idfc`, `bank/kotak`, `cash`), and Mode **Opening Balance**. That Mode keeps it out of your income reports. The balance picks it up by itself.
 4. Fill in three settings on the same tab: your **income goal**, your **months to survive** (how long you could manage with nothing coming in; aim for at least 6), and the month your **financial year** starts. That's all it asks. The sheet works out everything else from your rows. You can change these any time.
+5. Only five tabs show at first: Start Here, Dashboard, Log, Recurring and Auto-entries. The rest are hidden, not missing, and they keep calculating. When you want one, tick it in the **More reports** list on Start Here.
 
 **Keep one sheet. Don't start a new file each April.** The financial-year setting handles the year inside this file, so your tax view is right and your history stays whole. Many of the useful numbers need that history: your six-month average, months of cover, a client who went from a fifth of your income to a third. Start a new file and all of them start again from zero. Old accounting software made people close the books every year. A sheet doesn't need to.
 
@@ -446,7 +447,7 @@ Don't worry about small mistakes. This sheet helps you rank things: the kitchen 
 - **Same word, every time.** Pick from the dropdowns. Don't retype a name from memory.
 - **Tag both sides.** Income-only tags look great. Cost-only tags look terrible. A number that looks too good usually has rows missing.
 - **Clear the untagged-income line** now and then. Untagged income makes every line of work look smaller than it is.
-- **Type only in Log and Recurring.** Timeline and the reports only show results. (The one exception: edit a single month in Auto-entries when it was different.)
+- **Type on the teal tabs:** Log, Recurring, Watchlist, and Limits & Goals. Blue tabs are reports, and grey tabs are filled by the sheet. (Two exceptions: edit a single month in Auto-entries when it was different, and type values and checks on Wealth.)
 - **A number looks wrong?** Check in this order: do a check on Wealth, look for missing rows, check spellings. It's almost always one of these.
 
 ---
