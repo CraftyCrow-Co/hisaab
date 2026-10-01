@@ -4,6 +4,10 @@
 
 ## 30 Sep 2026
 
+- **Your payment history stays put.** Changing a repeating payment's day or amount no longer erases older payments.  
+  *The check that ends a loan once it's paid off was counting old payments made under the rule's earlier settings.*
+- **Moving to a new version takes two clicks.** Paste your old copy's link and your rows come across. No copying and pasting.  
+  *It reads your old copy through a Google Sheets formula. You allow it once, for that one file, and it never sees anything else in your Drive.*
 - **Less to take in on day one.** Your copy opens with five tabs. Tick the others on from Start Here when you want them, even on your phone.  
   *Hidden tabs keep calculating in the background, so nothing is lost while a tab is out of sight.*
 - **A guide you can read in one go.** Plain words, and every screen it describes now matches your sheet.  
@@ -39,9 +43,9 @@
 
 ## Have an older copy?
 
-1. Open the link you got when you bought. It always gives you the newest copy.
-2. Run the setup on it, the same two clicks as before.
-3. Copy across what you typed: Log and Recurring rows, plus anything on Watchlist, Limits & Goals or Wealth. Paste with Ctrl+Shift+V. The tinted formula columns fill themselves.
+1. Open the link you got when you bought. It always gives you the newest copy. Run the setup on it, the same two clicks as before.
+2. In the new copy, go to Actions → Bring in rows from an old copy, and paste your old copy's link.
+3. Click A1 on the tab it opens, press Allow access, then run the same menu item again. Your rows come across.
 
 ## Need a hand?
 
