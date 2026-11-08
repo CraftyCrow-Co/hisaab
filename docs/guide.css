@@ -167,6 +167,23 @@
   border:1px solid var(--line);cursor:pointer;transition:border-color .2s,color .2s}
 .copyurl:hover{border-color:var(--accent);color:var(--ink)}
 
+/* ---- walkthrough video + chapters ---- */
+.video{margin:var(--sp-5) 0}
+.video > p{margin:0 0 var(--sp-3);color:var(--ink-soft)}
+.video .frame{aspect-ratio:16/9;border-radius:var(--radius);overflow:hidden;
+  border:1px solid var(--line);background:#000}
+.video iframe{width:100%;height:100%;border:0;display:block}
+.chapters{margin-top:var(--sp-3);background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--radius);padding:var(--sp-2) var(--sp-4)}
+.chapters summary{cursor:pointer;font-weight:800;font-size:var(--fs-sm);color:var(--ink);
+  padding:var(--sp-1) 0}
+.chapters ol{list-style:none;margin:var(--sp-2) 0 var(--sp-2);padding:0}
+.chapters li{margin:0}
+.chapters a{display:flex;gap:1.5ch;padding:var(--sp-1) 0;color:var(--ink-soft);
+  text-decoration:none;font-size:var(--fs-sm)}
+.chapters a:hover,.chapters a:focus-visible{color:var(--ink)}
+.chapters .t{min-width:5ch;font-variant-numeric:tabular-nums;font-weight:700;color:var(--accent-ink)}
+
 /* ---- finale ---- */
 .finale{border-top:1px solid var(--line);margin-top:var(--sp-6);padding-top:var(--sp-6)}
 .finale em{color:var(--ink-soft);font-style:italic}

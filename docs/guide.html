@@ -69,6 +69,31 @@
 
     <p class="introlede">The first time, read it top to bottom. Each section builds on the one before. Coming back for one thing? Jump to it. Every section after the basics starts with the little you need to know.</p>
 
+    <div class="video">
+      <p><strong>Prefer to watch?</strong> The full walkthrough, 39 minutes: setting up, the Log, Recurring and the reports.</p>
+      <div class="frame"><iframe id="walkthrough" src="https://www.youtube-nocookie.com/embed/3d36yVBrBws" title="Hisaab: full walkthrough" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <details class="chapters"><summary>Chapters</summary>
+        <ol>
+          <li><a href="https://youtu.be/3d36yVBrBws?t=0" data-t="0"><span class="t">0:00</span> Set it up: two clicks</a></li>
+          <li><a href="https://youtu.be/3d36yVBrBws?t=75" data-t="75"><span class="t">1:15</span> Why we built it as a spreadsheet</a></li>
+          <li><a href="https://youtu.be/3d36yVBrBws?t=214" data-t="214"><span class="t">3:34</span> Start Here: three settings, and more reports</a></li>
+          <li><a href="https://youtu.be/3d36yVBrBws?t=326" data-t="326"><span class="t">5:26</span> The Log: Date and Amount are all it needs</a></li>
+          <li><a href="https://youtu.be/3d36yVBrBws?t=510" data-t="510"><span class="t">8:30</span> Two rows on the same day? Add a time</a></li>
+          <li><a href="https://youtu.be/3d36yVBrBws?t=566" data-t="566"><span class="t">9:26</span> The Dashboard, on a sample business</a></li>
+          <li><a href="https://youtu.be/3d36yVBrBws?t=649" data-t="649"><span class="t">10:49</span> The other columns: Count Under, Mode, Planned, Purpose</a></li>
+          <li><a href="https://youtu.be/3d36yVBrBws?t=833" data-t="833"><span class="t">13:53</span> Watchlist: total anything by one word</a></li>
+          <li><a href="https://youtu.be/3d36yVBrBws?t=965" data-t="965"><span class="t">16:05</span> Names with a slash: bank/idfc, bank/kotak</a></li>
+          <li><a href="https://youtu.be/3d36yVBrBws?t=1143" data-t="1143"><span class="t">19:03</span> Mode works the same way</a></li>
+          <li><a href="https://youtu.be/3d36yVBrBws?t=1216" data-t="1216"><span class="t">20:16</span> One sheet for the whole family</a></li>
+          <li><a href="https://youtu.be/3d36yVBrBws?t=1288" data-t="1288"><span class="t">21:28</span> Let your AI type the rows</a></li>
+          <li><a href="https://youtu.be/3d36yVBrBws?t=1303" data-t="1303"><span class="t">21:43</span> Recurring: type it once</a></li>
+          <li><a href="https://youtu.be/3d36yVBrBws?t=1835" data-t="1835"><span class="t">30:35</span> EMIs: what's paid, what's left</a></li>
+          <li><a href="https://youtu.be/3d36yVBrBws?t=1993" data-t="1993"><span class="t">33:13</span> Cash Flow: what's coming and going</a></li>
+          <li><a href="https://youtu.be/3d36yVBrBws?t=2154" data-t="2154"><span class="t">35:54</span> Real Picture: where the profit went</a></li>
+        </ol>
+      </details>
+    </div>
+
     <div class="aishare">
       <p><strong>Reading with an AI?</strong> Hand it the whole guide and it can walk you through your own money — setup, a tricky classification, reading a report.</p>
       <p><button class="aibtn" id="copyAI" type="button">
@@ -394,7 +419,7 @@
   var fabTop=document.getElementById("fabTop");
   var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
   var blocks=[].slice.call(document.querySelectorAll(
-    ".gcontent section > *, .gcontent > h1, .gcontent > p, .gcontent > .aishare, .gcontent .finale > *"));
+    ".gcontent section > *, .gcontent > h1, .gcontent > p, .gcontent > .aishare, .gcontent > .video, .gcontent .finale > *"));
   var FOCUS_MIN=0.45,focusPaused=false,ticking=false;
   function updateFocus(){
     if(reduce||focusPaused)return;
@@ -441,6 +466,20 @@
   document.getElementById("fabTop").addEventListener("click",function(){
     scrollTo({top:0,behavior:"smooth"});
   });
+
+  // walkthrough chapters: play the video on this page from that point.
+  // Without this script the links still open YouTube at the right second.
+  var player=document.getElementById("walkthrough");
+  if(player){
+    var base=player.src.split("?")[0];
+    [].forEach.call(document.querySelectorAll(".chapters a[data-t]"),function(a){
+      a.addEventListener("click",function(e){
+        e.preventDefault();
+        player.src=base+"?start="+a.getAttribute("data-t")+"&autoplay=1";
+        player.scrollIntoView({behavior:reduce?"auto":"smooth",block:"center"});
+      });
+    });
+  }
 
   // give-this-to-your-AI: copy the full guide markdown
   // click-to-copy the raw markdown URL

@@ -2,6 +2,10 @@
 
 *Every change below came from using Hisaab ourselves, or from something you told us. Keep it coming. — Jeet*
 
+## 8 Nov 2026
+
+- **Prefer watching to reading? The whole sheet is now one video.** Jump straight to the part you need from the chapter list.
+
 ## 30 Sep 2026
 
 - **Your payment history stays put.** Changing a repeating payment's day or amount no longer erases older payments.  

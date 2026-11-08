@@ -4,6 +4,25 @@
 
 The first time, read it top to bottom. Each section builds on the one before. Coming back for one thing? Jump to it. Every section after the basics starts with the little you need to know.
 
+**Prefer to watch?** The full walkthrough, 39 minutes: setting up, the Log, Recurring and the reports. — https://youtu.be/3d36yVBrBws
+
+- 0:00 Set it up: two clicks
+- 1:15 Why we built it as a spreadsheet
+- 3:34 Start Here: three settings, and more reports
+- 5:26 The Log: Date and Amount are all it needs
+- 8:30 Two rows on the same day? Add a time
+- 9:26 The Dashboard, on a sample business
+- 10:49 The other columns: Count Under, Mode, Planned, Purpose
+- 13:53 Watchlist: total anything by one word
+- 16:05 Names with a slash: bank/idfc, bank/kotak
+- 19:03 Mode works the same way
+- 20:16 One sheet for the whole family
+- 21:28 Let your AI type the rows
+- 21:43 Recurring: type it once
+- 30:35 EMIs: what's paid, what's left
+- 33:13 Cash Flow: what's coming and going
+- 35:54 Real Picture: where the profit went
+
 ---
 
 ## 1. What this is
