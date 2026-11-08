@@ -359,4 +359,4 @@ sharp second opinion is worth a great deal. It still isn't advice.
 ## Start
 
 The prompts are yours either way. If you want the sheet they were built for, it's
-₹112 once: https://hisaab.craftycrow.co/
+₹999 once: https://hisaab.craftycrow.co/

@@ -8,7 +8,7 @@ and it answers the only two questions that actually cause money stress:
 
 **Do I have enough right now? Is enough coming in on time?**
 
-₹112, once. It copies into your own Google Drive and stays there. No account, no app,
+₹999, once. It copies into your own Google Drive and stays there. No account, no app,
 no server of ours between you and your numbers — which is also why there's nothing to
 renew.
 
